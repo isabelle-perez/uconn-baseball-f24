@@ -1,20 +1,60 @@
 ```{python}
 import pandas as pd
 import matplotlib.pyplot as plt
-import plotnine as pn
+from plotnine import *
 ```
 
 ```{python}
 # read in data
-trackman_910 = pd.read_csv('../pitching/data/in-game-trackman/UConnFall910.csv')
-trackman_912 = pd.read_csv('../pitching/data/in-game-trackman/UConnFall912.csv')
-trackman_913 = pd.read_csv('../pitching/data/in-game-trackman/UConnFall913.csv')
-trackman_914 = pd.read_csv('../pitching/data/in-game-trackman/UConnFall914.csv')
+trackman_910 = pd.read_csv('../data/in-game-trackman/UConnFall910.csv')
+trackman_912 = pd.read_csv('../data/in-game-trackman/UConnFall912.csv')
+trackman_913 = pd.read_csv('../data/in-game-trackman/UConnFall913.csv')
+trackman_914 = pd.read_csv('../data/in-game-trackman/UConnFall914.csv')
 ```
 
 ```{python}
-# concatenate and clean datasets
+# concatenate datasets
 trackman_fall = pd.concat([trackman_910, trackman_912, trackman_913, trackman_914])
 
-trackman_fall.isnull().sum()
+# drop unecessary columns
+unnamed_cols = [f'Unnamed: {i}' for i in range(23, 30)]
+trackman_fall = trackman_fall.drop(columns = ['ExitSpeed', 'PitcherSet'])
+trackman_fall = trackman_fall.drop(columns = [i for i in unnamed_cols])
+
+trackman_fall = trackman_fall.dropna()
+```
+
+```{python}
+# clean up pitch call column
+trackman_fall['PitchCall'] = trackman_fall['PitchCall'].replace('Ballcalled', 'BallCalled')
+
+trackman_fall['PitchCall'] = trackman_fall['PitchCall'].replace('CalledStrike', 'StrikeCalled')
+```
+
+```{python}
+# drop unecessary/unusable columns
+trackman_fall = trackman_fall.drop(columns = ['KorBB', 'TaggedHitType', 'PlayResult'])
+```
+
+```{python}
+# clean up pitch type column
+trackman_fall['AutoPitchType'] = trackman_fall['AutoPitchType'].replace('Slider ', 'Slider')
+
+trackman_fall['AutoPitchType'] = trackman_fall['AutoPitchType'].replace('Fastball ', 'Fastball')
+
+trackman_fall['AutoPitchType'] = trackman_fall['AutoPitchType'].replace('Cutter ', 'Cutter')
+```
+
+```{python}
+fig, axs = plt.subplots(2, 2)
+
+hist_1 = trackman_fall[trackman_fall['Balls'] == 0.0]['AutoPitchType']
+hist_2 = trackman_fall[trackman_fall['Balls'] == 1.0]['AutoPitchType']
+hist_3 = trackman_fall[trackman_fall['Balls'] == 2.0]['AutoPitchType']
+hist_4 = trackman_fall[trackman_fall['Balls'] == 3.0]['AutoPitchType']
+
+axs[0, 0].hist(hist_1)
+axs[0, 1].hist(hist_2)
+axs[1, 0].hist(hist_3)
+axs[1, 1].hist(hist_4)
 ```
