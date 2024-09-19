@@ -1,0 +1,18 @@
+```{python}
+import pandas as pd
+import matplotlib.pyplot as plt 
+import plotnine as pn
+```
+
+```{python}
+# read in data
+trackman_910 = pd.read_csv('../data/in-game-trackman/UConnFall910.csv')
+
+trackman_912 = pd.read_csv('../data/in-game-trackman/UConnFall912.csv')
+```
+
+```{python}
+# concatenate data and drop null columns/rows
+trackman_fall = pd.concat([trackman_910, trackman_912])
+trackman_fall = trackman_fall.drop(columns = ['PitcherSet', 'ExitSpeed', 'PlayResult']).dropna()
+```
