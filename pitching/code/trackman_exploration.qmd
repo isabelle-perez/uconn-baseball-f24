@@ -1,0 +1,20 @@
+```{python}
+import pandas as pd
+import matplotlib.pyplot as plt
+import plotnine as pn
+```
+
+```{python}
+# read in data
+trackman_910 = pd.read_csv('../pitching/data/in-game-trackman/UConnFall910.csv')
+trackman_912 = pd.read_csv('../pitching/data/in-game-trackman/UConnFall912.csv')
+trackman_913 = pd.read_csv('../pitching/data/in-game-trackman/UConnFall913.csv')
+trackman_914 = pd.read_csv('../pitching/data/in-game-trackman/UConnFall914.csv')
+```
+
+```{python}
+# concatenate and clean datasets
+trackman_fall = pd.concat([trackman_910, trackman_912, trackman_913, trackman_914])
+
+trackman_fall.isnull().sum()
+```
