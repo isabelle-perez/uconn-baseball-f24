@@ -1,6 +1,8 @@
 ```{python}
 import pandas as pd
 import matplotlib.pyplot as plt
+import seaborn as sns
+from plotnine import *
 ```
 
 ```{python}
@@ -49,4 +51,21 @@ data['PitchCall'] = data['PitchCall'].replace('Ballcalled', 'BallCalled')
 data['PitchCall'] = data['PitchCall'].replace('CalledStrike', 'StrikeCalled')
 
 data['PitchCall'] = data['PitchCall'].replace('Strikeout', 'StrikeSwinging')
+```
+
+```{python}
+total_pitches = data.groupby('Pitcher').size()
+
+whiffs = data[data['PitchCall'] == 'StrikeSwinging'].groupby('Pitcher').size()
+
+prop_whiffs = ((whiffs / total_pitches) * 100).reset_index()
+
+prop_whiffs = pd.DataFrame(prop_whiffs)
+prop_whiffs.columns = ['Pitcher', 'Whiff Rate']
+
+sns.barplot(x = 'Pitcher', y = 'Whiff Rate', data = prop_whiffs,
+                                                    palette = 'Blues_d')
+
+plt.xticks(rotation = 45)
+plt.tight_layout()
 ```
