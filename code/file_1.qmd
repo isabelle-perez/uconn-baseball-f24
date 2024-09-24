@@ -1,0 +1,52 @@
+```{python}
+import pandas as pd
+import matplotlib.pyplot as plt
+```
+
+```{python}
+# read in and merge data
+week_1 = pd.read_csv('../data/in-game-trackman/UConnFallWeek1.csv')
+week_2 = pd.read_csv('../data/in-game-trackman/UConnFallWeek2.csv')
+
+data = pd.concat([week_1, week_2])
+```
+
+```{python}
+# drop unecessary columns
+cols_to_drop = [f'X.{i}' for i in range(1, 15)]
+
+data = data.drop(columns = cols_to_drop)
+data = data.drop(columns = ['X', 'PitcherSet', 'Date', 'ExitSpeed'])
+```
+
+```{python}
+# drop unecessary rows
+data = data[data['PitchCall'].notnull()]
+```
+
+```{python}
+# fix BatterSide column
+data['BatterSide'] = data['BatterSide'].replace(['RIght', 'Right '], 'Right')
+
+data['BatterSide'] = data['BatterSide'].replace('Left ', 'Left')
+```
+
+```{python}
+# fix AutoPitchType column
+data['AutoPitchType'] = data['AutoPitchType'].replace('Fastball ', 'Fastball')
+
+data['AutoPitchType'] = data['AutoPitchType'].replace('Cutter ', 'Cutter')
+
+data['AutoPitchType'] = data['AutoPitchType'].replace('Slider ', 'Slider')
+
+data['AutoPitchType'] = data['AutoPitchType'].replace('Splitter ', 'Splitter')
+```
+
+```{python}
+# fix PitchCall column
+data['PitchCall'] = data['PitchCall'].replace('Ballcalled', 'BallCalled')
+
+data['PitchCall'] = data['PitchCall'].replace('CalledStrike', 'StrikeCalled')
+
+data['PitchCall'] = data['PitchCall'].replace('Strikeout', 'StrikeSwinging')
+```

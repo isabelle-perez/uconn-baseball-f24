@@ -1,0 +1,1180 @@
+PitchNo,Date,PAofInning,PitchofPA,Pitcher,PitcherThrows,PitcherTeam,Batter,BatterSide,BatterTeam,PitcherSet,Inning,Top.Bottom,Outs,Balls,Strikes,AutoPitchType,PitchCall,KorBB,TaggedHitType,PlayResult,OutsOnPlay,RunsScored,ExitSpeed,X,X.1,X.2,X.3,X.4,X.5,X.6,X.7,X.8,X.9,X.10,X.11,X.12,X.13,X.14
+1,,1,1,"Wolff, Devin",Right,UCO_HUS,"Biller, Sam",Left,UCO_HUS,NA,1,Top,0,0,0,Fastball,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+2,,1,2,"Wolff, Devin",Right,UCO_HUS,"Biller, Sam",Left,UCO_HUS,NA,1,Top,0,1,0,Fastball,StrikeCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+3,,1,3,"Wolff, Devin",Right,UCO_HUS,"Biller, Sam",Left,UCO_HUS,NA,1,Top,0,1,1,Fastball,InPlay,Undefined,FlyBall,Out,1,0,88.1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+4,,2,1,"Wolff, Devin",Right,UCO_HUS,"Padilla, Bryan",Right,UCO_HUS,NA,1,Top,1,0,0,Slider,StrikeCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+5,,2,2,"Wolff, Devin",Right,UCO_HUS,"Padilla, Bryan",Right,UCO_HUS,NA,1,Top,1,0,1,Fastball,InPlay,Undefined,GroundBall,Single,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+6,,3,1,"Wolff, Devin",Right,UCO_HUS,"Dalena, Maddix",Left,UCO_HUS,NA,1,Top,1,0,0,Fastball,FoulBallNotFieldable,Undefined,Undefined,Undefined,0,0,28.5,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+7,,3,2,"Wolff, Devin",Right,UCO_HUS,"Dalena, Maddix",Left,UCO_HUS,NA,1,Top,1,0,1,Fastball,InPlay,Undefined,FlyBall,Error,0,1,98,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+8,,4,1,"Wolff, Devin",Right,UCO_HUS,"Garbowski, Matt",Left,UCO_HUS,NA,1,Top,1,0,0,Fastball,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+9,,4,2,"Wolff, Devin",Right,UCO_HUS,"Garbowski, Matt",Left,UCO_HUS,NA,1,Top,1,1,0,Slider,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+10,,4,3,"Wolff, Devin",Right,UCO_HUS,"Garbowski, Matt",Left,UCO_HUS,NA,1,Top,1,2,0,Fastball,StrikeCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+11,,4,4,"Wolff, Devin",Right,UCO_HUS,"Garbowski, Matt",Left,UCO_HUS,NA,1,Top,1,2,1,Fastball,InPlay,Undefined,GroundBall,Out,1,0,45,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+12,,5,1,"Wolff, Devin",Right,UCO_HUS,"Groen, Carter",Right,UCO_HUS,NA,1,Top,2,0,0,Splitter,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+13,,5,2,"Wolff, Devin",Right,UCO_HUS,"Groen, Carter",Right,UCO_HUS,NA,1,Top,2,1,0,Fastball,StrikeCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+14,,5,3,"Wolff, Devin",Right,UCO_HUS,"Groen, Carter",Right,UCO_HUS,NA,1,Top,2,1,1,Fastball,InPlay,Undefined,LineDrive,Out,1,0,86,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+15,,1,1,"Suchy, Cayden",Left,UCO_HUS,"Shpur, Caleb",Right,UCO_HUS,NA,1,Bottom,0,0,0,Fastball,InPlay,Undefined,GroundBall,Out,1,0,15.1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+16,,2,1,"Suchy, Cayden",Left,UCO_HUS,"Rispoli, Robert",Right,UCO_HUS,NA,1,Bottom,1,0,0,Slider,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+17,,2,2,"Suchy, Cayden",Left,UCO_HUS,"Rispoli, Robert",Right,UCO_HUS,NA,1,Bottom,1,1,0,Fastball,StrikeCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+18,,2,3,"Suchy, Cayden",Left,UCO_HUS,"Rispoli, Robert",Right,UCO_HUS,NA,1,Bottom,1,1,1,Changeup,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+19,,2,4,"Suchy, Cayden",Left,UCO_HUS,"Rispoli, Robert",Right,UCO_HUS,NA,1,Bottom,1,2,1,Fastball,StrikeCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+20,,2,5,"Suchy, Cayden",Left,UCO_HUS,"Rispoli, Robert",Right,UCO_HUS,NA,1,Bottom,1,2,2,Slider,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+21,,2,6,"Suchy, Cayden",Left,UCO_HUS,"Rispoli, Robert",Right,UCO_HUS,NA,1,Bottom,1,3,2,Fastball,FoulBallNotFieldable,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+22,,2,7,"Suchy, Cayden",Left,UCO_HUS,"Rispoli, Robert",Right,UCO_HUS,NA,1,Bottom,1,3,2,Fastball,BallCalled,Walk,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+23,,3,1,"Suchy, Cayden",Left,UCO_HUS,"Minick, Tyler",Right,UCO_HUS,NA,1,Bottom,1,0,0,Fastball,StrikeSwinging,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+24,,3,2,"Suchy, Cayden",Left,UCO_HUS,"Minick, Tyler",Right,UCO_HUS,NA,1,Bottom,1,0,1,Fastball,FoulBallNotFieldable,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+25,,3,3,"Suchy, Cayden",Left,UCO_HUS,"Minick, Tyler",Right,UCO_HUS,NA,1,Bottom,1,1,1,Fastball,InPlay,Undefined,FlyBall,Out,1,0,91.7,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+26,,4,1,"Suchy, Cayden",Left,UCO_HUS,"MacArthur, Grant",Right,UCO_HUS,NA,1,Bottom,2,0,0,Slider,StrikeCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+27,,4,2,"Suchy, Cayden",Left,UCO_HUS,"MacArthur, Grant",Right,UCO_HUS,NA,1,Bottom,2,0,1,Fastball,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+28,,4,3,"Suchy, Cayden",Left,UCO_HUS,"MacArthur, Grant",Right,UCO_HUS,NA,1,Bottom,2,1,1,Slider,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+29,,4,4,"Suchy, Cayden",Left,UCO_HUS,"MacArthur, Grant",Right,UCO_HUS,NA,1,Bottom,2,2,1,Fastball,InPlay,Undefined,LineDrive,Single,0,1,102.7,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+30,,5,1,"Suchy, Cayden",Left,UCO_HUS,"Root, Beau",Left,UCO_HUS,NA,1,Bottom,2,0,0,Slider,StrikeCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+31,,5,2,"Suchy, Cayden",Left,UCO_HUS,"Root, Beau",Left,UCO_HUS,NA,1,Bottom,2,0,1,Slider,InPlay,Undefined,GroundBall,Out,1,0,60.5,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+32,,1,1,"Wolff, Devin",Right,UCO_HUS,"LaRose, Jack",Left,UCO_HUS,NA,2,Top,0,0,0,Fastball,InPlay,Undefined,LineDrive,Out,1,0,99.1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+33,,2,1,"Wolff, Devin",Right,UCO_HUS,"Lane, Connor",Right,UCO_HUS,NA,2,Top,1,0,0,Slider,StrikeCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+34,,2,2,"Wolff, Devin",Right,UCO_HUS,"Lane, Connor",Right,UCO_HUS,NA,2,Top,1,0,1,Slider,StrikeCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+35,,2,3,"Wolff, Devin",Right,UCO_HUS,"Lane, Connor",Right,UCO_HUS,NA,2,Top,1,0,2,Fastball,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+36,,2,4,"Wolff, Devin",Right,UCO_HUS,"Lane, Connor",Right,UCO_HUS,NA,2,Top,1,1,2,Slider,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+37,,2,5,"Wolff, Devin",Right,UCO_HUS,"Lane, Connor",Right,UCO_HUS,NA,2,Top,1,2,2,Slider,FoulBallNotFieldable,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+38,,2,6,"Wolff, Devin",Right,UCO_HUS,"Lane, Connor",Right,UCO_HUS,NA,2,Top,1,2,2,Fastball,FoulBallNotFieldable,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+39,,2,7,"Wolff, Devin",Right,UCO_HUS,"Lane, Connor",Right,UCO_HUS,NA,2,Top,1,2,2,Slider,InPlay,Undefined,FlyBall,Out,1,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+40,,3,1,"Wolff, Devin",Right,UCO_HUS,"Kron, Drew",Right,UCO_HUS,NA,2,Top,2,0,0,Fastball,StrikeCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+41,,3,2,"Wolff, Devin",Right,UCO_HUS,"Kron, Drew",Right,UCO_HUS,NA,2,Top,2,0,1,Slider,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+42,,3,3,"Wolff, Devin",Right,UCO_HUS,"Kron, Drew",Right,UCO_HUS,NA,2,Top,2,1,1,Slider,InPlay,Undefined,GroundBall,Out,1,0,63,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+43,,1,1,"Suchy, Cayden",Left,UCO_HUS,"Tirado, Gabriel",Left,UCO_HUS,NA,2,Bottom,0,0,0,Fastball,InPlay,Undefined,FlyBall,Out,1,0,79.5,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+44,,2,1,"Suchy, Cayden",Left,UCO_HUS,"Belisario, Anthony",Right,UCO_HUS,NA,2,Bottom,1,0,0,Fastball,InPlay,Undefined,GroundBall,Out,1,0,35.8,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+45,,3,1,"Suchy, Cayden",Left,UCO_HUS,"Oates, Michael",Right,UCO_HUS,NA,2,Bottom,2,0,0,Fastball,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+46,,3,2,"Suchy, Cayden",Left,UCO_HUS,"Oates, Michael",Right,UCO_HUS,NA,2,Bottom,2,1,0,Fastball,StrikeCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+47,,3,3,"Suchy, Cayden",Left,UCO_HUS,"Oates, Michael",Right,UCO_HUS,NA,2,Bottom,2,1,1,Slider,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48,,3,4,"Suchy, Cayden",Left,UCO_HUS,"Oates, Michael",Right,UCO_HUS,NA,2,Bottom,2,2,1,Fastball,StrikeCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+49,,3,5,"Suchy, Cayden",Left,UCO_HUS,"Oates, Michael",Right,UCO_HUS,NA,2,Bottom,2,2,2,Changeup,StrikeSwinging,Strikeout,Undefined,Out,1,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+50,,1,1,"Norrell, Owen",Left,UCO_HUS,"Biller, Sam",Left,UCO_HUS,NA,3,Top,0,0,0,Slider,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+51,,1,2,"Norrell, Owen",Left,UCO_HUS,"Biller, Sam",Left,UCO_HUS,NA,3,Top,0,1,0,Slider,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+52,,1,3,"Norrell, Owen",Left,UCO_HUS,"Biller, Sam",Left,UCO_HUS,NA,3,Top,0,2,0,Fastball,BallCalled,HitbyPitch,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+53,,2,1,"Norrell, Owen",Left,UCO_HUS,"Padilla, Bryan",Right,UCO_HUS,NA,3,Top,0,0,0,Fastball,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+54,,2,2,"Norrell, Owen",Left,UCO_HUS,"Padilla, Bryan",Right,UCO_HUS,NA,3,Top,0,1,0,Fastball,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+55,,2,3,"Norrell, Owen",Left,UCO_HUS,"Padilla, Bryan",Right,UCO_HUS,NA,3,Top,0,2,0,Fastball,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+56,,2,4,"Norrell, Owen",Left,UCO_HUS,"Padilla, Bryan",Right,UCO_HUS,NA,3,Top,0,3,0,Fastball,BallCalled,Walk,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+57,,3,1,"Norrell, Owen",Left,UCO_HUS,"Dalena, Maddix",Left,UCO_HUS,NA,3,Top,0,0,0,Slider,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+58,,3,2,"Norrell, Owen",Left,UCO_HUS,"Dalena, Maddix",Left,UCO_HUS,NA,3,Top,0,1,0,Fastball,StrikeCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+59,,3,3,"Norrell, Owen",Left,UCO_HUS,"Dalena, Maddix",Left,UCO_HUS,NA,3,Top,0,1,1,Fastball,BallCalled,Undefined,Undefined,Error,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+60,,3,4,"Norrell, Owen",Left,UCO_HUS,"Dalena, Maddix",Left,UCO_HUS,NA,3,Top,0,2,1,Fastball,FoulBallNotFieldable,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+61,,3,5,"Norrell, Owen",Left,UCO_HUS,"Dalena, Maddix",Left,UCO_HUS,NA,3,Top,0,2,2,Slider,FoulBallNotFieldable,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+62,,3,6,"Norrell, Owen",Left,UCO_HUS,"Dalena, Maddix",Left,UCO_HUS,NA,3,Top,0,2,2,Fastball,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+63,,3,7,"Norrell, Owen",Left,UCO_HUS,"Dalena, Maddix",Left,UCO_HUS,NA,3,Top,0,3,2,Fastball,BallCalled,Walk,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+64,,4,1,"Norrell, Owen",Left,UCO_HUS,"Garbowski, Matt",Left,UCO_HUS,NA,3,Top,0,0,0,Fastball,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+65,,4,2,"Norrell, Owen",Left,UCO_HUS,"Garbowski, Matt",Left,UCO_HUS,NA,3,Top,0,1,0,Fastball,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+66,,4,3,"Norrell, Owen",Left,UCO_HUS,"Garbowski, Matt",Left,UCO_HUS,NA,3,Top,0,2,0,Fastball,StrikeCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+67,,4,4,"Norrell, Owen",Left,UCO_HUS,"Garbowski, Matt",Left,UCO_HUS,NA,3,Top,0,2,1,Fastball,InPlay,Undefined,GroundBall,Out,2,1,45.9,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+68,,5,1,"Norrell, Owen",Left,UCO_HUS,"Groen, Carter",Right,UCO_HUS,NA,3,Top,2,0,0,Fastball,FoulBallNotFieldable,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+69,,5,2,"Norrell, Owen",Left,UCO_HUS,"Groen, Carter",Right,UCO_HUS,NA,3,Top,2,0,1,Slider,BallCalled,HitbyPitch,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+70,,6,1,"Norrell, Owen",Left,UCO_HUS,"LaRose, Jack",Left,UCO_HUS,NA,3,Top,2,0,0,Fastball,InPlay,Undefined,GroundBall,Out,1,0,60.8,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+71,,1,1,"Suchy, Cayden",Left,UCO_HUS,"Shpur, Caleb",Right,UCO_HUS,NA,3,Bottom,0,0,0,Slider,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+72,,1,2,"Suchy, Cayden",Left,UCO_HUS,"Shpur, Caleb",Right,UCO_HUS,NA,3,Bottom,0,1,0,Changeup,StrikeCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+73,,1,3,"Suchy, Cayden",Left,UCO_HUS,"Shpur, Caleb",Right,UCO_HUS,NA,3,Bottom,0,1,1,Fastball,InPlay,Undefined,LineDrive,Out,1,0,99.2,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+74,,2,1,"Suchy, Cayden",Left,UCO_HUS,"Rispoli, Robert",Right,UCO_HUS,NA,3,Bottom,1,0,0,Changeup,StrikeSwinging,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+75,,2,2,"Suchy, Cayden",Left,UCO_HUS,"Rispoli, Robert",Right,UCO_HUS,NA,3,Bottom,1,0,1,Changeup,StrikeCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+76,,2,3,"Suchy, Cayden",Left,UCO_HUS,"Rispoli, Robert",Right,UCO_HUS,NA,3,Bottom,1,0,2,Fastball,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+77,,2,4,"Suchy, Cayden",Left,UCO_HUS,"Rispoli, Robert",Right,UCO_HUS,NA,3,Bottom,1,1,2,Changeup,InPlay,Undefined,FlyBall,Out,1,0,90.1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+78,,3,1,"Suchy, Cayden",Left,UCO_HUS,"Minick, Tyler",Right,UCO_HUS,NA,3,Bottom,2,0,0,Changeup,InPlay,Undefined,LineDrive,Single,0,0,86,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+79,,4,1,"Suchy, Cayden",Left,UCO_HUS,"MacArthur, Grant",Right,UCO_HUS,NA,3,Bottom,2,0,0,Changeup,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+80,,4,2,"Suchy, Cayden",Left,UCO_HUS,"MacArthur, Grant",Right,UCO_HUS,NA,3,Bottom,2,1,0,Fastball,FoulBallNotFieldable,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+81,,4,3,"Suchy, Cayden",Left,UCO_HUS,"MacArthur, Grant",Right,UCO_HUS,NA,3,Bottom,2,1,1,Fastball,BallCalled,Undefined,Undefined,Out,1,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+82,,1,1,"Norrell, Owen",Left,UCO_HUS,"Lane, Connor",Right,UCO_HUS,NA,4,Top,0,0,0,Slider,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+83,,1,2,"Norrell, Owen",Left,UCO_HUS,"Lane, Connor",Right,UCO_HUS,NA,4,Top,0,1,0,Fastball,StrikeSwinging,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+84,,1,3,"Norrell, Owen",Left,UCO_HUS,"Lane, Connor",Right,UCO_HUS,NA,4,Top,0,1,1,Fastball,StrikeCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+85,,1,4,"Norrell, Owen",Left,UCO_HUS,"Lane, Connor",Right,UCO_HUS,NA,4,Top,0,1,2,Slider,InPlay,Undefined,LineDrive,Out,1,0,83.6,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+86,,2,1,"Norrell, Owen",Left,UCO_HUS,"Kron, Drew",Right,UCO_HUS,NA,4,Top,1,0,0,Fastball,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+87,,2,2,"Norrell, Owen",Left,UCO_HUS,"Kron, Drew",Right,UCO_HUS,NA,4,Top,1,1,0,Fastball,FoulBallNotFieldable,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+88,,2,3,"Norrell, Owen",Left,UCO_HUS,"Kron, Drew",Right,UCO_HUS,NA,4,Top,1,1,1,Slider,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+89,,2,4,"Norrell, Owen",Left,UCO_HUS,"Kron, Drew",Right,UCO_HUS,NA,4,Top,1,2,1,Slider,StrikeCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+90,,2,5,"Norrell, Owen",Left,UCO_HUS,"Kron, Drew",Right,UCO_HUS,NA,4,Top,1,2,2,Fastball,InPlay,Undefined,GroundBall,Out,1,0,38.7,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+91,,3,1,"Norrell, Owen",Left,UCO_HUS,"Biller, Sam",Left,UCO_HUS,NA,4,Top,2,0,0,Slider,FoulBallNotFieldable,Undefined,Undefined,Undefined,0,0,25.5,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+92,,3,2,"Norrell, Owen",Left,UCO_HUS,"Biller, Sam",Left,UCO_HUS,NA,4,Top,2,0,1,Slider,StrikeSwinging,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+93,,3,3,"Norrell, Owen",Left,UCO_HUS,"Biller, Sam",Left,UCO_HUS,NA,4,Top,2,0,2,Slider,InPlay,Undefined,GroundBall,Single,0,0,98.5,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+94,,4,1,"Norrell, Owen",Left,UCO_HUS,"Padilla, Bryan",Right,UCO_HUS,NA,4,Top,2,0,0,Fastball,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+95,,4,2,"Norrell, Owen",Left,UCO_HUS,"Padilla, Bryan",Right,UCO_HUS,NA,4,Top,2,1,0,Fastball,BallCalled,Undefined,Undefined,PickedOff,1,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+96,,1,1,"Conte, Giovanni",Right,UCO_HUS,"MacArthur, Grant",Right,UCO_HUS,NA,4,Bottom,0,0,0,Fastball,InPlay,Undefined,FlyBall,Out,1,0,98.1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+97,,2,1,"Conte, Giovanni",Right,UCO_HUS,"Root, Beau",Left,UCO_HUS,NA,4,Bottom,1,0,0,Fastball,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+98,,2,2,"Conte, Giovanni",Right,UCO_HUS,"Root, Beau",Left,UCO_HUS,NA,4,Bottom,1,1,0,Fastball,StrikeCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+99,,2,3,"Conte, Giovanni",Right,UCO_HUS,"Root, Beau",Left,UCO_HUS,NA,4,Bottom,1,1,1,Slider,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+100,,2,4,"Conte, Giovanni",Right,UCO_HUS,"Root, Beau",Left,UCO_HUS,NA,4,Bottom,1,2,1,Fastball,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+101,,2,5,"Conte, Giovanni",Right,UCO_HUS,"Root, Beau",Left,UCO_HUS,NA,4,Bottom,1,3,1,Fastball,StrikeCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+102,,2,6,"Conte, Giovanni",Right,UCO_HUS,"Root, Beau",Left,UCO_HUS,NA,4,Bottom,1,3,2,Fastball,StrikeCalled,Strikeout,Undefined,Out,1,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+103,,3,1,"Conte, Giovanni",Right,UCO_HUS,"Tirado, Gabriel",Left,UCO_HUS,NA,4,Bottom,2,0,0,Fastball,InPlay,Undefined,FlyBall,Out,1,0,100.1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+104,,1,1,"West, Charlie",Left,UCO_HUS,"Padilla, Bryan",Right,UCO_HUS,NA,5,Top,0,0,0,Fastball,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+105,,1,2,"West, Charlie",Left,UCO_HUS,"Padilla, Bryan",Right,UCO_HUS,NA,5,Top,0,1,0,Curveball,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+106,,1,3,"West, Charlie",Left,UCO_HUS,"Padilla, Bryan",Right,UCO_HUS,NA,5,Top,0,2,0,Fastball,FoulBallNotFieldable,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+107,,1,4,"West, Charlie",Left,UCO_HUS,"Padilla, Bryan",Right,UCO_HUS,NA,5,Top,0,2,1,Fastball,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+108,,1,5,"West, Charlie",Left,UCO_HUS,"Padilla, Bryan",Right,UCO_HUS,NA,5,Top,0,3,1,Fastball,BallCalled,Walk,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+109,,2,1,"West, Charlie",Left,UCO_HUS,"Dalena, Maddix",Left,UCO_HUS,NA,5,Top,0,0,0,Fastball,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+110,,2,2,"West, Charlie",Left,UCO_HUS,"Dalena, Maddix",Left,UCO_HUS,NA,5,Top,0,1,0,Fastball,FoulBallNotFieldable,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+111,,2,3,"West, Charlie",Left,UCO_HUS,"Dalena, Maddix",Left,UCO_HUS,NA,5,Top,0,1,1,Fastball,BallCalled,Undefined,Undefined,PickedOff,1,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+112,,2,4,"West, Charlie",Left,UCO_HUS,"Dalena, Maddix",Left,UCO_HUS,NA,5,Top,1,2,1,Fastball,FoulBallNotFieldable,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+113,,2,5,"West, Charlie",Left,UCO_HUS,"Dalena, Maddix",Left,UCO_HUS,NA,5,Top,1,2,2,Curveball,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+114,,2,6,"West, Charlie",Left,UCO_HUS,"Dalena, Maddix",Left,UCO_HUS,NA,5,Top,1,3,2,Fastball,FoulBallNotFieldable,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+115,,2,7,"West, Charlie",Left,UCO_HUS,"Dalena, Maddix",Left,UCO_HUS,NA,5,Top,1,3,2,Changeup,InPlay,Undefined,GroundBall,Single,0,0,27.1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+116,,3,1,"West, Charlie",Left,UCO_HUS,"Garbowski, Matt",Left,UCO_HUS,NA,5,Top,1,0,0,Changeup,BallCalled,HitbyPitch,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+117,,4,1,"West, Charlie",Left,UCO_HUS,"Groen, Carter",Right,UCO_HUS,NA,5,Top,1,0,0,Changeup,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+118,,4,2,"West, Charlie",Left,UCO_HUS,"Groen, Carter",Right,UCO_HUS,NA,5,Top,1,1,0,Fastball,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+119,,4,3,"West, Charlie",Left,UCO_HUS,"Groen, Carter",Right,UCO_HUS,NA,5,Top,1,2,0,Changeup,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+120,,4,4,"West, Charlie",Left,UCO_HUS,"Groen, Carter",Right,UCO_HUS,NA,5,Top,1,3,0,Fastball,StrikeCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+121,,4,5,"West, Charlie",Left,UCO_HUS,"Groen, Carter",Right,UCO_HUS,NA,5,Top,1,3,1,Fastball,StrikeCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+122,,4,6,"West, Charlie",Left,UCO_HUS,"Groen, Carter",Right,UCO_HUS,NA,5,Top,1,3,2,Changeup,StrikeSwinging,Strikeout,Undefined,Out,1,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+123,,5,1,"West, Charlie",Left,UCO_HUS,"LaRose, Jack",Left,UCO_HUS,NA,5,Top,2,0,0,Fastball,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+124,,5,2,"West, Charlie",Left,UCO_HUS,"LaRose, Jack",Left,UCO_HUS,NA,5,Top,2,1,0,Changeup,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+125,,5,3,"West, Charlie",Left,UCO_HUS,"LaRose, Jack",Left,UCO_HUS,NA,5,Top,2,2,0,Fastball,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+126,,5,4,"West, Charlie",Left,UCO_HUS,"LaRose, Jack",Left,UCO_HUS,NA,5,Top,2,3,0,Fastball,StrikeCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+127,,5,5,"West, Charlie",Left,UCO_HUS,"LaRose, Jack",Left,UCO_HUS,NA,5,Top,2,3,1,Fastball,BallCalled,Walk,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+128,,6,1,"West, Charlie",Left,UCO_HUS,"Lane, Connor",Right,UCO_HUS,NA,5,Top,2,0,0,Fastball,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+129,,6,2,"West, Charlie",Left,UCO_HUS,"Lane, Connor",Right,UCO_HUS,NA,5,Top,2,1,0,Changeup,StrikeSwinging,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+130,,6,3,"West, Charlie",Left,UCO_HUS,"Lane, Connor",Right,UCO_HUS,NA,5,Top,2,1,1,Fastball,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+131,,6,4,"West, Charlie",Left,UCO_HUS,"Lane, Connor",Right,UCO_HUS,NA,5,Top,2,2,1,Changeup,StrikeSwinging,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+132,,6,5,"West, Charlie",Left,UCO_HUS,"Lane, Connor",Right,UCO_HUS,NA,5,Top,2,2,2,Changeup,FoulBallNotFieldable,Undefined,Undefined,Undefined,0,0,93,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+133,,6,6,"West, Charlie",Left,UCO_HUS,"Lane, Connor",Right,UCO_HUS,NA,5,Top,2,2,2,Curveball,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+134,,6,7,"West, Charlie",Left,UCO_HUS,"Lane, Connor",Right,UCO_HUS,NA,5,Top,2,3,2,Changeup,FoulBallNotFieldable,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+135,,6,8,"West, Charlie",Left,UCO_HUS,"Lane, Connor",Right,UCO_HUS,NA,5,Top,2,3,2,Changeup,InPlay,Undefined,GroundBall,Out,1,0,65.7,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+136,,1,1,"Afthim, Brady",Right,UCO_HUS,"Belisario, Anthony",Right,UCO_HUS,NA,5,Bottom,0,0,0,Fastball,FoulBallNotFieldable,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+137,,1,2,"Afthim, Brady",Right,UCO_HUS,"Belisario, Anthony",Right,UCO_HUS,NA,5,Bottom,0,0,1,Changeup,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+138,,1,3,"Afthim, Brady",Right,UCO_HUS,"Belisario, Anthony",Right,UCO_HUS,NA,5,Bottom,0,1,1,Fastball,InPlay,Undefined,GroundBall,Out,1,0,89.2,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+139,,2,1,"Afthim, Brady",Right,UCO_HUS,"Oates, Michael",Right,UCO_HUS,NA,5,Bottom,1,0,0,Changeup,StrikeSwinging,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+140,,2,2,"Afthim, Brady",Right,UCO_HUS,"Oates, Michael",Right,UCO_HUS,NA,5,Bottom,1,0,1,Changeup,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+141,,2,3,"Afthim, Brady",Right,UCO_HUS,"Oates, Michael",Right,UCO_HUS,NA,5,Bottom,1,1,1,Fastball,InPlay,Undefined,GroundBall,Out,1,0,96.7,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+142,,3,1,"Afthim, Brady",Right,UCO_HUS,"Shpur, Caleb",Right,UCO_HUS,NA,5,Bottom,2,0,0,Fastball,StrikeCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+143,,3,2,"Afthim, Brady",Right,UCO_HUS,"Shpur, Caleb",Right,UCO_HUS,NA,5,Bottom,2,0,1,Slider,StrikeSwinging,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+144,,3,3,"Afthim, Brady",Right,UCO_HUS,"Shpur, Caleb",Right,UCO_HUS,NA,5,Bottom,2,0,2,Fastball,FoulBallNotFieldable,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+145,,3,4,"Afthim, Brady",Right,UCO_HUS,"Shpur, Caleb",Right,UCO_HUS,NA,5,Bottom,2,0,2,Fastball,InPlay,Undefined,FlyBall,Out,1,0,81,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+146,,1,1,"West, Charlie",Left,UCO_HUS,"Kron, Drew",Right,UCO_HUS,NA,6,Top,0,0,0,Changeup,StrikeSwinging,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+147,,1,2,"West, Charlie",Left,UCO_HUS,"Kron, Drew",Right,UCO_HUS,NA,6,Top,0,0,1,Fastball,StrikeCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+148,,1,3,"West, Charlie",Left,UCO_HUS,"Kron, Drew",Right,UCO_HUS,NA,6,Top,0,0,2,Curveball,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+149,,1,4,"West, Charlie",Left,UCO_HUS,"Kron, Drew",Right,UCO_HUS,NA,6,Top,0,1,2,Changeup,FoulBallNotFieldable,Undefined,Undefined,Undefined,0,0,82,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+150,,1,5,"West, Charlie",Left,UCO_HUS,"Kron, Drew",Right,UCO_HUS,NA,6,Top,0,1,2,Fastball,InPlay,Undefined,LineDrive,Single,0,0,71.6,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+151,,2,1,"West, Charlie",Left,UCO_HUS,"Biller, Sam",Left,UCO_HUS,NA,6,Top,0,0,0,Fastball,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+152,,2,2,"West, Charlie",Left,UCO_HUS,"Biller, Sam",Left,UCO_HUS,NA,6,Top,0,1,0,Fastball,InPlay,Undefined,PopUp,Out,1,0,71.1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+153,,3,1,"West, Charlie",Left,UCO_HUS,"Padilla, Bryan",Right,UCO_HUS,NA,6,Top,1,0,0,Fastball,StrikeCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+154,,3,2,"West, Charlie",Left,UCO_HUS,"Padilla, Bryan",Right,UCO_HUS,NA,6,Top,1,0,1,Changeup,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+155,,3,3,"West, Charlie",Left,UCO_HUS,"Padilla, Bryan",Right,UCO_HUS,NA,6,Top,1,1,1,Fastball,BallCalled,Undefined,Undefined,StolenBase,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+156,,3,4,"West, Charlie",Left,UCO_HUS,"Padilla, Bryan",Right,UCO_HUS,NA,6,Top,1,2,1,Changeup,StrikeSwinging,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+157,,3,5,"West, Charlie",Left,UCO_HUS,"Padilla, Bryan",Right,UCO_HUS,NA,6,Top,1,2,2,Changeup,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+158,,3,6,"West, Charlie",Left,UCO_HUS,"Padilla, Bryan",Right,UCO_HUS,NA,6,Top,1,3,2,Changeup,StrikeSwinging,Strikeout,Undefined,Out,1,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+159,,4,1,"West, Charlie",Left,UCO_HUS,"Dalena, Maddix",Left,UCO_HUS,NA,6,Top,2,0,0,Fastball,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+160,,4,2,"West, Charlie",Left,UCO_HUS,"Dalena, Maddix",Left,UCO_HUS,NA,6,Top,2,1,0,Changeup,StrikeSwinging,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+161,,4,3,"West, Charlie",Left,UCO_HUS,"Dalena, Maddix",Left,UCO_HUS,NA,6,Top,2,1,1,Fastball,InPlay,Undefined,LineDrive,Out,1,0,96.1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1,NA,1,1,"Mayer, Cameron",Right,UCO_HUS,"Rispoli, Robert",Right,UCO_HUS,NA,1,Top,0,0,0,Fastball,InPlay,Undefined,GroundBall,Out,1,0,20.3,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+2,NA,2,1,"Mayer, Cameron",Right,UCO_HUS,"LaRose, Jack",Left,UCO_HUS,NA,1,Top,1,0,0,Fastball,StrikeCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+3,NA,2,2,"Mayer, Cameron",Right,UCO_HUS,"LaRose, Jack",Left,UCO_HUS,NA,1,Top,1,0,1,Cutter,StrikeCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+4,NA,2,3,"Mayer, Cameron",Right,UCO_HUS,"LaRose, Jack",Left,UCO_HUS,NA,1,Top,1,0,2,Cutter,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+5,NA,2,4,"Mayer, Cameron",Right,UCO_HUS,"LaRose, Jack",Left,UCO_HUS,NA,1,Top,1,1,2,Fastball,StrikeSwinging,Strikeout,Undefined,Out,1,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+6,NA,3,1,"Mayer, Cameron",Right,UCO_HUS,"Biller, Sam",Left,UCO_HUS,NA,1,Top,2,0,0,Slider,StrikeSwinging,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+7,NA,3,2,"Mayer, Cameron",Right,UCO_HUS,"Biller, Sam",Left,UCO_HUS,NA,1,Top,2,0,1,Slider,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+8,NA,3,3,"Mayer, Cameron",Right,UCO_HUS,"Biller, Sam",Left,UCO_HUS,NA,1,Top,2,1,1,Fastball,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+9,NA,3,4,"Mayer, Cameron",Right,UCO_HUS,"Biller, Sam",Left,UCO_HUS,NA,1,Top,2,2,1,Slider,InPlay,Undefined,GroundBall,Error,0,0,99.2,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+10,NA,4,1,"Mayer, Cameron",Right,UCO_HUS,"Groen, Carter",Right,UCO_HUS,NA,1,Top,2,0,0,Fastball,InPlay,Undefined,LineDrive,Single,0,0,97.8,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+11,NA,5,1,"Mayer, Cameron",Right,UCO_HUS,"Garbowski, Matt",Left,UCO_HUS,NA,1,Top,2,0,0,Slider,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+12,NA,5,2,"Mayer, Cameron",Right,UCO_HUS,"Garbowski, Matt",Left,UCO_HUS,NA,1,Top,2,1,0,Fastball,InPlay,Undefined,PopUp,Out,1,0,77,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+13,NA,1,1,"Carrea, Joe",Right,UCO_HUS,"Shpur, Caleb",Right,UCO_HUS,NA,1,Bottom,0,0,0,Slider,StrikeSwinging,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+14,NA,1,2,"Carrea, Joe",Right,UCO_HUS,"Shpur, Caleb",Right,UCO_HUS,NA,1,Bottom,0,0,1,Fastball,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+15,NA,1,3,"Carrea, Joe",Right,UCO_HUS,"Shpur, Caleb",Right,UCO_HUS,NA,1,Bottom,0,1,1,Slider,FoulBallNotFieldable,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+16,NA,1,4,"Carrea, Joe",Right,UCO_HUS,"Shpur, Caleb",Right,UCO_HUS,NA,1,Bottom,0,1,2,Fastball,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+17,NA,1,5,"Carrea, Joe",Right,UCO_HUS,"Shpur, Caleb",Right,UCO_HUS,NA,1,Bottom,0,2,2,Slider,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+18,NA,1,6,"Carrea, Joe",Right,UCO_HUS,"Shpur, Caleb",Right,UCO_HUS,NA,1,Bottom,0,3,2,Slider,BallCalled,Walk,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+19,NA,2,1,"Carrea, Joe",Right,UCO_HUS,"Root, Beau",Left,UCO_HUS,NA,1,Bottom,0,0,0,Fastball,BallCalled,Undefined,Undefined,StolenBase,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+20,NA,2,2,"Carrea, Joe",Right,UCO_HUS,"Root, Beau",Left,UCO_HUS,NA,1,Bottom,0,1,0,Fastball,StrikeCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+21,NA,2,3,"Carrea, Joe",Right,UCO_HUS,"Root, Beau",Left,UCO_HUS,NA,1,Bottom,0,1,1,Fastball,InPlay,Undefined,FlyBall,HomeRun,0,2,91.9,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+22,NA,3,1,"Carrea, Joe",Right,UCO_HUS,"Minick, Tyler",Right,UCO_HUS,NA,1,Bottom,0,0,0,Fastball,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+23,NA,3,2,"Carrea, Joe",Right,UCO_HUS,"Minick, Tyler",Right,UCO_HUS,NA,1,Bottom,0,1,0,Fastball,FoulBallNotFieldable,Undefined,Undefined,Undefined,0,0,103.3,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+24,NA,3,3,"Carrea, Joe",Right,UCO_HUS,"Minick, Tyler",Right,UCO_HUS,NA,1,Bottom,0,1,1,Slider,StrikeSwinging,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+25,NA,3,4,"Carrea, Joe",Right,UCO_HUS,"Minick, Tyler",Right,UCO_HUS,NA,1,Bottom,0,1,2,Slider,InPlay,Undefined,GroundBall,Single,0,0,65.7,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+26,NA,4,1,"Carrea, Joe",Right,UCO_HUS,"Padilla, Bryan",Right,UCO_HUS,NA,1,Bottom,0,0,0,Slider,FoulBallNotFieldable,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+27,NA,4,2,"Carrea, Joe",Right,UCO_HUS,"Padilla, Bryan",Right,UCO_HUS,NA,1,Bottom,0,0,1,Slider,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+28,NA,4,3,"Carrea, Joe",Right,UCO_HUS,"Padilla, Bryan",Right,UCO_HUS,NA,1,Bottom,0,1,1,Fastball,InPlay,Undefined,GroundBall,Single,0,0,67.9,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+29,NA,5,1,"Carrea, Joe",Right,UCO_HUS,"Lane, Connor",Right,UCO_HUS,NA,1,Bottom,0,0,0,Fastball,InPlay,Undefined,PopUp,Out,1,0,26.2,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+30,NA,6,1,"Carrea, Joe",Right,UCO_HUS,"Shpur, Caleb",Right,UCO_HUS,NA,1,Bottom,1,0,0,Fastball,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+31,NA,6,2,"Carrea, Joe",Right,UCO_HUS,"Shpur, Caleb",Right,UCO_HUS,NA,1,Bottom,1,1,0,Fastball,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+32,NA,6,3,"Carrea, Joe",Right,UCO_HUS,"Shpur, Caleb",Right,UCO_HUS,NA,1,Bottom,1,2,0,Slider,StrikeCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+33,NA,6,4,"Carrea, Joe",Right,UCO_HUS,"Shpur, Caleb",Right,UCO_HUS,NA,1,Bottom,1,2,1,Fastball,StrikeSwinging,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+34,NA,6,5,"Carrea, Joe",Right,UCO_HUS,"Shpur, Caleb",Right,UCO_HUS,NA,1,Bottom,1,2,2,Slider,FoulBallNotFieldable,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+35,NA,6,6,"Carrea, Joe",Right,UCO_HUS,"Shpur, Caleb",Right,UCO_HUS,NA,1,Bottom,1,2,2,Fastball,FoulBallNotFieldable,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+36,NA,6,7,"Carrea, Joe",Right,UCO_HUS,"Shpur, Caleb",Right,UCO_HUS,NA,1,Bottom,1,2,2,Fastball,FoulBallNotFieldable,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+37,NA,6,8,"Carrea, Joe",Right,UCO_HUS,"Shpur, Caleb",Right,UCO_HUS,NA,1,Bottom,1,2,2,Slider,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+38,NA,6,9,"Carrea, Joe",Right,UCO_HUS,"Shpur, Caleb",Right,UCO_HUS,NA,1,Bottom,1,3,2,Slider,InPlay,Undefined,LineDrive,Single,0,2,95.9,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+39,NA,7,1,"Carrea, Joe",Right,UCO_HUS,"Root, Beau",Left,UCO_HUS,NA,1,Bottom,1,0,0,Fastball,FoulBallNotFieldable,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+40,NA,7,2,"Carrea, Joe",Right,UCO_HUS,"Root, Beau",Left,UCO_HUS,NA,1,Bottom,1,0,1,Slider,StrikeSwinging,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+41,NA,7,3,"Carrea, Joe",Right,UCO_HUS,"Root, Beau",Left,UCO_HUS,NA,1,Bottom,1,0,2,Changeup,StrikeSwinging,Strikeout,Undefined,Out,1,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+42,NA,8,1,"Carrea, Joe",Right,UCO_HUS,"Minick, Tyler",Right,UCO_HUS,NA,1,Bottom,2,0,0,Slider,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+43,NA,8,2,"Carrea, Joe",Right,UCO_HUS,"Minick, Tyler",Right,UCO_HUS,NA,1,Bottom,2,1,0,Slider,StrikeCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+44,NA,8,3,"Carrea, Joe",Right,UCO_HUS,"Minick, Tyler",Right,UCO_HUS,NA,1,Bottom,2,1,1,Slider,StrikeSwinging,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+45,NA,8,4,"Carrea, Joe",Right,UCO_HUS,"Minick, Tyler",Right,UCO_HUS,NA,1,Bottom,2,1,2,Slider,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+46,NA,8,5,"Carrea, Joe",Right,UCO_HUS,"Minick, Tyler",Right,UCO_HUS,NA,1,Bottom,2,2,2,Fastball,InPlay,Undefined,LineDrive,Single,0,1,96.7,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+47,NA,1,1,"Mayer, Cameron",Right,UCO_HUS,"Belisario, Anthony",Right,UCO_HUS,NA,2,Top,0,0,0,Cutter,InPlay,Undefined,FlyBall,Out,1,0,94.9,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48,NA,2,1,"Mayer, Cameron",Right,UCO_HUS,"Tirado, Gabriel",Left,UCO_HUS,NA,2,Top,1,0,0,Fastball,FoulBallNotFieldable,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+49,NA,2,2,"Mayer, Cameron",Right,UCO_HUS,"Tirado, Gabriel",Left,UCO_HUS,NA,2,Top,1,0,1,Fastball,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+50,NA,2,3,"Mayer, Cameron",Right,UCO_HUS,"Tirado, Gabriel",Left,UCO_HUS,NA,2,Top,1,1,1,Fastball,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+51,NA,2,4,"Mayer, Cameron",Right,UCO_HUS,"Tirado, Gabriel",Left,UCO_HUS,NA,2,Top,1,2,1,Fastball,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+52,NA,2,5,"Mayer, Cameron",Right,UCO_HUS,"Tirado, Gabriel",Left,UCO_HUS,NA,2,Top,1,3,1,Fastball,BallCalled,Walk,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+53,NA,3,1,"Mayer, Cameron",Right,UCO_HUS,"MacArthur, Grant",Right,UCO_HUS,NA,2,Top,1,0,0,Slider,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+54,NA,3,2,"Mayer, Cameron",Right,UCO_HUS,"MacArthur, Grant",Right,UCO_HUS,NA,2,Top,1,1,0,Slider,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+55,NA,3,3,"Mayer, Cameron",Right,UCO_HUS,"MacArthur, Grant",Right,UCO_HUS,NA,2,Top,1,2,0,Fastball,FoulBallNotFieldable,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+56,NA,3,4,"Mayer, Cameron",Right,UCO_HUS,"MacArthur, Grant",Right,UCO_HUS,NA,2,Top,1,2,1,Fastball,StrikeCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+57,NA,3,5,"Mayer, Cameron",Right,UCO_HUS,"MacArthur, Grant",Right,UCO_HUS,NA,2,Top,1,2,2,Fastball,InPlay,Undefined,GroundBall,Out,1,0,40.5,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+58,NA,4,1,"Mayer, Cameron",Right,UCO_HUS,"Kron, Drew",Right,UCO_HUS,NA,2,Top,2,0,0,Slider,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+59,NA,4,2,"Mayer, Cameron",Right,UCO_HUS,"Kron, Drew",Right,UCO_HUS,NA,2,Top,2,1,0,Slider,StrikeCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+60,NA,4,3,"Mayer, Cameron",Right,UCO_HUS,"Kron, Drew",Right,UCO_HUS,NA,2,Top,2,1,1,Fastball,FoulBallNotFieldable,Undefined,Undefined,Undefined,0,0,34.7,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+61,NA,4,4,"Mayer, Cameron",Right,UCO_HUS,"Kron, Drew",Right,UCO_HUS,NA,2,Top,2,1,2,Slider,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+62,NA,4,5,"Mayer, Cameron",Right,UCO_HUS,"Kron, Drew",Right,UCO_HUS,NA,2,Top,2,2,2,Slider,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+63,NA,4,6,"Mayer, Cameron",Right,UCO_HUS,"Kron, Drew",Right,UCO_HUS,NA,2,Top,2,3,2,Slider,BallCalled,Walk,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+64,NA,5,1,"Mayer, Cameron",Right,UCO_HUS,"Suchy, Cayden",Left,UCO_HUS,NA,2,Top,2,0,0,Fastball,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+65,NA,5,2,"Mayer, Cameron",Right,UCO_HUS,"Suchy, Cayden",Left,UCO_HUS,NA,2,Top,2,1,0,Changeup,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+66,NA,5,3,"Mayer, Cameron",Right,UCO_HUS,"Suchy, Cayden",Left,UCO_HUS,NA,2,Top,2,2,0,Slider,StrikeCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+67,NA,5,4,"Mayer, Cameron",Right,UCO_HUS,"Suchy, Cayden",Left,UCO_HUS,NA,2,Top,2,2,1,Fastball,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+68,NA,5,5,"Mayer, Cameron",Right,UCO_HUS,"Suchy, Cayden",Left,UCO_HUS,NA,2,Top,2,3,1,Fastball,InPlay,Undefined,GroundBall,Out,1,0,79.7,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+69,NA,1,1,"Carrea, Joe",Right,UCO_HUS,"Rispoli, Robert",Right,UCO_HUS,NA,2,Bottom,0,0,0,Slider,StrikeCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+70,NA,1,2,"Carrea, Joe",Right,UCO_HUS,"Rispoli, Robert",Right,UCO_HUS,NA,2,Bottom,0,0,1,Slider,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+71,NA,1,3,"Carrea, Joe",Right,UCO_HUS,"Rispoli, Robert",Right,UCO_HUS,NA,2,Bottom,0,1,1,Changeup,StrikeCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+72,NA,1,4,"Carrea, Joe",Right,UCO_HUS,"Rispoli, Robert",Right,UCO_HUS,NA,2,Bottom,0,1,2,Slider,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+73,NA,1,5,"Carrea, Joe",Right,UCO_HUS,"Rispoli, Robert",Right,UCO_HUS,NA,2,Bottom,0,2,2,Slider,FoulBallNotFieldable,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+74,NA,1,6,"Carrea, Joe",Right,UCO_HUS,"Rispoli, Robert",Right,UCO_HUS,NA,2,Bottom,0,2,2,Changeup,InPlay,Undefined,GroundBall,Out,1,0,35.8,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+75,NA,2,1,"Carrea, Joe",Right,UCO_HUS,"LaRose, Jack",Left,UCO_HUS,NA,2,Bottom,1,0,0,Slider,StrikeCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+76,NA,2,2,"Carrea, Joe",Right,UCO_HUS,"LaRose, Jack",Left,UCO_HUS,NA,2,Bottom,1,0,1,Changeup,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+77,NA,2,3,"Carrea, Joe",Right,UCO_HUS,"LaRose, Jack",Left,UCO_HUS,NA,2,Bottom,1,1,1,Slider,StrikeCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+78,NA,2,4,"Carrea, Joe",Right,UCO_HUS,"LaRose, Jack",Left,UCO_HUS,NA,2,Bottom,1,1,2,Changeup,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+79,NA,2,5,"Carrea, Joe",Right,UCO_HUS,"LaRose, Jack",Left,UCO_HUS,NA,2,Bottom,1,2,2,Slider,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+80,NA,2,6,"Carrea, Joe",Right,UCO_HUS,"LaRose, Jack",Left,UCO_HUS,NA,2,Bottom,1,3,2,Slider,FoulBallNotFieldable,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+81,NA,2,7,"Carrea, Joe",Right,UCO_HUS,"LaRose, Jack",Left,UCO_HUS,NA,2,Bottom,1,3,2,Slider,BallCalled,Walk,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+82,NA,3,1,"Carrea, Joe",Right,UCO_HUS,"Biller, Sam",Left,UCO_HUS,NA,2,Bottom,1,0,0,Fastball,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+83,NA,3,2,"Carrea, Joe",Right,UCO_HUS,"Biller, Sam",Left,UCO_HUS,NA,2,Bottom,1,0,1,Slider,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+84,NA,3,3,"Carrea, Joe",Right,UCO_HUS,"Biller, Sam",Left,UCO_HUS,NA,2,Bottom,1,2,0,Fastball,FoulBallNotFieldable,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+85,NA,3,4,"Carrea, Joe",Right,UCO_HUS,"Biller, Sam",Left,UCO_HUS,NA,2,Bottom,1,2,1,Slider,StrikeCalled,Undefined,Undefined,StolenBase,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+86,NA,3,5,"Carrea, Joe",Right,UCO_HUS,"Biller, Sam",Left,UCO_HUS,NA,2,Bottom,1,2,2,Changeup,FoulBallNotFieldable,Undefined,Undefined,Undefined,0,0,39,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+87,NA,3,6,"Carrea, Joe",Right,UCO_HUS,"Biller, Sam",Left,UCO_HUS,NA,2,Bottom,1,2,2,Slider,FoulBallNotFieldable,Undefined,Undefined,Undefined,0,0,69.9,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+88,NA,3,7,"Carrea, Joe",Right,UCO_HUS,"Biller, Sam",Left,UCO_HUS,NA,2,Bottom,1,2,2,Changeup,InPlay,Undefined,GroundBall,Out,1,0,41.2,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+89,NA,4,1,"Carrea, Joe",Right,UCO_HUS,"Groen, Carter",Right,UCO_HUS,NA,2,Bottom,2,0,0,Fastball,StrikeCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+90,NA,4,2,"Carrea, Joe",Right,UCO_HUS,"Groen, Carter",Right,UCO_HUS,NA,2,Bottom,2,0,1,Slider,StrikeSwinging,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+91,NA,4,3,"Carrea, Joe",Right,UCO_HUS,"Groen, Carter",Right,UCO_HUS,NA,2,Bottom,2,1,1,Slider,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+92,NA,4,4,"Carrea, Joe",Right,UCO_HUS,"Groen, Carter",Right,UCO_HUS,NA,2,Bottom,2,1,2,Slider,StrikeSwinging,Strikeout,Undefined,Out,1,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+93,NA,1,1,"Alejandro, Hector",Right,UCO_HUS,"Padilla, Bryan",Right,UCO_HUS,NA,3,Top,0,0,0,Fastball,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+94,NA,1,2,"Alejandro, Hector",Right,UCO_HUS,"Padilla, Bryan",Right,UCO_HUS,NA,3,Top,0,1,0,Slider,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+95,NA,1,3,"Alejandro, Hector",Right,UCO_HUS,"Padilla, Bryan",Right,UCO_HUS,NA,3,Top,0,2,0,Fastball,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+96,NA,1,4,"Alejandro, Hector",Right,UCO_HUS,"Padilla, Bryan",Right,UCO_HUS,NA,3,Top,0,3,0,Fastball,StrikeCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+97,NA,1,5,"Alejandro, Hector",Right,UCO_HUS,"Padilla, Bryan",Right,UCO_HUS,NA,3,Top,0,3,1,Fastball,StrikeCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+98,NA,1,6,"Alejandro, Hector",Right,UCO_HUS,"Padilla, Bryan",Right,UCO_HUS,NA,3,Top,0,3,2,Changeup,FoulBallNotFieldable,Undefined,Undefined,Undefined,0,0,81.3,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+99,NA,1,7,"Alejandro, Hector",Right,UCO_HUS,"Padilla, Bryan",Right,UCO_HUS,NA,3,Top,0,3,2,Fastball,StrikeSwinging,Strikeout,Undefined,Out,1,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+100,NA,2,1,"Alejandro, Hector",Right,UCO_HUS,"Lane, Connor",Right,UCO_HUS,NA,3,Top,1,0,0,Fastball,StrikeCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+101,NA,2,2,"Alejandro, Hector",Right,UCO_HUS,"Lane, Connor",Right,UCO_HUS,NA,3,Top,1,0,1,Slider,StrikeCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+102,NA,2,3,"Alejandro, Hector",Right,UCO_HUS,"Lane, Connor",Right,UCO_HUS,NA,3,Top,1,0,2,Slider,FoulBallNotFieldable,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+103,NA,2,4,"Alejandro, Hector",Right,UCO_HUS,"Lane, Connor",Right,UCO_HUS,NA,3,Top,1,0,2,Fastball,StrikeCalled,Strikeout,Undefined,Out,1,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+104,NA,3,1,"Alejandro, Hector",Right,UCO_HUS,"Shpur, Caleb",Right,UCO_HUS,NA,3,Top,2,0,0,Slider,InPlay,Undefined,GroundBall,Single,0,0,94.9,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+105,NA,4,1,"Alejandro, Hector",Right,UCO_HUS,"Root, Beau",Left,UCO_HUS,NA,3,Top,2,0,0,Slider,StrikeCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+106,NA,4,2,"Alejandro, Hector",Right,UCO_HUS,"Root, Beau",Left,UCO_HUS,NA,3,Top,2,0,1,Changeup,BallCalled,Undefined,Undefined,StolenBase,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+107,NA,4,3,"Alejandro, Hector",Right,UCO_HUS,"Root, Beau",Left,UCO_HUS,NA,3,Top,2,1,1,Changeup,FoulBallNotFieldable,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+108,NA,4,4,"Alejandro, Hector",Right,UCO_HUS,"Root, Beau",Left,UCO_HUS,NA,3,Top,2,1,2,Fastball,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+109,NA,4,5,"Alejandro, Hector",Right,UCO_HUS,"Root, Beau",Left,UCO_HUS,NA,3,Top,2,2,2,Fastball,InPlay,Undefined,GroundBall,Out,1,0,92.1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+110,NA,1,1,"Mach, Alex",Right,UCO_HUS,"Oates, Michael",Right,UCO_HUS,NA,3,Bottom,0,0,0,Slider,StrikeCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+111,NA,1,2,"Mach, Alex",Right,UCO_HUS,"Oates, Michael",Right,UCO_HUS,NA,3,Bottom,0,0,1,Slider,StrikeSwinging,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+112,NA,1,3,"Mach, Alex",Right,UCO_HUS,"Oates, Michael",Right,UCO_HUS,NA,3,Bottom,0,0,2,Fastball,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+113,NA,1,4,"Mach, Alex",Right,UCO_HUS,"Oates, Michael",Right,UCO_HUS,NA,3,Bottom,0,1,2,Slider,FoulBallNotFieldable,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+114,NA,1,5,"Mach, Alex",Right,UCO_HUS,"Oates, Michael",Right,UCO_HUS,NA,3,Bottom,0,1,2,Slider,InPlay,Undefined,GroundBall,Single,0,0,96,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+115,NA,2,1,"Mach, Alex",Right,UCO_HUS,"Belisario, Anthony",Right,UCO_HUS,NA,3,Bottom,0,0,0,Slider,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+116,NA,2,2,"Mach, Alex",Right,UCO_HUS,"Belisario, Anthony",Right,UCO_HUS,NA,3,Bottom,0,1,0,Fastball,BallCalled,Undefined,Undefined,StolenBase,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+117,NA,2,3,"Mach, Alex",Right,UCO_HUS,"Belisario, Anthony",Right,UCO_HUS,NA,3,Bottom,0,2,0,Fastball,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+118,NA,2,4,"Mach, Alex",Right,UCO_HUS,"Belisario, Anthony",Right,UCO_HUS,NA,3,Bottom,0,3,0,Fastball,BallCalled,Walk,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+119,NA,3,1,"Mach, Alex",Right,UCO_HUS,"Tirado, Gabriel",Left,UCO_HUS,NA,3,Bottom,0,0,0,Slider,StrikeSwinging,Undefined,Undefined,PickedOff,1,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+120,NA,3,2,"Mach, Alex",Right,UCO_HUS,"Tirado, Gabriel",Left,UCO_HUS,NA,3,Bottom,1,0,1,Changeup,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+121,NA,3,3,"Mach, Alex",Right,UCO_HUS,"Tirado, Gabriel",Left,UCO_HUS,NA,3,Bottom,1,1,1,Fastball,InPlay,Undefined,LineDrive,Single,0,0,85.8,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+122,NA,4,1,"Mach, Alex",Right,UCO_HUS,"MacArthur, Grant",Right,UCO_HUS,NA,3,Bottom,1,0,0,Slider,FoulBallNotFieldable,Undefined,Undefined,Undefined,0,0,81.1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+123,NA,4,2,"Mach, Alex",Right,UCO_HUS,"MacArthur, Grant",Right,UCO_HUS,NA,3,Bottom,1,0,1,Slider,StrikeSwinging,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+124,NA,4,3,"Mach, Alex",Right,UCO_HUS,"MacArthur, Grant",Right,UCO_HUS,NA,3,Bottom,1,0,2,Fastball,BallCalled,Undefined,Undefined,PickedOff,1,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+125,NA,4,4,"Mach, Alex",Right,UCO_HUS,"MacArthur, Grant",Right,UCO_HUS,NA,3,Bottom,2,1,2,Slider,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+126,NA,4,5,"Mach, Alex",Right,UCO_HUS,"MacArthur, Grant",Right,UCO_HUS,NA,3,Bottom,2,2,2,Fastball,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+127,NA,4,6,"Mach, Alex",Right,UCO_HUS,"MacArthur, Grant",Right,UCO_HUS,NA,3,Bottom,2,3,2,Fastball,BallCalled,Walk,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+128,NA,5,1,"Mach, Alex",Right,UCO_HUS,"Kron, Drew",Right,UCO_HUS,NA,3,Bottom,2,0,0,Fastball,StrikeCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+129,NA,5,2,"Mach, Alex",Right,UCO_HUS,"Kron, Drew",Right,UCO_HUS,NA,3,Bottom,2,0,1,Fastball,StrikeCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+130,NA,5,3,"Mach, Alex",Right,UCO_HUS,"Kron, Drew",Right,UCO_HUS,NA,3,Bottom,2,0,2,Fastball,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+131,NA,5,4,"Mach, Alex",Right,UCO_HUS,"Kron, Drew",Right,UCO_HUS,NA,3,Bottom,2,1,2,Slider,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+132,NA,5,5,"Mach, Alex",Right,UCO_HUS,"Kron, Drew",Right,UCO_HUS,NA,3,Bottom,2,2,2,Slider,FoulBallNotFieldable,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+133,NA,5,6,"Mach, Alex",Right,UCO_HUS,"Kron, Drew",Right,UCO_HUS,NA,3,Bottom,2,2,2,Slider,InPlay,Undefined,FlyBall,HomeRun,0,3,95.5,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+134,NA,6,1,"Mach, Alex",Right,UCO_HUS,"Suchy, Cayden",Left,UCO_HUS,NA,3,Bottom,2,0,0,Fastball,StrikeCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+135,NA,6,2,"Mach, Alex",Right,UCO_HUS,"Suchy, Cayden",Left,UCO_HUS,NA,3,Bottom,2,0,1,Slider,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+136,NA,6,3,"Mach, Alex",Right,UCO_HUS,"Suchy, Cayden",Left,UCO_HUS,NA,3,Bottom,2,1,1,Fastball,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+137,NA,6,4,"Mach, Alex",Right,UCO_HUS,"Suchy, Cayden",Left,UCO_HUS,NA,3,Bottom,2,2,1,Slider,StrikeCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+138,NA,6,5,"Mach, Alex",Right,UCO_HUS,"Suchy, Cayden",Left,UCO_HUS,NA,3,Bottom,2,2,2,Changeup,StrikeSwinging,Strikeout,Undefined,Out,1,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+139,NA,1,1,"Alejandro, Hector",Right,UCO_HUS,"Garbowski, Matt",Left,UCO_HUS,NA,4,Top,0,0,0,Fastball,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+140,NA,1,2,"Alejandro, Hector",Right,UCO_HUS,"Garbowski, Matt",Left,UCO_HUS,NA,4,Top,0,1,0,Changeup,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+141,NA,1,3,"Alejandro, Hector",Right,UCO_HUS,"Garbowski, Matt",Left,UCO_HUS,NA,4,Top,0,2,0,Fastball,InPlay,Undefined,FlyBall,Out,1,0,91.1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+142,NA,2,1,"Alejandro, Hector",Right,UCO_HUS,"Rispoli, Robert",Right,UCO_HUS,NA,4,Top,1,0,0,Fastball,StrikeCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+143,NA,2,2,"Alejandro, Hector",Right,UCO_HUS,"Rispoli, Robert",Right,UCO_HUS,NA,4,Top,1,0,1,Slider,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+144,NA,2,3,"Alejandro, Hector",Right,UCO_HUS,"Rispoli, Robert",Right,UCO_HUS,NA,4,Top,1,1,1,Slider,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+145,NA,2,4,"Alejandro, Hector",Right,UCO_HUS,"Rispoli, Robert",Right,UCO_HUS,NA,4,Top,1,2,1,Slider,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+146,NA,2,5,"Alejandro, Hector",Right,UCO_HUS,"Rispoli, Robert",Right,UCO_HUS,NA,4,Top,1,3,1,Fastball,BallCalled,Walk,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+147,NA,3,1,"Alejandro, Hector",Right,UCO_HUS,"LaRose, Jack",Left,UCO_HUS,NA,4,Top,1,0,0,Fastball,InPlay,Undefined,PopUp,Out,1,0,79.7,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+148,NA,4,1,"Alejandro, Hector",Right,UCO_HUS,"Biller, Sam",Left,UCO_HUS,NA,4,Top,2,0,0,Changeup,StrikeCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+149,NA,4,2,"Alejandro, Hector",Right,UCO_HUS,"Biller, Sam",Left,UCO_HUS,NA,4,Top,2,0,1,Slider,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+150,NA,4,3,"Alejandro, Hector",Right,UCO_HUS,"Biller, Sam",Left,UCO_HUS,NA,4,Top,2,1,1,Fastball,FoulBallNotFieldable,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+151,NA,4,4,"Alejandro, Hector",Right,UCO_HUS,"Biller, Sam",Left,UCO_HUS,NA,4,Top,2,1,2,Slider,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+152,NA,4,5,"Alejandro, Hector",Right,UCO_HUS,"Biller, Sam",Left,UCO_HUS,NA,4,Top,2,2,2,Fastball,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+153,NA,4,6,"Alejandro, Hector",Right,UCO_HUS,"Biller, Sam",Left,UCO_HUS,NA,4,Top,2,3,2,Slider,BallCalled,Walk,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+154,NA,5,1,"Alejandro, Hector",Right,UCO_HUS,"Groen, Carter",Right,UCO_HUS,NA,4,Top,2,0,0,Slider,InPlay,Undefined,GroundBall,Out,1,0,20.8,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+155,NA,1,1,"Mach, Alex",Right,UCO_HUS,"Minick, Tyler",Right,UCO_HUS,NA,4,Top,0,0,0,Slider,FoulBallNotFieldable,Undefined,Undefined,Undefined,0,0,52.1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+156,NA,1,2,"Mach, Alex",Right,UCO_HUS,"Minick, Tyler",Right,UCO_HUS,NA,4,Top,0,0,1,Slider,InPlay,Undefined,FlyBall,Out,1,0,101.8,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+157,NA,2,1,"Mach, Alex",Right,UCO_HUS,"Padilla, Bryan",Right,UCO_HUS,NA,4,Top,1,0,0,Slider,StrikeCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+158,NA,2,2,"Mach, Alex",Right,UCO_HUS,"Padilla, Bryan",Right,UCO_HUS,NA,4,Top,1,0,1,Slider,InPlay,Undefined,LineDrive,Single,0,0,71.8,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+159,NA,3,1,"Mach, Alex",Right,UCO_HUS,"Lane, Connor",Right,UCO_HUS,NA,4,Top,1,0,0,Fastball,StrikeCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+160,NA,3,2,"Mach, Alex",Right,UCO_HUS,"Lane, Connor",Right,UCO_HUS,NA,4,Top,1,0,1,Slider,BallCalled,Undefined,Undefined,WildPitch,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+161,NA,3,3,"Mach, Alex",Right,UCO_HUS,"Lane, Connor",Right,UCO_HUS,NA,4,Top,1,1,1,Fastball,StrikeCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+162,NA,3,4,"Mach, Alex",Right,UCO_HUS,"Lane, Connor",Right,UCO_HUS,NA,4,Top,1,1,2,Slider,InPlay,Undefined,FlyBall,Double,0,1,103,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+163,NA,4,1,"Mach, Alex",Right,UCO_HUS,"Shpur, Caleb",Right,UCO_HUS,NA,4,Top,1,0,0,Fastball,StrikeCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+164,NA,4,2,"Mach, Alex",Right,UCO_HUS,"Shpur, Caleb",Right,UCO_HUS,NA,4,Top,1,0,1,Fastball,FoulBallNotFieldable,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+165,NA,4,3,"Mach, Alex",Right,UCO_HUS,"Shpur, Caleb",Right,UCO_HUS,NA,4,Top,1,0,2,Changeup,FoulBallNotFieldable,Undefined,Undefined,Undefined,0,0,41.4,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+166,NA,4,4,"Mach, Alex",Right,UCO_HUS,"Shpur, Caleb",Right,UCO_HUS,NA,4,Top,1,0,2,Slider,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+167,NA,4,5,"Mach, Alex",Right,UCO_HUS,"Shpur, Caleb",Right,UCO_HUS,NA,4,Top,1,1,2,Changeup,InPlay,Undefined,FlyBall,Sacrifice,1,0,93.7,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+168,NA,5,1,"Mach, Alex",Right,UCO_HUS,"Root, Beau",Left,UCO_HUS,NA,4,Top,2,0,0,Changeup,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+169,NA,5,2,"Mach, Alex",Right,UCO_HUS,"Root, Beau",Left,UCO_HUS,NA,4,Top,2,1,0,Changeup,InPlay,Undefined,LineDrive,Out,1,0,75.9,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+170,NA,1,1,"Alejandro, Hector",Right,UCO_HUS,"Oates, Michael",Right,UCO_HUS,NA,5,Top,0,0,0,Fastball,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+171,NA,1,2,"Alejandro, Hector",Right,UCO_HUS,"Oates, Michael",Right,UCO_HUS,NA,5,Top,0,1,0,Fastball,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+172,NA,1,3,"Alejandro, Hector",Right,UCO_HUS,"Oates, Michael",Right,UCO_HUS,NA,5,Top,0,2,0,Fastball,StrikeCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+173,NA,1,4,"Alejandro, Hector",Right,UCO_HUS,"Oates, Michael",Right,UCO_HUS,NA,5,Top,0,2,1,Slider,StrikeSwinging,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+174,NA,1,5,"Alejandro, Hector",Right,UCO_HUS,"Oates, Michael",Right,UCO_HUS,NA,5,Top,0,2,2,Fastball,FoulBallNotFieldable,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+175,NA,1,6,"Alejandro, Hector",Right,UCO_HUS,"Oates, Michael",Right,UCO_HUS,NA,5,Top,0,2,2,Fastball,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+176,NA,1,7,"Alejandro, Hector",Right,UCO_HUS,"Oates, Michael",Right,UCO_HUS,NA,5,Top,0,3,2,Fastball,FoulBallNotFieldable,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+177,NA,1,8,"Alejandro, Hector",Right,UCO_HUS,"Oates, Michael",Right,UCO_HUS,NA,5,Top,0,3,2,Fastball,StrikeCalled,Strikeout,Undefined,Out,1,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+178,NA,2,1,"Alejandro, Hector",Right,UCO_HUS,"Belisario, Anthony",Right,UCO_HUS,NA,5,Top,1,0,0,Slider,StrikeSwinging,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+179,NA,2,2,"Alejandro, Hector",Right,UCO_HUS,"Belisario, Anthony",Right,UCO_HUS,NA,5,Top,1,0,1,Slider,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+180,NA,2,3,"Alejandro, Hector",Right,UCO_HUS,"Belisario, Anthony",Right,UCO_HUS,NA,5,Top,1,1,1,Fastball,FoulBallNotFieldable,Undefined,Undefined,Undefined,0,0,93.1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+181,NA,2,4,"Alejandro, Hector",Right,UCO_HUS,"Belisario, Anthony",Right,UCO_HUS,NA,5,Top,1,1,2,Slider,InPlay,Undefined,GroundBall,Out,1,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+182,NA,3,1,"Alejandro, Hector",Right,UCO_HUS,"Tirado, Gabriel",Left,UCO_HUS,NA,5,Top,2,0,0,Changeup,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+183,NA,3,2,"Alejandro, Hector",Right,UCO_HUS,"Tirado, Gabriel",Left,UCO_HUS,NA,5,Top,2,1,0,Fastball,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+184,NA,3,3,"Alejandro, Hector",Right,UCO_HUS,"Tirado, Gabriel",Left,UCO_HUS,NA,5,Top,2,2,0,Fastball,FoulBallNotFieldable,Undefined,Undefined,Undefined,0,0,104.3,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+185,NA,3,4,"Alejandro, Hector",Right,UCO_HUS,"Tirado, Gabriel",Left,UCO_HUS,NA,5,Top,2,2,1,Changeup,StrikeCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+186,NA,3,5,"Alejandro, Hector",Right,UCO_HUS,"Tirado, Gabriel",Left,UCO_HUS,NA,5,Top,2,2,2,Changeup,InPlay,Undefined,LineDrive,Out,1,0,99.6,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+187,NA,1,1,"Mach, Alex",Right,UCO_HUS,"Garbowski, Matt",Left,UCO_HUS,NA,5,Bottom,0,0,0,Slider,StrikeCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+188,NA,1,2,"Mach, Alex",Right,UCO_HUS,"Garbowski, Matt",Left,UCO_HUS,NA,5,Bottom,0,0,1,Changeup,InPlay,Undefined,LineDrive,Single,0,0,93.6,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+189,NA,2,1,"Mach, Alex",Right,UCO_HUS,"Rispoli, Robert",Right,UCO_HUS,NA,5,Bottom,0,0,0,Fastball,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+190,NA,2,2,"Mach, Alex",Right,UCO_HUS,"Rispoli, Robert",Right,UCO_HUS,NA,5,Bottom,0,1,0,Fastball,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+191,NA,2,3,"Mach, Alex",Right,UCO_HUS,"Rispoli, Robert",Right,UCO_HUS,NA,5,Bottom,0,2,0,Slider,StrikeCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+192,NA,2,4,"Mach, Alex",Right,UCO_HUS,"Rispoli, Robert",Right,UCO_HUS,NA,5,Bottom,0,2,1,Slider,FoulBallNotFieldable,Undefined,Undefined,Undefined,0,0,82.4,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+193,NA,2,5,"Mach, Alex",Right,UCO_HUS,"Rispoli, Robert",Right,UCO_HUS,NA,5,Bottom,0,2,2,Fastball,FoulBallNotFieldable,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+194,NA,2,6,"Mach, Alex",Right,UCO_HUS,"Rispoli, Robert",Right,UCO_HUS,NA,5,Bottom,0,2,2,Slider,FoulBallNotFieldable,Undefined,Undefined,PickedOff,1,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+195,NA,2,7,"Mach, Alex",Right,UCO_HUS,"Rispoli, Robert",Right,UCO_HUS,NA,5,Bottom,1,2,2,Slider,InPlay,Undefined,LineDrive,Out,1,0,90.3,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+196,NA,3,1,"Mach, Alex",Right,UCO_HUS,"LaRose, Jack",Left,UCO_HUS,NA,5,Bottom,2,0,0,Changeup,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+197,NA,3,2,"Mach, Alex",Right,UCO_HUS,"LaRose, Jack",Left,UCO_HUS,NA,5,Bottom,2,1,0,Slider,FoulBallNotFieldable,Undefined,Undefined,Undefined,0,0,66.4,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+198,NA,3,3,"Mach, Alex",Right,UCO_HUS,"LaRose, Jack",Left,UCO_HUS,NA,5,Bottom,2,1,1,Fastball,FoulBallNotFieldable,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+199,NA,3,4,"Mach, Alex",Right,UCO_HUS,"LaRose, Jack",Left,UCO_HUS,NA,5,Bottom,2,1,2,Slider,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+200,NA,3,5,"Mach, Alex",Right,UCO_HUS,"LaRose, Jack",Left,UCO_HUS,NA,5,Bottom,2,2,2,Fastball,BallCalled,HitbyPitch,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+201,NA,4,1,"Mach, Alex",Right,UCO_HUS,"Biller, Sam",Left,UCO_HUS,NA,5,Bottom,2,0,0,Slider,InPlay,Undefined,FlyBall,Out,1,0,90.5,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1,NA,1,1,"Van Emon, Gabe",Left,UCO_HUS,"Padilla, Bryan",Right,UCO_HUS,NA,1,Top,0,0,0,Fastball,StrikeCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+2,NA,1,2,"Van Emon, Gabe",Left,UCO_HUS,"Padilla, Bryan",Right,UCO_HUS,NA,1,Top,0,0,1,Fastball,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+3,NA,1,3,"Van Emon, Gabe",Left,UCO_HUS,"Padilla, Bryan",Right,UCO_HUS,NA,1,Top,0,1,1,Fastball,FoulBallNotFieldable,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+4,NA,1,4,"Van Emon, Gabe",Left,UCO_HUS,"Padilla, Bryan",Right,UCO_HUS,NA,1,Top,0,1,2,Fastball,StrikeCalled,Strikeout,Undefined,Out,1,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+5,NA,2,1,"Van Emon, Gabe",Left,UCO_HUS,"Biller, Sam",Left,UCO_HUS,NA,1,Top,1,0,0,Slider,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+6,NA,2,2,"Van Emon, Gabe",Left,UCO_HUS,"Biller, Sam",Left,UCO_HUS,NA,1,Top,1,1,0,Changeup,StrikeCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+7,NA,2,3,"Van Emon, Gabe",Left,UCO_HUS,"Biller, Sam",Left,UCO_HUS,NA,1,Top,1,1,1,Slider,FoulBallNotFieldable,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+8,NA,2,4,"Van Emon, Gabe",Left,UCO_HUS,"Biller, Sam",Left,UCO_HUS,NA,1,Top,1,1,2,Fastball,StrikeCalled,Strikeout,Undefined,Out,1,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+9,NA,3,1,"Van Emon, Gabe",Left,UCO_HUS,"MacArthur, Grant",Right,UCO_HUS,NA,1,Top,2,0,0,Fastball,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+10,NA,3,2,"Van Emon, Gabe",Left,UCO_HUS,"MacArthur, Grant",Right,UCO_HUS,NA,1,Top,2,1,0,Changeup,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+11,NA,3,3,"Van Emon, Gabe",Left,UCO_HUS,"MacArthur, Grant",Right,UCO_HUS,NA,1,Top,2,2,0,Fastball,StrikeSwinging,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+12,NA,3,4,"Van Emon, Gabe",Left,UCO_HUS,"MacArthur, Grant",Right,UCO_HUS,NA,1,Top,2,2,1,Fastball,FoulBallNotFieldable,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+13,NA,3,5,"Van Emon, Gabe",Left,UCO_HUS,"MacArthur, Grant",Right,UCO_HUS,NA,1,Top,2,2,2,Fastball,FoulBallNotFieldable,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+14,NA,3,6,"Van Emon, Gabe",Left,UCO_HUS,"MacArthur, Grant",Right,UCO_HUS,NA,1,Top,2,2,2,Fastball,StrikeSwinging,Strikeout,Undefined,Out,1,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+15,NA,1,1,"Cooke, Ian",Right,UCO_HUS,"Shpur, Caleb",Right,UCO_HUS,NA,1,Bottom,0,0,0,Fastball,StrikeCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+16,NA,1,2,"Cooke, Ian",Right,UCO_HUS,"Shpur, Caleb",Right,UCO_HUS,NA,1,Bottom,0,0,1,Slider,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+17,NA,1,3,"Cooke, Ian",Right,UCO_HUS,"Shpur, Caleb",Right,UCO_HUS,NA,1,Bottom,0,1,1,Fastball,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+18,NA,1,4,"Cooke, Ian",Right,UCO_HUS,"Shpur, Caleb",Right,UCO_HUS,NA,1,Bottom,0,2,1,Fastball,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+19,NA,1,5,"Cooke, Ian",Right,UCO_HUS,"Shpur, Caleb",Right,UCO_HUS,NA,1,Bottom,0,3,1,Fastball,StrikeSwinging,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+20,NA,1,6,"Cooke, Ian",Right,UCO_HUS,"Shpur, Caleb",Right,UCO_HUS,NA,1,Bottom,0,3,2,Slider,InPlay,Undefined,FlyBall,Out,1,0,83.3,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+21,NA,2,1,"Cooke, Ian",Right,UCO_HUS,"Root, Beau",Left,UCO_HUS,NA,1,Bottom,1,0,0,Changeup,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+22,NA,2,2,"Cooke, Ian",Right,UCO_HUS,"Root, Beau",Left,UCO_HUS,NA,1,Bottom,1,1,0,Fastball,FoulBallNotFieldable,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+23,NA,2,3,"Cooke, Ian",Right,UCO_HUS,"Root, Beau",Left,UCO_HUS,NA,1,Bottom,1,1,1,Fastball,InPlay,Undefined,GroundBall,Out,1,0,99.8,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+24,NA,3,1,"Cooke, Ian",Right,UCO_HUS,"Minick, Tyler",Right,UCO_HUS,NA,1,Bottom,2,0,0,Slider,InPlay,Undefined,GroundBall,Out,1,0,92.4,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+25,NA,1,1,"Van Emon, Gabe",Left,UCO_HUS,"Minick, Tyler",Right,UCO_HUS,NA,2,Top,0,0,0,Changeup,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+26,NA,1,2,"Van Emon, Gabe",Left,UCO_HUS,"Minick, Tyler",Right,UCO_HUS,NA,2,Top,0,1,0,Fastball,FoulBallNotFieldable,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+27,NA,1,3,"Van Emon, Gabe",Left,UCO_HUS,"Minick, Tyler",Right,UCO_HUS,NA,2,Top,0,1,1,Fastball,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+28,NA,1,4,"Van Emon, Gabe",Left,UCO_HUS,"Minick, Tyler",Right,UCO_HUS,NA,2,Top,0,2,1,Fastball,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+29,NA,1,5,"Van Emon, Gabe",Left,UCO_HUS,"Minick, Tyler",Right,UCO_HUS,NA,2,Top,0,3,1,Fastball,BallCalled,Walk,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+30,NA,2,1,"Van Emon, Gabe",Left,UCO_HUS,"Garbowski, Matt",Left,UCO_HUS,NA,2,Top,0,0,0,Fastball,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+31,NA,2,2,"Van Emon, Gabe",Left,UCO_HUS,"Garbowski, Matt",Left,UCO_HUS,NA,2,Top,0,1,0,Fastball,InPlay,Undefined,Undefined,Sacrifice,1,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+32,NA,3,1,"Van Emon, Gabe",Left,UCO_HUS,"Kron, Drew",Right,UCO_HUS,NA,2,Top,1,0,0,Changeup,StrikeSwinging,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+33,NA,3,2,"Van Emon, Gabe",Left,UCO_HUS,"Kron, Drew",Right,UCO_HUS,NA,2,Top,1,0,1,Fastball,StrikeCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+34,NA,3,3,"Van Emon, Gabe",Left,UCO_HUS,"Kron, Drew",Right,UCO_HUS,NA,2,Top,1,1,1,Fastball,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+35,NA,3,4,"Van Emon, Gabe",Left,UCO_HUS,"Kron, Drew",Right,UCO_HUS,NA,2,Top,1,2,1,Fastball,StrikeCalled,Strikeout,Undefined,Out,1,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+36,NA,4,1,"Van Emon, Gabe",Left,UCO_HUS,"LaRose, Jack",Left,UCO_HUS,NA,2,Top,2,0,0,Slider,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+37,NA,4,2,"Van Emon, Gabe",Left,UCO_HUS,"LaRose, Jack",Left,UCO_HUS,NA,2,Top,2,1,0,Changeup,BallCalled,HitbyPitch,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+38,NA,5,1,"Van Emon, Gabe",Left,UCO_HUS,"Lane, Connor",Right,UCO_HUS,NA,2,Top,2,0,0,Changeup,FoulBallNotFieldable,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+39,NA,5,2,"Van Emon, Gabe",Left,UCO_HUS,"Lane, Connor",Right,UCO_HUS,NA,2,Top,2,0,1,Fastball,StrikeSwinging,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+40,NA,5,3,"Van Emon, Gabe",Left,UCO_HUS,"Lane, Connor",Right,UCO_HUS,NA,2,Top,2,0,2,Fastball,FoulBallNotFieldable,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+41,NA,5,4,"Van Emon, Gabe",Left,UCO_HUS,"Lane, Connor",Right,UCO_HUS,NA,2,Top,2,1,2,Fastball,StrikeSwinging,Strikeout,Undefined,Out,1,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+42,NA,1,1,"Cooke, Ian",Right,UCO_HUS,"Garbowski, Matt",Left,UCO_HUS,NA,2,Bottom,0,0,0,Fastball,InPlay,Undefined,GroundBall,Out,1,0,99,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+43,NA,2,1,"Cooke, Ian",Right,UCO_HUS,"Rispoli, Robert",Right,UCO_HUS,NA,2,Bottom,1,0,0,Slider,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+44,NA,2,2,"Cooke, Ian",Right,UCO_HUS,"Rispoli, Robert",Right,UCO_HUS,NA,2,Bottom,1,1,0,Fastball,FoulBallNotFieldable,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+45,NA,2,3,"Cooke, Ian",Right,UCO_HUS,"Rispoli, Robert",Right,UCO_HUS,NA,2,Bottom,1,1,1,Fastball,InPlay,Undefined,GroundBall,Single,0,0,19.9,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+46,NA,3,1,"Cooke, Ian",Right,UCO_HUS,"Tirado, Gabriel",Left,UCO_HUS,NA,2,Bottom,1,0,0,Fastball,FoulBallNotFieldable,Undefined,Undefined,Undefined,0,0,79.9,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+47,NA,3,2,"Cooke, Ian",Right,UCO_HUS,"Tirado, Gabriel",Left,UCO_HUS,NA,2,Bottom,1,0,1,Fastball,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48,NA,3,3,"Cooke, Ian",Right,UCO_HUS,"Tirado, Gabriel",Left,UCO_HUS,NA,2,Bottom,1,1,1,Fastball,InPlay,Undefined,FlyBall,Out,1,0,95.6,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+49,NA,4,1,"Cooke, Ian",Right,UCO_HUS,"Belisario, Anthony",Right,UCO_HUS,NA,2,Bottom,2,0,0,Fastball,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+50,NA,4,2,"Cooke, Ian",Right,UCO_HUS,"Belisario, Anthony",Right,UCO_HUS,NA,2,Bottom,2,1,0,Fastball,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+51,NA,4,3,"Cooke, Ian",Right,UCO_HUS,"Belisario, Anthony",Right,UCO_HUS,NA,2,Bottom,2,2,0,Fastball,StrikeCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+52,NA,4,4,"Cooke, Ian",Right,UCO_HUS,"Belisario, Anthony",Right,UCO_HUS,NA,2,Bottom,2,2,1,Slider,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+53,NA,4,5,"Cooke, Ian",Right,UCO_HUS,"Belisario, Anthony",Right,UCO_HUS,NA,2,Bottom,2,3,1,Fastball,BallCalled,Walk,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+54,NA,5,1,"Cooke, Ian",Right,UCO_HUS,"Suchy, Cayden",Left,UCO_HUS,NA,2,Bottom,2,0,0,Fastball,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+55,NA,5,2,"Cooke, Ian",Right,UCO_HUS,"Suchy, Cayden",Left,UCO_HUS,NA,2,Bottom,2,1,0,Fastball,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+56,NA,5,3,"Cooke, Ian",Right,UCO_HUS,"Suchy, Cayden",Left,UCO_HUS,NA,2,Bottom,2,2,0,Fastball,InPlay,Undefined,GroundBall,Out,1,0,89.4,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+57,NA,1,1,"Van Emon, Gabe",Left,UCO_HUS,"Oates, Michael",Right,UCO_HUS,NA,3,Top,0,0,0,Fastball,StrikeCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+58,NA,1,2,"Van Emon, Gabe",Left,UCO_HUS,"Oates, Michael",Right,UCO_HUS,NA,3,Top,0,1,0,Fastball,InPlay,Undefined,LineDrive,Out,1,0,90.3,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+59,NA,2,1,"Van Emon, Gabe",Left,UCO_HUS,"Padilla, Bryan",Right,UCO_HUS,NA,3,Top,1,0,0,Changeup,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+60,NA,2,2,"Van Emon, Gabe",Left,UCO_HUS,"Padilla, Bryan",Right,UCO_HUS,NA,3,Top,1,1,0,Changeup,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+61,NA,2,3,"Van Emon, Gabe",Left,UCO_HUS,"Padilla, Bryan",Right,UCO_HUS,NA,3,Top,1,1,1,Fastball,FoulBallNotFieldable,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+62,NA,2,4,"Van Emon, Gabe",Left,UCO_HUS,"Padilla, Bryan",Right,UCO_HUS,NA,3,Top,1,1,2,Changeup,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+63,NA,2,5,"Van Emon, Gabe",Left,UCO_HUS,"Padilla, Bryan",Right,UCO_HUS,NA,3,Top,1,2,2,Changeup,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+64,NA,2,6,"Van Emon, Gabe",Left,UCO_HUS,"Padilla, Bryan",Right,UCO_HUS,NA,3,Top,1,3,2,Changeup,BallCalled,Walk,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+65,NA,3,1,"Van Emon, Gabe",Left,UCO_HUS,"Biller, Sam",Left,UCO_HUS,NA,3,Top,1,0,0,Fastball,StrikeCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+66,NA,3,2,"Van Emon, Gabe",Left,UCO_HUS,"Biller, Sam",Left,UCO_HUS,NA,3,Top,1,0,1,Slider,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+67,NA,3,3,"Van Emon, Gabe",Left,UCO_HUS,"Biller, Sam",Left,UCO_HUS,NA,3,Top,1,1,1,Fastball,InPlay,Undefined,LineDrive,Out,1,0,98.2,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+68,NA,4,1,"Van Emon, Gabe",Left,UCO_HUS,"MacArthur, Grant",Right,UCO_HUS,NA,3,Top,2,0,0,Fastball,InPlay,Undefined,LineDrive,Double,1,0,96.6,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+69,NA,1,1,"Cooke, Ian",Right,UCO_HUS,"Shpur, Caleb",Right,UCO_HUS,NA,3,Bottom,0,0,0,Slider,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+70,NA,1,2,"Cooke, Ian",Right,UCO_HUS,"Shpur, Caleb",Right,UCO_HUS,NA,3,Bottom,0,1,0,Slider,InPlay,Undefined,LineDrive,Single,0,0,89.4,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+71,NA,2,1,"Cooke, Ian",Right,UCO_HUS,"Root, Beau",Left,UCO_HUS,NA,3,Bottom,0,0,0,Fastball,FoulBallNotFieldable,Undefined,Undefined,Undefined,0,0,13.4,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+72,NA,2,2,"Cooke, Ian",Right,UCO_HUS,"Root, Beau",Left,UCO_HUS,NA,3,Bottom,0,0,1,Fastball,InPlay,Undefined,FlyBall,Out,1,0,80.7,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+73,NA,3,1,"Cooke, Ian",Right,UCO_HUS,"Minick, Tyler",Right,UCO_HUS,NA,3,Bottom,1,0,0,Fastball,BallCalled,Undefined,Undefined,CaughtStealing,1,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+74,NA,3,2,"Cooke, Ian",Right,UCO_HUS,"Minick, Tyler",Right,UCO_HUS,NA,3,Bottom,2,1,0,Slider,InPlay,Undefined,FlyBall,Out,1,0,75.8,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+75,NA,1,1,"Ellisen, Thomas",Right,UCO_HUS,"Dalena, Maddix",Left,UCO_HUS,NA,4,Top,0,0,0,Fastball,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+76,NA,1,2,"Ellisen, Thomas",Right,UCO_HUS,"Dalena, Maddix",Left,UCO_HUS,NA,4,Top,0,1,0,Fastball,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+77,NA,1,3,"Ellisen, Thomas",Right,UCO_HUS,"Dalena, Maddix",Left,UCO_HUS,NA,4,Top,0,2,0,Fastball,StrikeCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+78,NA,1,4,"Ellisen, Thomas",Right,UCO_HUS,"Dalena, Maddix",Left,UCO_HUS,NA,4,Top,0,2,1,Fastball,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+79,NA,1,5,"Ellisen, Thomas",Right,UCO_HUS,"Dalena, Maddix",Left,UCO_HUS,NA,4,Top,0,3,1,Fastball,InPlay,Undefined,GroundBall,Out,1,0,57.5,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+80,NA,2,1,"Ellisen, Thomas",Right,UCO_HUS,"Groen, Carter",Right,UCO_HUS,NA,4,Top,1,0,0,Slider,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+81,NA,2,2,"Ellisen, Thomas",Right,UCO_HUS,"Groen, Carter",Right,UCO_HUS,NA,4,Top,1,1,0,Slider,FoulBallNotFieldable,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+82,NA,2,3,"Ellisen, Thomas",Right,UCO_HUS,"Groen, Carter",Right,UCO_HUS,NA,4,Top,1,1,1,Slider,StrikeSwinging,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+83,NA,2,4,"Ellisen, Thomas",Right,UCO_HUS,"Groen, Carter",Right,UCO_HUS,NA,4,Top,1,1,2,Slider,InPlay,Undefined,PopUp,Out,1,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+84,NA,3,1,"Ellisen, Thomas",Right,UCO_HUS,"Kron, Drew",Right,UCO_HUS,NA,4,Top,2,0,0,Fastball,FoulBallNotFieldable,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+85,NA,3,2,"Ellisen, Thomas",Right,UCO_HUS,"Kron, Drew",Right,UCO_HUS,NA,4,Top,2,0,1,Slider,StrikeCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+86,NA,3,3,"Ellisen, Thomas",Right,UCO_HUS,"Kron, Drew",Right,UCO_HUS,NA,4,Top,2,0,2,Slider,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+87,NA,3,4,"Ellisen, Thomas",Right,UCO_HUS,"Kron, Drew",Right,UCO_HUS,NA,4,Top,2,1,2,Fastball,FoulBallNotFieldable,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+88,NA,3,5,"Ellisen, Thomas",Right,UCO_HUS,"Kron, Drew",Right,UCO_HUS,NA,4,Top,2,1,2,Slider,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+89,NA,3,6,"Ellisen, Thomas",Right,UCO_HUS,"Kron, Drew",Right,UCO_HUS,NA,4,Top,2,2,2,Slider,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+90,NA,3,7,"Ellisen, Thomas",Right,UCO_HUS,"Kron, Drew",Right,UCO_HUS,NA,4,Top,2,3,2,Fastball,StrikeCalled,Strikeout,Undefined,Out,1,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+91,NA,1,1,"Meyers, Paxton",Right,UCO_HUS,"Garbowski, Matt",Left,UCO_HUS,NA,4,Bottom,0,0,0,Fastball,FoulBallNotFieldable,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+92,NA,1,2,"Meyers, Paxton",Right,UCO_HUS,"Garbowski, Matt",Left,UCO_HUS,NA,4,Bottom,0,0,1,Slider,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+93,NA,1,3,"Meyers, Paxton",Right,UCO_HUS,"Garbowski, Matt",Left,UCO_HUS,NA,4,Bottom,0,1,1,Slider,StrikeCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+94,NA,1,4,"Meyers, Paxton",Right,UCO_HUS,"Garbowski, Matt",Left,UCO_HUS,NA,4,Bottom,0,1,2,Fastball,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+95,NA,1,5,"Meyers, Paxton",Right,UCO_HUS,"Garbowski, Matt",Left,UCO_HUS,NA,4,Bottom,0,2,2,Curveball,FoulBallNotFieldable,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+96,NA,1,6,"Meyers, Paxton",Right,UCO_HUS,"Garbowski, Matt",Left,UCO_HUS,NA,4,Bottom,0,2,2,Cutter,FoulBallNotFieldable,Undefined,Undefined,Undefined,0,0,93.1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+97,NA,1,7,"Meyers, Paxton",Right,UCO_HUS,"Garbowski, Matt",Left,UCO_HUS,NA,4,Bottom,0,2,2,Fastball,StrikeSwinging,Strikeout,Undefined,Out,1,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+98,NA,2,1,"Meyers, Paxton",Right,UCO_HUS,"Rispoli, Robert",Right,UCO_HUS,NA,4,Bottom,1,0,0,Fastball,InPlay,Undefined,LineDrive,Single,0,0,89.8,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+99,NA,3,1,"Meyers, Paxton",Right,UCO_HUS,"Tirado, Gabriel",Left,UCO_HUS,NA,4,Bottom,1,0,0,Fastball,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+100,NA,3,2,"Meyers, Paxton",Right,UCO_HUS,"Tirado, Gabriel",Left,UCO_HUS,NA,4,Bottom,1,1,0,Slider,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+101,NA,3,3,"Meyers, Paxton",Right,UCO_HUS,"Tirado, Gabriel",Left,UCO_HUS,NA,4,Bottom,1,2,0,Fastball,FoulBallFieldable,Undefined,PopUp,Out,1,0,88.3,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+102,NA,4,1,"Meyers, Paxton",Right,UCO_HUS,"Belisario, Anthony",Right,UCO_HUS,NA,4,Bottom,2,0,0,Fastball,FoulBallNotFieldable,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+103,NA,4,2,"Meyers, Paxton",Right,UCO_HUS,"Belisario, Anthony",Right,UCO_HUS,NA,4,Bottom,2,0,1,Slider,FoulBallNotFieldable,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+104,NA,4,3,"Meyers, Paxton",Right,UCO_HUS,"Belisario, Anthony",Right,UCO_HUS,NA,4,Bottom,2,0,2,Slider,InPlay,Undefined,GroundBall,Out,1,0,26.2,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+105,NA,1,1,"Ellisen, Thomas",Right,UCO_HUS,"LaRose, Jack",Left,UCO_HUS,NA,5,Top,0,0,0,Fastball,FoulBallNotFieldable,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+106,NA,1,2,"Ellisen, Thomas",Right,UCO_HUS,"LaRose, Jack",Left,UCO_HUS,NA,5,Top,0,0,1,Slider,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+107,NA,1,3,"Ellisen, Thomas",Right,UCO_HUS,"LaRose, Jack",Left,UCO_HUS,NA,5,Top,0,1,1,Slider,StrikeCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+108,NA,1,4,"Ellisen, Thomas",Right,UCO_HUS,"LaRose, Jack",Left,UCO_HUS,NA,5,Top,0,1,2,Fastball,InPlay,Undefined,GroundBall,Out,1,0,61.2,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+109,NA,2,1,"Ellisen, Thomas",Right,UCO_HUS,"Lane, Connor",Right,UCO_HUS,NA,5,Top,1,0,0,Slider,StrikeSwinging,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+110,NA,2,2,"Ellisen, Thomas",Right,UCO_HUS,"Lane, Connor",Right,UCO_HUS,NA,5,Top,1,0,1,Slider,FoulBallNotFieldable,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+111,NA,2,3,"Ellisen, Thomas",Right,UCO_HUS,"Lane, Connor",Right,UCO_HUS,NA,5,Top,1,0,2,Fastball,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+112,NA,2,4,"Ellisen, Thomas",Right,UCO_HUS,"Lane, Connor",Right,UCO_HUS,NA,5,Top,1,1,2,Fastball,FoulBallNotFieldable,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+113,NA,2,5,"Ellisen, Thomas",Right,UCO_HUS,"Lane, Connor",Right,UCO_HUS,NA,5,Top,1,1,2,Slider,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+114,NA,2,6,"Ellisen, Thomas",Right,UCO_HUS,"Lane, Connor",Right,UCO_HUS,NA,5,Top,1,2,2,Slider,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+115,NA,2,7,"Ellisen, Thomas",Right,UCO_HUS,"Lane, Connor",Right,UCO_HUS,NA,5,Top,1,3,2,Fastball,BallCalled,Walk,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+116,NA,3,1,"Ellisen, Thomas",Right,UCO_HUS,"Oates, Michael",Right,UCO_HUS,NA,5,Top,1,0,0,Fastball,InPlay,Undefined,FlyBall,Out,1,0,91.7,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+117,NA,4,1,"Ellisen, Thomas",Right,UCO_HUS,"Padilla, Bryan",Right,UCO_HUS,NA,5,Top,2,0,0,Fastball,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+118,NA,4,2,"Ellisen, Thomas",Right,UCO_HUS,"Padilla, Bryan",Right,UCO_HUS,NA,5,Top,2,1,0,Slider,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+119,NA,4,3,"Ellisen, Thomas",Right,UCO_HUS,"Padilla, Bryan",Right,UCO_HUS,NA,5,Top,2,2,0,Fastball,StrikeSwinging,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+120,NA,4,4,"Ellisen, Thomas",Right,UCO_HUS,"Padilla, Bryan",Right,UCO_HUS,NA,5,Top,2,2,1,Fastball,StrikeCalled,Undefined,Undefined,StolenBase,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+121,NA,4,5,"Ellisen, Thomas",Right,UCO_HUS,"Padilla, Bryan",Right,UCO_HUS,NA,5,Top,2,2,2,Slider,BallCalled,Undefined,Undefined,CaughtStealing,1,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+122,NA,1,1,"Meyers, Paxton",Right,UCO_HUS,"Suchy, Cayden",Left,UCO_HUS,NA,5,Bottom,0,0,0,Fastball,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+123,NA,1,2,"Meyers, Paxton",Right,UCO_HUS,"Suchy, Cayden",Left,UCO_HUS,NA,5,Bottom,0,1,0,Fastball,StrikeCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+124,NA,1,3,"Meyers, Paxton",Right,UCO_HUS,"Suchy, Cayden",Left,UCO_HUS,NA,5,Bottom,0,1,1,Cutter,FoulBallNotFieldable,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+125,NA,1,4,"Meyers, Paxton",Right,UCO_HUS,"Suchy, Cayden",Left,UCO_HUS,NA,5,Bottom,0,1,2,Slider,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+126,NA,1,5,"Meyers, Paxton",Right,UCO_HUS,"Suchy, Cayden",Left,UCO_HUS,NA,5,Bottom,0,2,2,Curveball,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+127,NA,1,6,"Meyers, Paxton",Right,UCO_HUS,"Suchy, Cayden",Left,UCO_HUS,NA,5,Bottom,0,3,2,Fastball,StrikeCalled,Strikeout,Undefined,Out,1,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+128,NA,2,1,"Meyers, Paxton",Right,UCO_HUS,"Shpur, Caleb",Right,UCO_HUS,NA,5,Bottom,1,0,0,Slider,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+129,NA,2,2,"Meyers, Paxton",Right,UCO_HUS,"Shpur, Caleb",Right,UCO_HUS,NA,5,Bottom,1,1,0,Slider,StrikeSwinging,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+130,NA,2,3,"Meyers, Paxton",Right,UCO_HUS,"Shpur, Caleb",Right,UCO_HUS,NA,5,Bottom,1,1,1,Slider,FoulBallNotFieldable,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+131,NA,2,4,"Meyers, Paxton",Right,UCO_HUS,"Shpur, Caleb",Right,UCO_HUS,NA,5,Bottom,1,1,2,Fastball,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+132,NA,2,5,"Meyers, Paxton",Right,UCO_HUS,"Shpur, Caleb",Right,UCO_HUS,NA,5,Bottom,1,2,2,Slider,InPlay,Undefined,FlyBall,Out,1,0,86.5,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+133,NA,3,1,"Meyers, Paxton",Right,UCO_HUS,"Root, Beau",Left,UCO_HUS,NA,5,Bottom,2,0,0,Curveball,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+134,NA,3,2,"Meyers, Paxton",Right,UCO_HUS,"Root, Beau",Left,UCO_HUS,NA,5,Bottom,2,1,0,Fastball,FoulBallNotFieldable,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+135,NA,3,3,"Meyers, Paxton",Right,UCO_HUS,"Root, Beau",Left,UCO_HUS,NA,5,Bottom,2,1,1,Fastball,StrikeCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+136,NA,3,4,"Meyers, Paxton",Right,UCO_HUS,"Root, Beau",Left,UCO_HUS,NA,5,Bottom,2,1,2,Curveball,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+137,NA,3,5,"Meyers, Paxton",Right,UCO_HUS,"Root, Beau",Left,UCO_HUS,NA,5,Bottom,2,2,2,Fastball,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+138,NA,3,6,"Meyers, Paxton",Right,UCO_HUS,"Root, Beau",Left,UCO_HUS,NA,5,Bottom,2,3,2,Fastball,InPlay,Undefined,GroundBall,Single,0,0,65.2,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+139,NA,4,1,"Meyers, Paxton",Right,UCO_HUS,"Minick, Tyler",Right,UCO_HUS,NA,5,Bottom,2,0,0,Slider,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+140,NA,4,2,"Meyers, Paxton",Right,UCO_HUS,"Minick, Tyler",Right,UCO_HUS,NA,5,Bottom,2,1,0,Cutter,InPlay,Undefined,GroundBall,Out,1,0,57.9,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+141,NA,1,1,"Ellisen, Thomas",Right,UCO_HUS,"Padilla, Bryan",Right,UCO_HUS,NA,6,Top,0,0,0,Fastball,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+142,NA,1,2,"Ellisen, Thomas",Right,UCO_HUS,"Padilla, Bryan",Right,UCO_HUS,NA,6,Top,0,1,0,Fastball,FoulBallNotFieldable,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+143,NA,1,3,"Ellisen, Thomas",Right,UCO_HUS,"Padilla, Bryan",Right,UCO_HUS,NA,6,Top,0,1,1,Slider,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+144,NA,1,4,"Ellisen, Thomas",Right,UCO_HUS,"Padilla, Bryan",Right,UCO_HUS,NA,6,Top,0,2,1,Fastball,InPlay,Undefined,FlyBall,Out,1,0,94.1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+145,NA,2,1,"Ellisen, Thomas",Right,UCO_HUS,"Biller, Sam",Left,UCO_HUS,NA,6,Top,1,0,0,Fastball,InPlay,Undefined,GroundBall,Single,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+146,NA,3,1,"Ellisen, Thomas",Right,UCO_HUS,"MacArthur, Grant",Right,UCO_HUS,NA,6,Top,1,0,0,Slider,StrikeCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+147,NA,3,2,"Ellisen, Thomas",Right,UCO_HUS,"MacArthur, Grant",Right,UCO_HUS,NA,6,Top,1,0,1,Slider,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+148,NA,3,3,"Ellisen, Thomas",Right,UCO_HUS,"MacArthur, Grant",Right,UCO_HUS,NA,6,Top,1,1,1,Fastball,BallCalled,Undefined,Undefined,StolenBase,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+149,NA,3,4,"Ellisen, Thomas",Right,UCO_HUS,"MacArthur, Grant",Right,UCO_HUS,NA,6,Top,1,2,1,Slider,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+150,NA,3,5,"Ellisen, Thomas",Right,UCO_HUS,"MacArthur, Grant",Right,UCO_HUS,NA,6,Top,1,3,1,Fastball,FoulBallNotFieldable,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+151,NA,3,6,"Ellisen, Thomas",Right,UCO_HUS,"MacArthur, Grant",Right,UCO_HUS,NA,6,Top,1,3,2,Fastball,InPlay,Undefined,FlyBall,Sacrifice,1,1,96.8,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+152,NA,4,1,"Ellisen, Thomas",Right,UCO_HUS,"Dalena, Maddix",Left,UCO_HUS,NA,6,Top,2,0,0,Fastball,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+153,NA,4,2,"Ellisen, Thomas",Right,UCO_HUS,"Dalena, Maddix",Left,UCO_HUS,NA,6,Top,2,1,0,Fastball,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+154,NA,4,3,"Ellisen, Thomas",Right,UCO_HUS,"Dalena, Maddix",Left,UCO_HUS,NA,6,Top,2,2,0,Fastball,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+155,NA,4,4,"Ellisen, Thomas",Right,UCO_HUS,"Dalena, Maddix",Left,UCO_HUS,NA,6,Top,2,3,0,Fastball,FoulBallNotFieldable,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+156,NA,4,5,"Ellisen, Thomas",Right,UCO_HUS,"Dalena, Maddix",Left,UCO_HUS,NA,6,Top,2,3,1,Fastball,StrikeCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+157,NA,4,6,"Ellisen, Thomas",Right,UCO_HUS,"Dalena, Maddix",Left,UCO_HUS,NA,6,Top,2,3,2,Slider,InPlay,Undefined,GroundBall,Out,1,0,88.5,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+158,NA,1,1,"Hamberger, Evan",Left,UCO_HUS,"Garbowski, Matt",Left,UCO_HUS,NA,6,Bottom,0,0,0,Changeup,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+159,NA,1,2,"Hamberger, Evan",Left,UCO_HUS,"Garbowski, Matt",Left,UCO_HUS,NA,6,Bottom,0,1,0,Fastball,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+160,NA,1,3,"Hamberger, Evan",Left,UCO_HUS,"Garbowski, Matt",Left,UCO_HUS,NA,6,Bottom,0,2,0,Fastball,StrikeCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+161,NA,1,4,"Hamberger, Evan",Left,UCO_HUS,"Garbowski, Matt",Left,UCO_HUS,NA,6,Bottom,0,2,1,Slider,FoulBallNotFieldable,Undefined,Undefined,Undefined,0,0,20.7,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+162,NA,1,5,"Hamberger, Evan",Left,UCO_HUS,"Garbowski, Matt",Left,UCO_HUS,NA,6,Bottom,0,2,2,Slider,StrikeCalled,Strikeout,Undefined,Out,1,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+163,NA,2,1,"Hamberger, Evan",Left,UCO_HUS,"Rispoli, Robert",Right,UCO_HUS,NA,6,Bottom,1,0,0,Changeup,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+164,NA,2,2,"Hamberger, Evan",Left,UCO_HUS,"Rispoli, Robert",Right,UCO_HUS,NA,6,Bottom,1,1,0,Fastball,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+165,NA,2,3,"Hamberger, Evan",Left,UCO_HUS,"Rispoli, Robert",Right,UCO_HUS,NA,6,Bottom,1,2,0,Fastball,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+166,NA,2,4,"Hamberger, Evan",Left,UCO_HUS,"Rispoli, Robert",Right,UCO_HUS,NA,6,Bottom,1,3,0,Fastball,StrikeCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+167,NA,2,5,"Hamberger, Evan",Left,UCO_HUS,"Rispoli, Robert",Right,UCO_HUS,NA,6,Bottom,1,3,1,Fastball,StrikeCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+168,NA,2,6,"Hamberger, Evan",Left,UCO_HUS,"Rispoli, Robert",Right,UCO_HUS,NA,6,Bottom,1,3,2,Fastball,BallCalled,Walk,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+169,NA,3,1,"Hamberger, Evan",Left,UCO_HUS,"Tirado, Gabriel",Left,UCO_HUS,NA,6,Bottom,1,0,0,Slider,InPlay,Undefined,GroundBall,Out,1,0,30.2,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+170,NA,4,1,"Hamberger, Evan",Left,UCO_HUS,"Belisario, Anthony",Right,UCO_HUS,NA,6,Bottom,2,0,0,Slider,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+171,NA,4,2,"Hamberger, Evan",Left,UCO_HUS,"Belisario, Anthony",Right,UCO_HUS,NA,6,Bottom,2,1,0,Fastball,StrikeSwinging,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+172,NA,4,3,"Hamberger, Evan",Left,UCO_HUS,"Belisario, Anthony",Right,UCO_HUS,NA,6,Bottom,2,1,1,Slider,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+173,NA,4,4,"Hamberger, Evan",Left,UCO_HUS,"Belisario, Anthony",Right,UCO_HUS,NA,6,Bottom,2,2,1,Fastball,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+174,NA,4,5,"Hamberger, Evan",Left,UCO_HUS,"Belisario, Anthony",Right,UCO_HUS,NA,6,Bottom,2,3,1,Fastball,InPlay,Undefined,GroundBall,Out,1,0,66.6,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+175,NA,1,1,"Hutchinson, Sam",Left,UCO_HUS,"Groen, Carter",Right,UCO_HUS,NA,7,Top,0,0,0,Changeup,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+176,NA,1,2,"Hutchinson, Sam",Left,UCO_HUS,"Groen, Carter",Right,UCO_HUS,NA,7,Top,0,1,0,Fastball,InPlay,Undefined,FlyBall,Out,1,0,98.8,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+177,NA,2,1,"Hutchinson, Sam",Left,UCO_HUS,"Kron, Drew",Right,UCO_HUS,NA,7,Top,1,0,0,Fastball,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+178,NA,2,2,"Hutchinson, Sam",Left,UCO_HUS,"Kron, Drew",Right,UCO_HUS,NA,7,Top,1,1,0,Fastball,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+179,NA,2,3,"Hutchinson, Sam",Left,UCO_HUS,"Kron, Drew",Right,UCO_HUS,NA,7,Top,1,2,0,Fastball,FoulBallNotFieldable,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+180,NA,2,4,"Hutchinson, Sam",Left,UCO_HUS,"Kron, Drew",Right,UCO_HUS,NA,7,Top,1,2,1,Changeup,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+181,NA,2,5,"Hutchinson, Sam",Left,UCO_HUS,"Kron, Drew",Right,UCO_HUS,NA,7,Top,1,3,1,Fastball,InPlay,Undefined,FlyBall,Out,1,0,89.2,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+182,NA,3,1,"Hutchinson, Sam",Left,UCO_HUS,"LaRose, Jack",Left,UCO_HUS,NA,7,Top,2,0,0,Fastball,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+183,NA,3,2,"Hutchinson, Sam",Left,UCO_HUS,"LaRose, Jack",Left,UCO_HUS,NA,7,Top,2,1,0,Fastball,StrikeCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+184,NA,3,3,"Hutchinson, Sam",Left,UCO_HUS,"LaRose, Jack",Left,UCO_HUS,NA,7,Top,2,1,1,Slider,FoulBallNotFieldable,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+185,NA,3,4,"Hutchinson, Sam",Left,UCO_HUS,"LaRose, Jack",Left,UCO_HUS,NA,7,Top,2,1,2,Slider,StrikeSwinging,Strikeout,Undefined,PassedBall,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+186,NA,4,1,"Hutchinson, Sam",Left,UCO_HUS,"Lane, Connor",Right,UCO_HUS,NA,7,Top,2,0,0,Fastball,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+187,NA,4,2,"Hutchinson, Sam",Left,UCO_HUS,"Lane, Connor",Right,UCO_HUS,NA,7,Top,2,1,0,Fastball,FoulBallNotFieldable,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+188,NA,4,3,"Hutchinson, Sam",Left,UCO_HUS,"Lane, Connor",Right,UCO_HUS,NA,7,Top,2,1,1,Changeup,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+189,NA,4,4,"Hutchinson, Sam",Left,UCO_HUS,"Lane, Connor",Right,UCO_HUS,NA,7,Top,2,2,1,Fastball,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+190,NA,4,5,"Hutchinson, Sam",Left,UCO_HUS,"Lane, Connor",Right,UCO_HUS,NA,7,Top,2,3,1,Fastball,InPlay,Undefined,FlyBall,Out,1,0,77,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+191,NA,5,1,"Hamberger, Evan",Left,UCO_HUS,"Suchy, Cayden",Left,UCO_HUS,NA,7,Bottom,0,0,0,Slider,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+192,NA,5,2,"Hamberger, Evan",Left,UCO_HUS,"Suchy, Cayden",Left,UCO_HUS,NA,7,Bottom,0,1,0,Slider,StrikeSwinging,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+193,NA,5,3,"Hamberger, Evan",Left,UCO_HUS,"Suchy, Cayden",Left,UCO_HUS,NA,7,Bottom,0,1,1,Fastball,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+194,NA,5,4,"Hamberger, Evan",Left,UCO_HUS,"Suchy, Cayden",Left,UCO_HUS,NA,7,Bottom,0,2,1,Fastball,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+195,NA,5,5,"Hamberger, Evan",Left,UCO_HUS,"Suchy, Cayden",Left,UCO_HUS,NA,7,Bottom,0,3,1,Slider,StrikeCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+196,NA,5,6,"Hamberger, Evan",Left,UCO_HUS,"Suchy, Cayden",Left,UCO_HUS,NA,7,Bottom,0,3,2,Fastball,BallCalled,Walk,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+197,NA,6,1,"Hamberger, Evan",Left,UCO_HUS,"Shpur, Caleb",Right,UCO_HUS,NA,7,Bottom,0,0,0,Fastball,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+198,NA,6,2,"Hamberger, Evan",Left,UCO_HUS,"Shpur, Caleb",Right,UCO_HUS,NA,7,Bottom,0,1,0,Fastball,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+199,NA,6,3,"Hamberger, Evan",Left,UCO_HUS,"Shpur, Caleb",Right,UCO_HUS,NA,7,Bottom,0,2,0,Fastball,StrikeSwinging,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+200,NA,6,4,"Hamberger, Evan",Left,UCO_HUS,"Shpur, Caleb",Right,UCO_HUS,NA,7,Bottom,0,2,1,Fastball,FoulBallNotFieldable,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+201,NA,6,5,"Hamberger, Evan",Left,UCO_HUS,"Shpur, Caleb",Right,UCO_HUS,NA,7,Bottom,0,2,2,Changeup,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+202,NA,6,6,"Hamberger, Evan",Left,UCO_HUS,"Shpur, Caleb",Right,UCO_HUS,NA,7,Bottom,0,3,2,Slider,FoulBallNotFieldable,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+203,NA,6,7,"Hamberger, Evan",Left,UCO_HUS,"Shpur, Caleb",Right,UCO_HUS,NA,7,Bottom,0,3,2,Fastball,InPlay,Undefined,LineDrive,Out,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+204,NA,7,1,"Hamberger, Evan",Left,UCO_HUS,"Root, Beau",Left,UCO_HUS,NA,7,Bottom,0,0,0,Fastball,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+205,NA,7,2,"Hamberger, Evan",Left,UCO_HUS,"Root, Beau",Left,UCO_HUS,NA,7,Bottom,0,1,0,Fastball,BallCalled,Undefined,Undefined,WildPitch,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+206,NA,7,3,"Hamberger, Evan",Left,UCO_HUS,"Root, Beau",Left,UCO_HUS,NA,7,Bottom,0,2,0,Fastball,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+207,NA,7,4,"Hamberger, Evan",Left,UCO_HUS,"Root, Beau",Left,UCO_HUS,NA,7,Bottom,0,3,0,Fastball,StrikeCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+208,NA,7,5,"Hamberger, Evan",Left,UCO_HUS,"Root, Beau",Left,UCO_HUS,NA,7,Bottom,0,3,1,Slider,FoulBallNotFieldable,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+209,NA,7,6,"Hamberger, Evan",Left,UCO_HUS,"Root, Beau",Left,UCO_HUS,NA,7,Bottom,0,3,2,Slider,BallCalled,Walk,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+210,NA,8,1,"Hamberger, Evan",Left,UCO_HUS,"Minick, Tyler",Right,UCO_HUS,NA,7,Bottom,0,0,0,Fastball,BallCalled,Undefined,Undefined,StolenBase,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+211,NA,8,2,"Hamberger, Evan",Left,UCO_HUS,"Minick, Tyler",Right,UCO_HUS,NA,7,Bottom,0,1,0,Changeup,StrikeSwinging,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+212,NA,8,3,"Hamberger, Evan",Left,UCO_HUS,"Minick, Tyler",Right,UCO_HUS,NA,7,Bottom,0,1,1,Changeup,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+213,NA,8,4,"Hamberger, Evan",Left,UCO_HUS,"Minick, Tyler",Right,UCO_HUS,NA,7,Bottom,0,2,1,Slider,InPlay,Undefined,GroundBall,Out,1,0,58.5,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+214,NA,9,1,"Hamberger, Evan",Left,UCO_HUS,"Garbowski, Matt",Left,UCO_HUS,NA,7,Bottom,1,0,0,Slider,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+215,NA,9,2,"Hamberger, Evan",Left,UCO_HUS,"Garbowski, Matt",Left,UCO_HUS,NA,7,Bottom,1,1,0,Fastball,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+216,NA,9,3,"Hamberger, Evan",Left,UCO_HUS,"Garbowski, Matt",Left,UCO_HUS,NA,7,Bottom,1,2,0,Fastball,InPlay,Undefined,GroundBall,Single,0,2,59.5,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+217,NA,10,1,"Hamberger, Evan",Left,UCO_HUS,"Rispoli, Robert",Right,UCO_HUS,NA,7,Bottom,1,0,0,Fastball,FoulBallNotFieldable,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+218,NA,10,2,"Hamberger, Evan",Left,UCO_HUS,"Rispoli, Robert",Right,UCO_HUS,NA,7,Bottom,1,0,1,Slider,BallCalled,Undefined,Undefined,WildPitch,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+219,NA,10,3,"Hamberger, Evan",Left,UCO_HUS,"Rispoli, Robert",Right,UCO_HUS,NA,7,Bottom,1,1,1,Fastball,InPlay,Undefined,FlyBall,Out,1,0,92.5,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+220,NA,11,1,"Hamberger, Evan",Left,UCO_HUS,"Tirado, Gabriel",Left,UCO_HUS,NA,7,Bottom,2,0,0,Slider,InPlay,Undefined,FlyBall,Out,1,0,89.5,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+221,NA,1,1,"Hutchinson, Sam",Left,UCO_HUS,"Oates, Michael",Right,UCO_HUS,NA,8,Top,0,0,0,Changeup,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+222,NA,1,2,"Hutchinson, Sam",Left,UCO_HUS,"Oates, Michael",Right,UCO_HUS,NA,8,Top,0,1,0,Fastball,StrikeSwinging,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+223,NA,1,3,"Hutchinson, Sam",Left,UCO_HUS,"Oates, Michael",Right,UCO_HUS,NA,8,Top,0,1,1,Changeup,StrikeSwinging,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+224,NA,1,4,"Hutchinson, Sam",Left,UCO_HUS,"Oates, Michael",Right,UCO_HUS,NA,8,Top,0,1,2,Changeup,FoulBallNotFieldable,Undefined,Undefined,Undefined,0,0,24.4,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+225,NA,1,5,"Hutchinson, Sam",Left,UCO_HUS,"Oates, Michael",Right,UCO_HUS,NA,8,Top,0,1,2,Changeup,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+226,NA,1,6,"Hutchinson, Sam",Left,UCO_HUS,"Oates, Michael",Right,UCO_HUS,NA,8,Top,0,2,2,Changeup,FoulBallNotFieldable,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+227,NA,1,7,"Hutchinson, Sam",Left,UCO_HUS,"Oates, Michael",Right,UCO_HUS,NA,8,Top,0,2,2,Fastball,InPlay,Undefined,LineDrive,Out,1,0,96.1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+228,NA,2,1,"Hutchinson, Sam",Left,UCO_HUS,"Padilla, Bryan",Right,UCO_HUS,NA,8,Top,1,0,0,Changeup,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+229,NA,2,2,"Hutchinson, Sam",Left,UCO_HUS,"Padilla, Bryan",Right,UCO_HUS,NA,8,Top,1,1,0,Changeup,StrikeSwinging,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+230,NA,2,3,"Hutchinson, Sam",Left,UCO_HUS,"Padilla, Bryan",Right,UCO_HUS,NA,8,Top,1,1,1,Fastball,InPlay,Undefined,GroundBall,Out,1,0,93.1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+231,NA,3,1,"Hutchinson, Sam",Left,UCO_HUS,"Biller, Sam",Left,UCO_HUS,NA,8,Top,2,0,0,Fastball,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+232,NA,3,2,"Hutchinson, Sam",Left,UCO_HUS,"Biller, Sam",Left,UCO_HUS,NA,8,Top,2,1,0,Changeup,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+233,NA,3,3,"Hutchinson, Sam",Left,UCO_HUS,"Biller, Sam",Left,UCO_HUS,NA,8,Top,2,2,0,Slider,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+234,NA,3,4,"Hutchinson, Sam",Left,UCO_HUS,"Biller, Sam",Left,UCO_HUS,NA,8,Top,2,3,0,Fastball,StrikeCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+235,NA,3,5,"Hutchinson, Sam",Left,UCO_HUS,"Biller, Sam",Left,UCO_HUS,NA,8,Top,2,3,1,Fastball,BallCalled,Walk,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+236,NA,4,1,"Hutchinson, Sam",Left,UCO_HUS,"MacArthur, Grant",Right,UCO_HUS,NA,8,Top,2,0,0,Fastball,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+237,NA,4,2,"Hutchinson, Sam",Left,UCO_HUS,"MacArthur, Grant",Right,UCO_HUS,NA,8,Top,2,1,0,Fastball,StrikeSwinging,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+238,NA,4,3,"Hutchinson, Sam",Left,UCO_HUS,"MacArthur, Grant",Right,UCO_HUS,NA,8,Top,2,1,1,Fastball,FoulBallNotFieldable,Undefined,Undefined,Undefined,0,0,82.7,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+239,NA,4,4,"Hutchinson, Sam",Left,UCO_HUS,"MacArthur, Grant",Right,UCO_HUS,NA,8,Top,2,1,2,Changeup,StrikeSwinging,Strikeout,Undefined,Out,1,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+240,NA,1,1,"Afthim, Brady",Right,UCO_HUS,"Belisario, Anthony",Right,UCO_HUS,NA,8,Bottom,0,0,0,Fastball,StrikeCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+241,NA,1,2,"Afthim, Brady",Right,UCO_HUS,"Belisario, Anthony",Right,UCO_HUS,NA,8,Bottom,1,0,1,Fastball,StrikeCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+242,NA,1,3,"Afthim, Brady",Right,UCO_HUS,"Belisario, Anthony",Right,UCO_HUS,NA,8,Bottom,1,0,2,Slider,StrikeSwinging,Strikeout,Undefined,Out,1,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+243,NA,2,1,"Afthim, Brady",Right,UCO_HUS,"Suchy, Cayden",Left,UCO_HUS,NA,8,Bottom,1,0,0,Slider,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+244,NA,2,2,"Afthim, Brady",Right,UCO_HUS,"Suchy, Cayden",Left,UCO_HUS,NA,8,Bottom,1,1,0,Fastball,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+245,NA,2,3,"Afthim, Brady",Right,UCO_HUS,"Suchy, Cayden",Left,UCO_HUS,NA,8,Bottom,1,2,0,Fastball,StrikeCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+246,NA,2,4,"Afthim, Brady",Right,UCO_HUS,"Suchy, Cayden",Left,UCO_HUS,NA,8,Bottom,1,2,1,Fastball,StrikeCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+247,NA,2,5,"Afthim, Brady",Right,UCO_HUS,"Suchy, Cayden",Left,UCO_HUS,NA,8,Bottom,1,2,2,Fastball,StrikeSwinging,Strikeout,Undefined,Out,1,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+248,NA,3,1,"Afthim, Brady",Right,UCO_HUS,"Shpur, Caleb",Right,UCO_HUS,NA,8,Bottom,2,0,0,Fastball,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+249,NA,3,2,"Afthim, Brady",Right,UCO_HUS,"Shpur, Caleb",Right,UCO_HUS,NA,8,Bottom,2,1,0,Fastball,InPlay,Undefined,LineDrive,Out,1,0,80.6,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1,NA,1,1,"West, Charlie",Left,UCO_HUS,"Shpur, Caleb",Right,UCO_HUS,NA,1,Top,0,0,0,Fastball,FoulBallNotFieldable,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+2,NA,1,2,"West, Charlie",Left,UCO_HUS,"Shpur, Caleb",Right,UCO_HUS,NA,1,Top,0,0,1,Changeup,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+3,NA,1,3,"West, Charlie",Left,UCO_HUS,"Shpur, Caleb",Right,UCO_HUS,NA,1,Top,0,1,1,Fastball,FoulBallNotFieldable,Undefined,Undefined,Undefined,0,0,97.4,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+4,NA,1,4,"West, Charlie",Left,UCO_HUS,"Shpur, Caleb",Right,UCO_HUS,NA,1,Top,0,1,2,Curveball,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+5,NA,1,5,"West, Charlie",Left,UCO_HUS,"Shpur, Caleb",Right,UCO_HUS,NA,1,Top,0,2,2,Changeup,StrikeSwinging,Strikeout,Undefined,Out,1,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+6,NA,2,1,"West, Charlie",Left,UCO_HUS,"Root, Beau",Left,UCO_HUS,NA,1,Top,1,0,0,Fastball,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+7,NA,2,2,"West, Charlie",Left,UCO_HUS,"Root, Beau",Left,UCO_HUS,NA,1,Top,1,1,0,Fastball,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+8,NA,2,3,"West, Charlie",Left,UCO_HUS,"Root, Beau",Left,UCO_HUS,NA,1,Top,1,2,0,Fastball,StrikeSwinging,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+9,NA,2,4,"West, Charlie",Left,UCO_HUS,"Root, Beau",Left,UCO_HUS,NA,1,Top,1,2,1,Fastball,StrikeCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+10,NA,2,5,"West, Charlie",Left,UCO_HUS,"Root, Beau",Left,UCO_HUS,NA,1,Top,1,2,2,Changeup,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+11,NA,2,6,"West, Charlie",Left,UCO_HUS,"Root, Beau",Left,UCO_HUS,NA,1,Top,1,3,2,Changeup,InPlay,Undefined,LineDrive,Single,0,0,90.8,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+12,NA,3,1,"West, Charlie",Left,UCO_HUS,"MacArthur, Grant",Right,UCO_HUS,NA,1,Top,1,0,0,Fastball,FoulBallNotFieldable,Undefined,Undefined,Undefined,0,0,94.2,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+13,NA,3,2,"West, Charlie",Left,UCO_HUS,"MacArthur, Grant",Right,UCO_HUS,NA,1,Top,1,0,1,Changeup,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+14,NA,3,3,"West, Charlie",Left,UCO_HUS,"MacArthur, Grant",Right,UCO_HUS,NA,1,Top,1,1,1,Fastball,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+15,NA,3,4,"West, Charlie",Left,UCO_HUS,"MacArthur, Grant",Right,UCO_HUS,NA,1,Top,1,2,1,Fastball,BallCalled,Undefined,Undefined,StolenBase,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+16,NA,3,5,"West, Charlie",Left,UCO_HUS,"MacArthur, Grant",Right,UCO_HUS,NA,1,Top,1,3,1,Fastball,StrikeSwinging,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+17,NA,3,6,"West, Charlie",Left,UCO_HUS,"MacArthur, Grant",Right,UCO_HUS,NA,1,Top,1,3,2,Changeup,BallCalled,Walk,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+18,NA,4,1,"West, Charlie",Left,UCO_HUS,"Dalena, Maddix",Left,UCO_HUS,NA,1,Top,1,0,0,Fastball,StrikeCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+19,NA,4,2,"West, Charlie",Left,UCO_HUS,"Dalena, Maddix",Left,UCO_HUS,NA,1,Top,1,0,1,Fastball,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+20,NA,4,3,"West, Charlie",Left,UCO_HUS,"Dalena, Maddix",Left,UCO_HUS,NA,1,Top,1,1,1,Fastball,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+21,NA,4,4,"West, Charlie",Left,UCO_HUS,"Dalena, Maddix",Left,UCO_HUS,NA,1,Top,1,2,1,Changeup,StrikeSwinging,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+22,NA,4,5,"West, Charlie",Left,UCO_HUS,"Dalena, Maddix",Left,UCO_HUS,NA,1,Top,1,2,2,Curveball,BallCalled,Undefined,Undefined,WildPitch,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+23,NA,4,6,"West, Charlie",Left,UCO_HUS,"Dalena, Maddix",Left,UCO_HUS,NA,1,Top,1,3,2,Changeup,BallCalled,Walk,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+24,NA,5,1,"West, Charlie",Left,UCO_HUS,"Rispoli, Robert",Right,UCO_HUS,NA,1,Top,1,0,0,Fastball,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+25,NA,5,2,"West, Charlie",Left,UCO_HUS,"Rispoli, Robert",Right,UCO_HUS,NA,1,Top,1,1,0,Fastball,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+26,NA,5,3,"West, Charlie",Left,UCO_HUS,"Rispoli, Robert",Right,UCO_HUS,NA,1,Top,1,2,0,Fastball,InPlay,Undefined,GroundBall,FieldersChoice,1,1,86.3,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+27,NA,6,1,"West, Charlie",Left,UCO_HUS,"Tirado, Gabriel",Left,UCO_HUS,NA,1,Top,2,0,0,Fastball,BallCalled,Undefined,Undefined,CaughtStealing,1,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+28,NA,1,1,"Peters, Kyle",Right,UCO_HUS,"Biller, Sam",Left,UCO_HUS,NA,1,Bottom,0,0,0,Fastball,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+29,NA,1,2,"Peters, Kyle",Right,UCO_HUS,"Biller, Sam",Left,UCO_HUS,NA,1,Bottom,0,1,0,Fastball,InPlay,Undefined,FlyBall,Out,1,0,89.5,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+30,NA,2,1,"Peters, Kyle",Right,UCO_HUS,"Padilla, Bryan",Right,UCO_HUS,NA,1,Bottom,1,0,0,Slider,StrikeCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+31,NA,2,2,"Peters, Kyle",Right,UCO_HUS,"Padilla, Bryan",Right,UCO_HUS,NA,1,Bottom,1,0,1,Fastball,FoulBallNotFieldable,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+32,NA,2,3,"Peters, Kyle",Right,UCO_HUS,"Padilla, Bryan",Right,UCO_HUS,NA,1,Bottom,1,0,2,Slider,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+33,NA,2,4,"Peters, Kyle",Right,UCO_HUS,"Padilla, Bryan",Right,UCO_HUS,NA,1,Bottom,1,1,2,Fastball,InPlay,Undefined,FlyBall,Double,0,0,76.1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+34,NA,3,1,"Peters, Kyle",Right,UCO_HUS,"Minick, Tyler",Right,UCO_HUS,NA,1,Bottom,1,0,0,Fastball,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+35,NA,3,2,"Peters, Kyle",Right,UCO_HUS,"Minick, Tyler",Right,UCO_HUS,NA,1,Bottom,1,1,0,Slider,StrikeCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+36,NA,3,3,"Peters, Kyle",Right,UCO_HUS,"Minick, Tyler",Right,UCO_HUS,NA,1,Bottom,1,1,1,Fastball,StrikeSwinging,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+37,NA,3,4,"Peters, Kyle",Right,UCO_HUS,"Minick, Tyler",Right,UCO_HUS,NA,1,Bottom,1,1,2,Slider,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+38,NA,3,5,"Peters, Kyle",Right,UCO_HUS,"Minick, Tyler",Right,UCO_HUS,NA,1,Bottom,1,2,2,Fastball,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+39,NA,3,6,"Peters, Kyle",Right,UCO_HUS,"Minick, Tyler",Right,UCO_HUS,NA,1,Bottom,1,3,2,Fastball,FoulBallNotFieldable,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+40,NA,3,7,"Peters, Kyle",Right,UCO_HUS,"Minick, Tyler",Right,UCO_HUS,NA,1,Bottom,1,3,2,Slider,FoulBallNotFieldable,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+41,NA,3,8,"Peters, Kyle",Right,UCO_HUS,"Minick, Tyler",Right,UCO_HUS,NA,1,Bottom,1,3,2,Fastball,StrikeSwinging,Strikeout,Undefined,Out,1,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+42,NA,4,1,"Peters, Kyle",Right,UCO_HUS,"Garbowski, Matt",Left,UCO_HUS,NA,1,Bottom,2,0,0,Fastball,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+43,NA,4,2,"Peters, Kyle",Right,UCO_HUS,"Garbowski, Matt",Left,UCO_HUS,NA,1,Bottom,2,1,0,Slider,StrikeCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+44,NA,4,3,"Peters, Kyle",Right,UCO_HUS,"Garbowski, Matt",Left,UCO_HUS,NA,1,Bottom,2,1,1,Fastball,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+45,NA,4,4,"Peters, Kyle",Right,UCO_HUS,"Garbowski, Matt",Left,UCO_HUS,NA,1,Bottom,2,2,1,Slider,FoulBallNotFieldable,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+46,NA,4,5,"Peters, Kyle",Right,UCO_HUS,"Garbowski, Matt",Left,UCO_HUS,NA,1,Bottom,2,2,2,Fastball,FoulBallNotFieldable,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+47,NA,4,6,"Peters, Kyle",Right,UCO_HUS,"Garbowski, Matt",Left,UCO_HUS,NA,1,Bottom,2,2,2,Slider,StrikeSwinging,Strikeout,Undefined,Out,1,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48,NA,1,1,"West, Charlie",Left,UCO_HUS,"Tirado, Gabriel",Left,UCO_HUS,NA,2,Top,0,0,0,Fastball,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+49,NA,1,2,"West, Charlie",Left,UCO_HUS,"Tirado, Gabriel",Left,UCO_HUS,NA,2,Top,0,1,0,Fastball,StrikeCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+50,NA,1,3,"West, Charlie",Left,UCO_HUS,"Tirado, Gabriel",Left,UCO_HUS,NA,2,Top,0,1,1,Changeup,FoulBallNotFieldable,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+51,NA,1,4,"West, Charlie",Left,UCO_HUS,"Tirado, Gabriel",Left,UCO_HUS,NA,2,Top,0,1,2,Curveball,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+52,NA,1,5,"West, Charlie",Left,UCO_HUS,"Tirado, Gabriel",Left,UCO_HUS,NA,2,Top,0,2,2,Changeup,FoulBallNotFieldable,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+53,NA,1,6,"West, Charlie",Left,UCO_HUS,"Tirado, Gabriel",Left,UCO_HUS,NA,2,Top,0,2,2,Fastball,StrikeSwinging,Strikeout,Undefined,Out,1,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+54,NA,2,1,"West, Charlie",Left,UCO_HUS,"Groen, Carter",Right,UCO_HUS,NA,2,Top,1,0,0,Fastball,FoulBallNotFieldable,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+55,NA,2,2,"West, Charlie",Left,UCO_HUS,"Groen, Carter",Right,UCO_HUS,NA,2,Top,1,0,1,Changeup,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+56,NA,2,3,"West, Charlie",Left,UCO_HUS,"Groen, Carter",Right,UCO_HUS,NA,2,Top,1,1,1,Changeup,FoulBallNotFieldable,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+57,NA,2,4,"West, Charlie",Left,UCO_HUS,"Groen, Carter",Right,UCO_HUS,NA,2,Top,1,1,2,Curveball,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+58,NA,2,5,"West, Charlie",Left,UCO_HUS,"Groen, Carter",Right,UCO_HUS,NA,2,Top,1,2,2,Changeup,InPlay,Undefined,LineDrive,Single,0,0,93.8,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+59,NA,3,1,"West, Charlie",Left,UCO_HUS,"Lane, Connor",Right,UCO_HUS,NA,2,Top,1,0,0,Fastball,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+60,NA,3,2,"West, Charlie",Left,UCO_HUS,"Lane, Connor",Right,UCO_HUS,NA,2,Top,1,1,0,Fastball,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+61,NA,3,3,"West, Charlie",Left,UCO_HUS,"Lane, Connor",Right,UCO_HUS,NA,2,Top,1,2,0,Fastball,StrikeCalled,Undefined,Undefined,PickedOff,1,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+62,NA,3,4,"West, Charlie",Left,UCO_HUS,"Lane, Connor",Right,UCO_HUS,NA,2,Top,2,2,1,Fastball,StrikeSwinging,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+63,NA,3,5,"West, Charlie",Left,UCO_HUS,"Lane, Connor",Right,UCO_HUS,NA,2,Top,2,2,2,Fastball,StrikeSwinging,Strikeout,Undefined,Out,1,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+64,NA,1,1,"Peters, Kyle",Right,UCO_HUS,"Kron, Drew",Right,UCO_HUS,NA,2,Bottom,0,0,0,Curveball,StrikeCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+65,NA,1,2,"Peters, Kyle",Right,UCO_HUS,"Kron, Drew",Right,UCO_HUS,NA,2,Bottom,0,0,1,Curveball,StrikeSwinging,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+66,NA,1,3,"Peters, Kyle",Right,UCO_HUS,"Kron, Drew",Right,UCO_HUS,NA,2,Bottom,0,0,2,Slider,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+67,NA,1,4,"Peters, Kyle",Right,UCO_HUS,"Kron, Drew",Right,UCO_HUS,NA,2,Bottom,0,1,2,Fastball,FoulBallNotFieldable,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+68,NA,1,5,"Peters, Kyle",Right,UCO_HUS,"Kron, Drew",Right,UCO_HUS,NA,2,Bottom,0,1,2,Slider,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+69,NA,1,6,"Peters, Kyle",Right,UCO_HUS,"Kron, Drew",Right,UCO_HUS,NA,2,Bottom,0,2,2,Fastball,FoulBallNotFieldable,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+70,NA,1,7,"Peters, Kyle",Right,UCO_HUS,"Kron, Drew",Right,UCO_HUS,NA,2,Bottom,0,2,2,Curveball,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+71,NA,1,8,"Peters, Kyle",Right,UCO_HUS,"Kron, Drew",Right,UCO_HUS,NA,2,Bottom,0,3,2,Slider,StrikeSwinging,Strikeout,Undefined,Out,1,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+72,NA,2,1,"Peters, Kyle",Right,UCO_HUS,"LaRose, Jack",Left,UCO_HUS,NA,2,Bottom,1,0,0,Slider,StrikeCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+73,NA,2,2,"Peters, Kyle",Right,UCO_HUS,"LaRose, Jack",Left,UCO_HUS,NA,2,Bottom,1,0,1,Slider,StrikeCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+74,NA,2,3,"Peters, Kyle",Right,UCO_HUS,"LaRose, Jack",Left,UCO_HUS,NA,2,Bottom,1,0,2,Slider,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+75,NA,2,4,"Peters, Kyle",Right,UCO_HUS,"LaRose, Jack",Left,UCO_HUS,NA,2,Bottom,1,1,2,Fastball,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+76,NA,2,5,"Peters, Kyle",Right,UCO_HUS,"LaRose, Jack",Left,UCO_HUS,NA,2,Bottom,1,2,2,Slider,InPlay,Undefined,GroundBall,Single,0,0,69.5,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+77,NA,3,1,"Peters, Kyle",Right,UCO_HUS,"Oates, Michael",Right,UCO_HUS,NA,2,Bottom,1,0,0,Fastball,StrikeCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+78,NA,3,2,"Peters, Kyle",Right,UCO_HUS,"Oates, Michael",Right,UCO_HUS,NA,2,Bottom,1,0,1,Slider,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+79,NA,3,3,"Peters, Kyle",Right,UCO_HUS,"Oates, Michael",Right,UCO_HUS,NA,2,Bottom,1,1,1,Fastball,InPlay,Undefined,GroundBall,Single,0,0,26.3,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+80,NA,4,1,"Peters, Kyle",Right,UCO_HUS,"Suchy, Cayden",Left,UCO_HUS,NA,2,Bottom,1,0,0,Slider,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+81,NA,4,2,"Peters, Kyle",Right,UCO_HUS,"Suchy, Cayden",Left,UCO_HUS,NA,2,Bottom,1,1,0,Fastball,StrikeCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+82,NA,4,3,"Peters, Kyle",Right,UCO_HUS,"Suchy, Cayden",Left,UCO_HUS,NA,2,Bottom,1,1,1,Slider,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+83,NA,4,4,"Peters, Kyle",Right,UCO_HUS,"Suchy, Cayden",Left,UCO_HUS,NA,2,Bottom,1,2,1,Fastball,FoulBallNotFieldable,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+84,NA,4,5,"Peters, Kyle",Right,UCO_HUS,"Suchy, Cayden",Left,UCO_HUS,NA,2,Bottom,1,2,2,Slider,FoulBallNotFieldable,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+85,NA,4,6,"Peters, Kyle",Right,UCO_HUS,"Suchy, Cayden",Left,UCO_HUS,NA,2,Bottom,1,2,2,Fastball,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+86,NA,4,7,"Peters, Kyle",Right,UCO_HUS,"Suchy, Cayden",Left,UCO_HUS,NA,2,Bottom,1,3,2,Fastball,BallCalled,Walk,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+87,NA,5,1,"Peters, Kyle",Right,UCO_HUS,"Biller, Sam",Left,UCO_HUS,NA,2,Bottom,1,0,0,Slider,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+88,NA,5,2,"Peters, Kyle",Right,UCO_HUS,"Biller, Sam",Left,UCO_HUS,NA,2,Bottom,1,1,0,Fastball,StrikeCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+89,NA,5,3,"Peters, Kyle",Right,UCO_HUS,"Biller, Sam",Left,UCO_HUS,NA,2,Bottom,1,1,1,Slider,FoulBallNotFieldable,Undefined,Undefined,Undefined,0,0,81.9,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+90,NA,5,4,"Peters, Kyle",Right,UCO_HUS,"Biller, Sam",Left,UCO_HUS,NA,2,Bottom,1,1,2,Fastball,StrikeSwinging,Strikeout,Undefined,Out,1,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+91,NA,6,1,"Peters, Kyle",Right,UCO_HUS,"Padilla, Bryan",Right,UCO_HUS,NA,2,Bottom,2,0,0,Curveball,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+92,NA,6,2,"Peters, Kyle",Right,UCO_HUS,"Padilla, Bryan",Right,UCO_HUS,NA,2,Bottom,2,1,0,Slider,InPlay,Undefined,FlyBall,Out,1,0,81.4,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+93,NA,1,1,"West, Charlie",Left,UCO_HUS,"Belisario, Anthony",Right,UCO_HUS,NA,3,Top,0,0,0,Fastball,StrikeCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+94,NA,1,2,"West, Charlie",Left,UCO_HUS,"Belisario, Anthony",Right,UCO_HUS,NA,3,Top,0,0,1,Changeup,StrikeSwinging,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+95,NA,1,3,"West, Charlie",Left,UCO_HUS,"Belisario, Anthony",Right,UCO_HUS,NA,3,Top,0,0,2,Changeup,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+96,NA,1,4,"West, Charlie",Left,UCO_HUS,"Belisario, Anthony",Right,UCO_HUS,NA,3,Top,0,1,2,Changeup,StrikeSwinging,Strikeout,Undefined,Out,1,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+97,NA,2,1,"West, Charlie",Left,UCO_HUS,"Shpur, Caleb",Right,UCO_HUS,NA,3,Top,1,0,0,Fastball,StrikeCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+98,NA,2,2,"West, Charlie",Left,UCO_HUS,"Shpur, Caleb",Right,UCO_HUS,NA,3,Top,1,0,1,Fastball,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+99,NA,2,3,"West, Charlie",Left,UCO_HUS,"Shpur, Caleb",Right,UCO_HUS,NA,3,Top,1,1,1,Curveball,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+100,NA,2,4,"West, Charlie",Left,UCO_HUS,"Shpur, Caleb",Right,UCO_HUS,NA,3,Top,1,2,1,Changeup,InPlay,Undefined,GroundBall,Out,1,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+101,NA,3,1,"West, Charlie",Left,UCO_HUS,"Root, Beau",Left,UCO_HUS,NA,3,Top,2,0,0,Changeup,StrikeCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+102,NA,3,2,"West, Charlie",Left,UCO_HUS,"Root, Beau",Left,UCO_HUS,NA,3,Top,2,0,1,Fastball,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+103,NA,3,3,"West, Charlie",Left,UCO_HUS,"Root, Beau",Left,UCO_HUS,NA,3,Top,2,1,1,Fastball,StrikeSwinging,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+104,NA,3,4,"West, Charlie",Left,UCO_HUS,"Root, Beau",Left,UCO_HUS,NA,3,Top,2,1,2,Fastball,StrikeSwinging,Strikeout,Undefined,Out,1,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+105,NA,1,1,"Conte, Giovanni",Right,UCO_HUS,"Minick, Tyler",Right,UCO_HUS,NA,3,Bottom,0,0,0,Fastball,FoulBallNotFieldable,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+106,NA,1,2,"Conte, Giovanni",Right,UCO_HUS,"Minick, Tyler",Right,UCO_HUS,NA,3,Bottom,0,0,1,Slider,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+107,NA,1,3,"Conte, Giovanni",Right,UCO_HUS,"Minick, Tyler",Right,UCO_HUS,NA,3,Bottom,0,1,1,Fastball,StrikeSwinging,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+108,NA,1,4,"Conte, Giovanni",Right,UCO_HUS,"Minick, Tyler",Right,UCO_HUS,NA,3,Bottom,0,1,2,Slider,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+109,NA,1,5,"Conte, Giovanni",Right,UCO_HUS,"Minick, Tyler",Right,UCO_HUS,NA,3,Bottom,0,2,2,Fastball,InPlay,Undefined,LineDrive,Double,0,0,100.6,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+110,NA,2,1,"Conte, Giovanni",Right,UCO_HUS,"Garbowski, Matt",Left,UCO_HUS,NA,3,Bottom,0,0,0,Fastball,StrikeCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+111,NA,2,2,"Conte, Giovanni",Right,UCO_HUS,"Garbowski, Matt",Left,UCO_HUS,NA,3,Bottom,0,0,1,Fastball,StrikeSwinging,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+112,NA,2,3,"Conte, Giovanni",Right,UCO_HUS,"Garbowski, Matt",Left,UCO_HUS,NA,3,Bottom,0,0,2,Fastball,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+113,NA,2,4,"Conte, Giovanni",Right,UCO_HUS,"Garbowski, Matt",Left,UCO_HUS,NA,3,Bottom,0,1,2,Slider,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+114,NA,2,5,"Conte, Giovanni",Right,UCO_HUS,"Garbowski, Matt",Left,UCO_HUS,NA,3,Bottom,0,2,2,Fastball,InPlay,Undefined,FlyBall,Sacrifice,1,0,91,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+115,NA,3,1,"Conte, Giovanni",Right,UCO_HUS,"Kron, Drew",Right,UCO_HUS,NA,3,Bottom,1,0,0,Fastball,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+116,NA,3,2,"Conte, Giovanni",Right,UCO_HUS,"Kron, Drew",Right,UCO_HUS,NA,3,Bottom,1,1,0,Slider,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+117,NA,3,3,"Conte, Giovanni",Right,UCO_HUS,"Kron, Drew",Right,UCO_HUS,NA,3,Bottom,1,2,0,Slider,FoulBallNotFieldable,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+118,NA,3,4,"Conte, Giovanni",Right,UCO_HUS,"Kron, Drew",Right,UCO_HUS,NA,3,Bottom,1,2,1,Fastball,FoulBallNotFieldable,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+119,NA,3,5,"Conte, Giovanni",Right,UCO_HUS,"Kron, Drew",Right,UCO_HUS,NA,3,Bottom,1,2,2,Fastball,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+120,NA,3,6,"Conte, Giovanni",Right,UCO_HUS,"Kron, Drew",Right,UCO_HUS,NA,3,Bottom,1,3,2,Fastball,FoulBallNotFieldable,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+121,NA,3,7,"Conte, Giovanni",Right,UCO_HUS,"Kron, Drew",Right,UCO_HUS,NA,3,Bottom,1,3,2,Slider,BallCalled,Walk,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+122,NA,4,1,"Conte, Giovanni",Right,UCO_HUS,"LaRose, Jack",Left,UCO_HUS,NA,3,Bottom,1,0,0,Fastball,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+123,NA,4,2,"Conte, Giovanni",Right,UCO_HUS,"LaRose, Jack",Left,UCO_HUS,NA,3,Bottom,1,1,0,Fastball,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+124,NA,4,3,"Conte, Giovanni",Right,UCO_HUS,"LaRose, Jack",Left,UCO_HUS,NA,3,Bottom,1,2,0,Fastball,InPlay,Undefined,LineDrive,Sacrifice,1,1,88.6,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+125,NA,5,1,"Conte, Giovanni",Right,UCO_HUS,"Suchy, Cayden",Left,UCO_HUS,NA,3,Bottom,2,0,0,Fastball,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+126,NA,5,2,"Conte, Giovanni",Right,UCO_HUS,"Suchy, Cayden",Left,UCO_HUS,NA,3,Bottom,2,1,0,Fastball,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+127,NA,5,3,"Conte, Giovanni",Right,UCO_HUS,"Suchy, Cayden",Left,UCO_HUS,NA,3,Bottom,2,2,0,Fastball,StrikeCalled,Undefined,Undefined,StolenBase,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+128,NA,5,4,"Conte, Giovanni",Right,UCO_HUS,"Suchy, Cayden",Left,UCO_HUS,NA,3,Bottom,2,2,1,Fastball,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+129,NA,5,5,"Conte, Giovanni",Right,UCO_HUS,"Suchy, Cayden",Left,UCO_HUS,NA,3,Bottom,2,3,1,Fastball,FoulBallNotFieldable,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+130,NA,5,6,"Conte, Giovanni",Right,UCO_HUS,"Suchy, Cayden",Left,UCO_HUS,NA,3,Bottom,2,3,2,Fastball,BallCalled,Walk,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+131,NA,6,1,"Conte, Giovanni",Right,UCO_HUS,"Biller, Sam",Left,UCO_HUS,NA,3,Bottom,2,0,0,Fastball,FoulBallNotFieldable,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+132,NA,6,2,"Conte, Giovanni",Right,UCO_HUS,"Biller, Sam",Left,UCO_HUS,NA,3,Bottom,2,0,1,Fastball,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+133,NA,6,3,"Conte, Giovanni",Right,UCO_HUS,"Biller, Sam",Left,UCO_HUS,NA,3,Bottom,2,1,1,Fastball,StrikeCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+134,NA,6,4,"Conte, Giovanni",Right,UCO_HUS,"Biller, Sam",Left,UCO_HUS,NA,3,Bottom,2,1,2,Fastball,FoulBallNotFieldable,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+135,NA,6,5,"Conte, Giovanni",Right,UCO_HUS,"Biller, Sam",Left,UCO_HUS,NA,3,Bottom,2,1,2,Slider,FoulBallNotFieldable,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+136,NA,6,6,"Conte, Giovanni",Right,UCO_HUS,"Biller, Sam",Left,UCO_HUS,NA,3,Bottom,2,1,2,Fastball,InPlay,Undefined,GroundBall,Out,1,0,60.9,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+137,NA,1,1,"Carrea, Joe",Right,UCO_HUS,"MacArthur, Grant",Right,UCO_HUS,NA,4,Top,0,0,0,Fastball,StrikeCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+138,NA,1,2,"Carrea, Joe",Right,UCO_HUS,"MacArthur, Grant",Right,UCO_HUS,NA,4,Top,0,0,1,Fastball,FoulBallNotFieldable,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+139,NA,1,3,"Carrea, Joe",Right,UCO_HUS,"MacArthur, Grant",Right,UCO_HUS,NA,4,Top,0,0,2,Slider,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+140,NA,1,4,"Carrea, Joe",Right,UCO_HUS,"MacArthur, Grant",Right,UCO_HUS,NA,4,Top,0,1,2,Slider,StrikeSwinging,Strikeout,Undefined,Out,1,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+141,NA,2,1,"Carrea, Joe",Right,UCO_HUS,"Dalena, Maddix",Left,UCO_HUS,NA,4,Top,1,0,0,Fastball,FoulBallNotFieldable,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+142,NA,2,2,"Carrea, Joe",Right,UCO_HUS,"Dalena, Maddix",Left,UCO_HUS,NA,4,Top,1,0,1,Changeup,StrikeSwinging,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+143,NA,2,3,"Carrea, Joe",Right,UCO_HUS,"Dalena, Maddix",Left,UCO_HUS,NA,4,Top,1,0,2,Fastball,StrikeSwinging,Strikeout,Undefined,Out,1,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+144,NA,3,1,"Carrea, Joe",Right,UCO_HUS,"Rispoli, Robert",Right,UCO_HUS,NA,4,Top,2,0,0,Fastball,StrikeCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+145,NA,3,2,"Carrea, Joe",Right,UCO_HUS,"Rispoli, Robert",Right,UCO_HUS,NA,4,Top,2,0,1,Fastball,FoulBallNotFieldable,Undefined,Undefined,Undefined,0,0,84.9,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+146,NA,3,3,"Carrea, Joe",Right,UCO_HUS,"Rispoli, Robert",Right,UCO_HUS,NA,4,Top,2,0,2,Slider,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+147,NA,3,4,"Carrea, Joe",Right,UCO_HUS,"Rispoli, Robert",Right,UCO_HUS,NA,4,Top,2,1,2,Slider,StrikeSwinging,Strikeout,Undefined,Out,1,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+148,NA,1,1,"Conte, Giovanni",Right,UCO_HUS,"Padilla, Bryan",Right,UCO_HUS,NA,4,Bottom,0,0,0,Fastball,StrikeCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+149,NA,1,2,"Conte, Giovanni",Right,UCO_HUS,"Padilla, Bryan",Right,UCO_HUS,NA,4,Bottom,0,0,1,Slider,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+150,NA,1,3,"Conte, Giovanni",Right,UCO_HUS,"Padilla, Bryan",Right,UCO_HUS,NA,4,Bottom,0,1,1,Fastball,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+151,NA,1,4,"Conte, Giovanni",Right,UCO_HUS,"Padilla, Bryan",Right,UCO_HUS,NA,4,Bottom,0,2,1,Fastball,StrikeSwinging,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+152,NA,1,5,"Conte, Giovanni",Right,UCO_HUS,"Padilla, Bryan",Right,UCO_HUS,NA,4,Bottom,0,2,2,Slider,InPlay,Undefined,FlyBall,Out,1,0,81.1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+153,NA,2,1,"Conte, Giovanni",Right,UCO_HUS,"Garbowski, Matt",Left,UCO_HUS,NA,4,Bottom,1,0,0,Slider,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+154,NA,2,2,"Conte, Giovanni",Right,UCO_HUS,"Garbowski, Matt",Left,UCO_HUS,NA,4,Bottom,1,1,0,Fastball,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+155,NA,2,3,"Conte, Giovanni",Right,UCO_HUS,"Garbowski, Matt",Left,UCO_HUS,NA,4,Bottom,1,2,0,Fastball,StrikeCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+156,NA,2,4,"Conte, Giovanni",Right,UCO_HUS,"Garbowski, Matt",Left,UCO_HUS,NA,4,Bottom,1,2,1,Fastball,InPlay,Undefined,GroundBall,Out,1,0,58.8,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+157,NA,3,1,"Conte, Giovanni",Right,UCO_HUS,"Kron, Drew",Right,UCO_HUS,NA,4,Bottom,2,0,0,Slider,StrikeSwinging,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+158,NA,3,2,"Conte, Giovanni",Right,UCO_HUS,"Kron, Drew",Right,UCO_HUS,NA,4,Bottom,2,0,1,Slider,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+159,NA,3,3,"Conte, Giovanni",Right,UCO_HUS,"Kron, Drew",Right,UCO_HUS,NA,4,Bottom,2,1,1,Slider,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+160,NA,3,4,"Conte, Giovanni",Right,UCO_HUS,"Kron, Drew",Right,UCO_HUS,NA,4,Bottom,2,2,1,Fastball,FoulBallNotFieldable,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+161,NA,3,5,"Conte, Giovanni",Right,UCO_HUS,"Kron, Drew",Right,UCO_HUS,NA,4,Bottom,2,2,2,Fastball,StrikeCalled,Strikeout,Undefined,Out,1,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+162,NA,1,1,"Mayer, Cameron",Right,UCO_HUS,"Tirado, Gabriel",Left,UCO_HUS,NA,5,Top,0,0,0,Fastball,FoulBallNotFieldable,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+163,NA,1,2,"Mayer, Cameron",Right,UCO_HUS,"Tirado, Gabriel",Left,UCO_HUS,NA,5,Top,0,0,1,Fastball,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+164,NA,1,3,"Mayer, Cameron",Right,UCO_HUS,"Tirado, Gabriel",Left,UCO_HUS,NA,5,Top,0,1,1,Fastball,InPlay,Undefined,GroundBall,Out,1,0,65.9,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+165,NA,2,1,"Mayer, Cameron",Right,UCO_HUS,"Groen, Carter",Right,UCO_HUS,NA,5,Top,1,0,0,Slider,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+166,NA,2,2,"Mayer, Cameron",Right,UCO_HUS,"Groen, Carter",Right,UCO_HUS,NA,5,Top,1,1,0,Slider,FoulBallNotFieldable,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+167,NA,2,3,"Mayer, Cameron",Right,UCO_HUS,"Groen, Carter",Right,UCO_HUS,NA,5,Top,1,1,1,Cutter,StrikeSwinging,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+168,NA,2,4,"Mayer, Cameron",Right,UCO_HUS,"Groen, Carter",Right,UCO_HUS,NA,5,Top,1,1,2,Cutter,StrikeSwinging,Strikeout,Undefined,Out,1,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+169,NA,3,1,"Mayer, Cameron",Right,UCO_HUS,"Lane, Connor",Right,UCO_HUS,NA,5,Top,2,0,0,Fastball,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+170,NA,3,2,"Mayer, Cameron",Right,UCO_HUS,"Lane, Connor",Right,UCO_HUS,NA,5,Top,2,1,0,Fastball,InPlay,Undefined,LineDrive,Double,0,0,101.4,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+171,NA,4,1,"Mayer, Cameron",Right,UCO_HUS,"Belisario, Anthony",Right,UCO_HUS,NA,5,Top,2,0,0,Slider,StrikeCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+172,NA,4,2,"Mayer, Cameron",Right,UCO_HUS,"Belisario, Anthony",Right,UCO_HUS,NA,5,Top,2,0,1,Cutter,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+173,NA,4,3,"Mayer, Cameron",Right,UCO_HUS,"Belisario, Anthony",Right,UCO_HUS,NA,5,Top,2,1,1,Slider,BallCalled,Undefined,Undefined,Undefined,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+174,NA,4,4,"Mayer, Cameron",Right,UCO_HUS,"Belisario, Anthony",Right,UCO_HUS,NA,5,Top,2,2,1,Cutter,FoulBallNotFieldable,Undefined,Undefined,Undefined,0,0,87.1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+175,NA,4,5,"Mayer, Cameron",Right,UCO_HUS,"Belisario, Anthony",Right,UCO_HUS,NA,5,Top,2,2,2,Fastball,StrikeSwinging,Strikeout,Undefined,Out,1,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,,,,,,,NA,NA,,NA,NA,NA,,,,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
