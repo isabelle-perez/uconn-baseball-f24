@@ -54,6 +54,14 @@ data['PitchCall'] = data['PitchCall'].replace('Strikeout', 'StrikeSwinging')
 ```
 
 ```{python}
+# TODO: replace undefined
+data.head()
+data.columns
+```
+
+```{python}
+# TODO: set minimum batters faced
+# graph whiff percentages for each pitcher
 total_pitches = data.groupby('Pitcher').size()
 
 whiffs = data[data['PitchCall'] == 'StrikeSwinging'].groupby('Pitcher').size()
@@ -68,4 +76,5 @@ sns.barplot(x = 'Pitcher', y = 'Whiff Rate', data = prop_whiffs,
 
 plt.xticks(rotation = 45)
 plt.tight_layout()
+plt.show()
 ```
