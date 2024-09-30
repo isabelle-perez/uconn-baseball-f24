@@ -1,0 +1,14 @@
+```{python}
+import pandas as pd
+```
+
+```{python}
+pitcher_data = pd.read_csv('../data/synergy/pitcher_synergy_data.csv')
+```
+
+```{python}
+pitcher_data = pitcher_data.drop(columns = ['Unnamed: 3'])
+pitcher_data = pitcher_data.drop(0, axis = 0)
+
+pitcher_data.head()
+```
