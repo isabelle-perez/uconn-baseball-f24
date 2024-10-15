@@ -1,0 +1,19 @@
+```{python}
+import pandas as pd 
+import numpy as np
+```
+
+```{python}
+data
+```
+
+```{python}
+# needed columns :
+
+# on 1b (binary)
+# on 2b (binary)
+# on 3b (binary)
+# outs for at bat (integer)
+# pre at bat runs (integer)
+# post at bat runs (integer)
+```
