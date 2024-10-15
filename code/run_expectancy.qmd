@@ -1,0 +1,40 @@
+```{python}
+import pandas as pd 
+import numpy as np
+```
+
+```{python}
+data = pd.read_csv('../data/synergy/run_expectancy.csv')
+```
+
+```{python}
+def summarize_bases(row):
+    '''returns base number if player is on said base, else '''
+    return (f"{'1' if row['on_1b'] else '_'}"
+            f"{'2' if row['on_2b'] else '_'}"
+            f"{'3' if row['on_3b'] else '_'}")
+
+# summarize data for runners on base 
+data['base_state'] = data.apply(summarize_bases, axis = 1)
+
+# group by combinations of outs and runners on base
+run_expectancy = data.groupby(['outs', 'base_state'])
+
+# return to data frame structure
+run_expectancy = run_expectancy['runs_scored'].mean().reset_index()
+```
+
+```{python}
+# pivot such that outs are columns
+run_expectancy_pivot = run_expectancy.pivot_table(
+    index = 'base_state', 
+    columns = 'outs', 
+    values = 'runs_scored', 
+    aggfunc = 'mean'
+)
+
+# format numbers to three decimal places
+pd.options.display.float_format = '{:.3f}'.format
+
+run_expectancy_pivot
+```
