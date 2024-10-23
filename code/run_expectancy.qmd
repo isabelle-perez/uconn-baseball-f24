@@ -1,3 +1,5 @@
+# Import Data & Necessary Packages
+
 ```{python}
 import pandas as pd 
 import numpy as np
@@ -5,7 +7,11 @@ import numpy as np
 
 ```{python}
 data = pd.read_csv('../data/synergy/run_expectancy.csv')
+hr_data = pd.read_csv('../data/synergy/hr_expectancy.csv')
+single_data = pd.read_csv('../data/synergy/1b_expectancy.csv')
 ```
+
+# Necessary Functions
 
 ```{python}
 def summarize_bases(row):
@@ -14,6 +20,31 @@ def summarize_bases(row):
             f"{'2' if row['on_2b'] else '_'}"
             f"{'3' if row['on_3b'] else '_'}")
 
+def get_table(data):
+    '''return expectancy table for specific data frame'''
+    exp_table = data.groupby(['outs', 'base_state'])
+    exp_table = exp_table['runs'].mean().reset_index()
+    exp_table = exp_table.pivot_table(
+                    index = 'base_state', 
+                    columns = 'outs', 
+                    values = 'runs', 
+                    aggfunc = 'mean')
+
+    return exp_table.fillna(0)
+
+def start_re(table, data, run_exp):
+    '''return starting run expectancy for event'''
+    event_re = table.multiply(run_exp).fillna(0)
+    event_re = event_re.values.sum() / len(data)
+
+    return event_re.round(3)
+```
+
+# Run Expectancies
+
+## Overall Run Expectancy
+
+```{python}
 # summarize data for runners on base 
 data['base_state'] = data.apply(summarize_bases, axis = 1)
 
@@ -22,16 +53,13 @@ run_expectancy = data.groupby(['outs', 'base_state'])
 
 # return to data frame structure
 run_expectancy = run_expectancy['runs_scored'].mean().reset_index()
-```
 
-```{python}
 # pivot such that outs are columns
 run_exp = run_expectancy.pivot_table(
-    index = 'base_state', 
-    columns = 'outs', 
-    values = 'runs_scored', 
-    aggfunc = 'mean'
-)
+            index = 'base_state', 
+            columns = 'outs', 
+            values = 'runs_scored', 
+            aggfunc = 'mean')
 
 # format numbers to three decimal places
 pd.options.display.float_format = '{:.3f}'.format
@@ -39,22 +67,38 @@ pd.options.display.float_format = '{:.3f}'.format
 run_exp
 ```
 
+# Homerun
+
 ```{python}
-# initalize walk expectancy
-walk_re = 0
+# average run expectancy for homeruns
+hr_avg = sum(hr_data['runs']) / len(hr_data)
 
-# sum all differences in run expectancy caused by a walk
-for i in range(3):
-    walk_re += ((run_exp[i]['1__'] - run_exp[i]['___']) + 
-                (run_exp[i]['12_'] - run_exp[i]['1__']) +
-                (run_exp[i]['12_'] - run_exp[i]['_2_']) +
-                (run_exp[i]['1_3'] - run_exp[i]['__3']) + 
-                (run_exp[i]['123'] - run_exp[i]['12_']) +
-                (run_exp[i]['123'] - run_exp[i]['1_3']) + 
-                (run_exp[i]['123'] - run_exp[i]['_23']))
+# get expectancy table
+hr_exp_table = get_table(hr_data)
 
-# divide by number of walks
-walk_re = walk_re / 119
+# get starting home run expectancy
+hr_start_re = start_re(hr_exp_table, hr_data, run_exp)
 
-walk_re
+# final hr run expectancy
+hr_re = hr_avg - hr_start_re
+
+hr_re
+```
+
+## Single
+
+```{python}
+# average run expectancy for homeruns
+single_avg = sum(single_data['runs']) / len(single_data)
+
+# get expectancy table
+single_exp_table = get_table(single_data)
+
+# get starting home run expectancy
+single_start_re = start_re(single_exp_table, single_data, run_exp)
+
+# final hr run expectancy
+single_re = single_avg - single_start_re
+
+single_re
 ```
