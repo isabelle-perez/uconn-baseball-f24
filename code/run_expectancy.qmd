@@ -9,6 +9,7 @@ import numpy as np
 data = pd.read_csv('../data/synergy/run_expectancy.csv')
 hr_data = pd.read_csv('../data/synergy/hr_expectancy.csv')
 single_data = pd.read_csv('../data/synergy/1b_expectancy.csv')
+double_data = pd.read_csv('../data/synergy/2b_expectancy.csv')
 ```
 
 # Necessary Functions
@@ -101,4 +102,22 @@ single_start_re = start_re(single_exp_table, single_data, run_exp)
 single_re = single_avg - single_start_re
 
 single_re
+```
+
+## Double
+
+```{python}
+# average run expectancy for homeruns
+double_avg = sum(double_data['runs']) / len(double_data)
+
+# get expectancy table
+double_exp_table = get_table(double_data)
+
+# get starting home run expectancy
+double_start_re = start_re(double_exp_table, double_data, run_exp)
+
+# final hr run expectancy
+double_re = double_avg - double_start_re
+
+double_re
 ```
