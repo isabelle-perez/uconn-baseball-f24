@@ -26,7 +26,7 @@ run_expectancy = run_expectancy['runs_scored'].mean().reset_index()
 
 ```{python}
 # pivot such that outs are columns
-run_expectancy_pivot = run_expectancy.pivot_table(
+run_exp = run_expectancy.pivot_table(
     index = 'base_state', 
     columns = 'outs', 
     values = 'runs_scored', 
@@ -36,5 +36,25 @@ run_expectancy_pivot = run_expectancy.pivot_table(
 # format numbers to three decimal places
 pd.options.display.float_format = '{:.3f}'.format
 
-run_expectancy_pivot
+run_exp
+```
+
+```{python}
+# initalize walk expectancy
+walk_re = 0
+
+# sum all differences in run expectancy caused by a walk
+for i in range(3):
+    walk_re += ((run_exp[i]['1__'] - run_exp[i]['___']) + 
+                (run_exp[i]['12_'] - run_exp[i]['1__']) +
+                (run_exp[i]['12_'] - run_exp[i]['_2_']) +
+                (run_exp[i]['1_3'] - run_exp[i]['__3']) + 
+                (run_exp[i]['123'] - run_exp[i]['12_']) +
+                (run_exp[i]['123'] - run_exp[i]['1_3']) + 
+                (run_exp[i]['123'] - run_exp[i]['_23']))
+
+# divide by number of walks
+walk_re = walk_re / 119
+
+walk_re
 ```
