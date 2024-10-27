@@ -6,10 +6,16 @@ import numpy as np
 ```
 
 ```{python}
+# read in data
+
 data = pd.read_csv('../data/synergy/run_expectancy.csv')
 hr_data = pd.read_csv('../data/synergy/hr_expectancy.csv')
 single_data = pd.read_csv('../data/synergy/1b_expectancy.csv')
 double_data = pd.read_csv('../data/synergy/2b_expectancy.csv')
+triple_data = pd.read_csv('../data/synergy/3b_expectancy.csv')
+hbp_data = pd.read_csv('../data/synergy/hbp_expectancy.csv')
+bb_data = pd.read_csv('../data/synergy/bb_expectancy.csv')
+fall_stats = pd.read_csv('../data/synergy/Fall Stats(Sheet1).csv')
 ```
 
 # Necessary Functions
@@ -120,4 +126,85 @@ double_start_re = start_re(double_exp_table, double_data, run_exp)
 double_re = double_avg - double_start_re
 
 double_re
+```
+
+## Triple
+
+```{python}
+# average run expectancy for homeruns
+triple_avg = sum(triple_data['runs']) / len(triple_data)
+
+# get expectancy table
+triple_exp_table = get_table(triple_data)
+
+# get starting home run expectancy
+triple_start_re = start_re(triple_exp_table, triple_data, run_exp)
+
+# final hr run expectancy
+triple_re = triple_avg - triple_start_re
+
+triple_re
+```
+
+## Hit by pitch
+
+```{python}
+# average run expectancy for homeruns
+hbp_avg = sum(hbp_data['runs']) / len(hbp_data)
+
+# get expectancy table
+hbp_exp_table = get_table(hbp_data)
+
+# get starting home run expectancy
+hbp_start_re = start_re(hbp_exp_table, hbp_data, run_exp)
+
+# final hr run expectancy
+hbp_re = hbp_avg - hbp_start_re
+
+hbp_re
+```
+
+## Walk
+
+```{python}
+# average run expectancy for homeruns
+bb_avg = sum(bb_data['runs']) / len(bb_data)
+
+# get expectancy table
+bb_exp_table = get_table(bb_data)
+
+# get starting home run expectancy
+bb_start_re = start_re(bb_exp_table, bb_data, run_exp)
+
+# final hr run expectancy
+bb_re = bb_avg - bb_start_re
+
+bb_re
+```
+
+# Calculate WRC+
+
+```{python}
+def woba(player):
+    '''return woba for given player'''
+    numerator = ((0.0138 * player['BB']) + (0.0217 * player['HBP'])
+                    + (0.2936 * player['X1B']) + (0.3472 * player['X2B'])
+                    + (0.4023 * player['X1B']) + (1.4541 * player['HR']))
+    denominator = player['AB'] + player['BB'] + player['SF'] + player['HBP']
+    
+    return numerator / denominator
+
+def wrc(player):
+    '''return wrc for given player'''
+    league_data = pd.DataFrame({'BB': 1037, 'HBP': 334, 'X1B': 1327, 
+                                    'X2B': 397, 'X3B': 53, 'HR': 253,
+                                    'AB': 7270, 'SF': 89})
+    
+    player_woba = woba(player)
+    league_woba = woba(league_data)
+
+    return ((player_woba - league_woba) + (1462 / 8836)) * 8836
+
+for index, row in fall_stats.iterrows():
+    print(wrc(fall_stats.iloc[index]))
 ```
