@@ -16,6 +16,7 @@ triple_data = pd.read_csv('../data/synergy/3b_expectancy.csv')
 hbp_data = pd.read_csv('../data/synergy/hbp_expectancy.csv')
 bb_data = pd.read_csv('../data/synergy/bb_expectancy.csv')
 fall_stats = pd.read_csv('../data/synergy/Fall Stats(Sheet1).csv')
+bigeast_stats = pd.read_csv('../data/synergy/bigeast_stats(Sheet1).csv')
 ```
 
 # Necessary Functions
@@ -185,6 +186,11 @@ bb_re
 # Calculate WRC+
 
 ```{python}
+# big east 2024 stats
+league_data = pd.DataFrame({'BB': [1037], 'HBP': [334], 'X1B': [1327], 
+                                    'X2B': [397], 'X3B': [53], 'HR': [253],
+                                    'AB': [7270], 'SF': [89]})
+
 def woba(player):
     '''return woba for given player'''
     numerator = ((0.0138 * player['BB']) + (0.0217 * player['HBP'])
@@ -192,19 +198,93 @@ def woba(player):
                     + (0.4023 * player['X1B']) + (1.4541 * player['HR']))
     denominator = player['AB'] + player['BB'] + player['SF'] + player['HBP']
     
-    return numerator / denominator
+    woba = numerator / denominator
 
-def wrc(player):
-    '''return wrc for given player'''
-    league_data = pd.DataFrame({'BB': 1037, 'HBP': 334, 'X1B': 1327, 
-                                    'X2B': 397, 'X3B': 53, 'HR': 253,
-                                    'AB': 7270, 'SF': 89})
-    
+    return woba
+
+def wraa(player):
+    '''return wraa for given player'''
     player_woba = woba(player)
     league_woba = woba(league_data)
 
-    return ((player_woba - league_woba) + (1462 / 8836)) * 8836
+    wraa = (player_woba - league_woba) * player['PA']
+
+    return wraa
+
+def wrc(player):
+    '''return wrc for given player'''
+    player_woba = woba(player)
+    league_woba = woba(league_data)
+
+    wrc = ((player_woba - league_woba) + (1462 / 8836)) * 8836
+
+    return wrc
+
+bigeast_wrc = 0
+
+for index, row in bigeast_stats.iterrows():
+    cur_player = bigeast_stats.iloc[index]
+    bigeast_wrc += wrc(cur_player)
+
+def wrc_plus(player): 
+    '''return wrc+ for given player'''
+    numerator = ((wraa(player) / player['PA']) + (1462 / 8836)
+                    + (1462 / 8836) - (100 * (1462 / 8836)))
+    denominator = bigeast_wrc / 8836
+
+    return numerator / denominator
+```
+
+# Fall 2024 Stats
+
+```{python}
+wrc_dict = {}
 
 for index, row in fall_stats.iterrows():
-    print(wrc(fall_stats.iloc[index]))
+    cur_player = fall_stats.iloc[index]
+    wrc_dict[str(cur_player['First'] + ' ' + cur_player['Last'])] = wrc_plus(cur_player)
+
+# convert to data frame and rename columns
+wrc_data = pd.DataFrame(wrc_dict).T.reset_index()
+wrc_data = wrc_data.rename(columns = {'index': 'name', 0: 'wRC+'})
+
+# sort by best to worst wRC+
+wrc_data.sort_values(by = 'wRC+', ascending = False, inplace = True)
+
+wrc_data
+```
+
+# Spring 2024 Stats
+
+```{python}
+first = ['Bryan', 'Caleb', 'Drew', 'Maddix', 'Tyler', 'Matt', 'Ryan']
+last = ['Padilla', 'Shpur', 'Kron', 'Dalena', 'Minick', 'Garbowski', 'Daniels']
+bb = [28, 23, 3, 27, 4, 24, 10]
+hbp = [3, 11, 1, 8, 4, 2, 1]
+ab = [195, 194, 40, 288, 139, 154, 57]
+x1b = [33, 34, 5, 21, 20, 33, 6]
+x2b = [14, 14, 2, 12, 7, 6, 2]
+x3b = [1, 0, 0, 0, 1, 0, 0]
+hr = [6, 3, 0, 13, 9, 4, 3]
+sf = [2, 3, 0, 1, 1, 1, 0] 
+pa = [232, 233, 45, 225, 149, 185, 71]
+
+spring_stats = pd.DataFrame({'First': first, 'Last': last, 'BB': bb,
+                                'HBP': hbp, 'AB': ab, 'X1B': x1b, 'X2B': x2b,
+                                'X3B': x3b, 'HR': hr, 'SF': sf, 'PA': pa})
+
+wrc_dict_2 = {}
+
+for index, row in spring_stats.iterrows():
+    cur_player = spring_stats.iloc[index]
+    wrc_dict_2[str(cur_player['First'] + ' ' + cur_player['Last'])] = wrc_plus(cur_player)
+
+# convert to data frame and rename columns
+wrc_data_2 = pd.DataFrame(wrc_dict_2).T.reset_index()
+wrc_data_2 = wrc_data_2.rename(columns = {'index': 'name', 0: 'wRC+'})
+
+# sort by best to worst wRC+
+wrc_data_2.sort_values(by = 'wRC+', ascending = False, inplace = True)
+
+wrc_data_2
 ```
