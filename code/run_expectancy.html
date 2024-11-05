@@ -80,45 +80,96 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <main class="content" id="quarto-document-content">
 
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Import Data &amp; Necessary Packages</h1>
+</div>
 
 
 
-<div id="9795f2fe" class="cell" data-execution_count="1">
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<div id="494a7655" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd </span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="b7c7719f" class="cell" data-execution_count="2">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> pd.read_csv(<span class="st">'../data/synergy/run_expectancy.csv'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="1d45374a" class="cell" data-execution_count="2">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># read in data</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> pd.read_csv(<span class="st">'../data/synergy/run_expectancy.csv'</span>)</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>hr_data <span class="op">=</span> pd.read_csv(<span class="st">'../data/synergy/hr_expectancy.csv'</span>)</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>single_data <span class="op">=</span> pd.read_csv(<span class="st">'../data/synergy/1b_expectancy.csv'</span>)</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>double_data <span class="op">=</span> pd.read_csv(<span class="st">'../data/synergy/2b_expectancy.csv'</span>)</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>triple_data <span class="op">=</span> pd.read_csv(<span class="st">'../data/synergy/3b_expectancy.csv'</span>)</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>hbp_data <span class="op">=</span> pd.read_csv(<span class="st">'../data/synergy/hbp_expectancy.csv'</span>)</span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>bb_data <span class="op">=</span> pd.read_csv(<span class="st">'../data/synergy/bb_expectancy.csv'</span>)</span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>fall_stats <span class="op">=</span> pd.read_csv(<span class="st">'../data/synergy/Fall Stats(Sheet1).csv'</span>)</span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>bigeast_stats <span class="op">=</span> pd.read_csv(<span class="st">'../data/synergy/bigeast_stats(Sheet1).csv'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="b7fd544c" class="cell" data-execution_count="3">
+<section id="necessary-functions" class="level1">
+<h1>Necessary Functions</h1>
+<div id="9aa68337" class="cell" data-execution_count="3">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> summarize_bases(row):</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>    <span class="co">'''returns base number if player is on said base, else '''</span></span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> (<span class="ss">f"</span><span class="sc">{</span><span class="st">'1'</span> <span class="cf">if</span> row[<span class="st">'on_1b'</span>] <span class="cf">else</span> <span class="st">'_'</span><span class="sc">}</span><span class="ss">"</span></span>
 <span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>            <span class="ss">f"</span><span class="sc">{</span><span class="st">'2'</span> <span class="cf">if</span> row[<span class="st">'on_2b'</span>] <span class="cf">else</span> <span class="st">'_'</span><span class="sc">}</span><span class="ss">"</span></span>
 <span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>            <span class="ss">f"</span><span class="sc">{</span><span class="st">'3'</span> <span class="cf">if</span> row[<span class="st">'on_3b'</span>] <span class="cf">else</span> <span class="st">'_'</span><span class="sc">}</span><span class="ss">"</span>)</span>
 <span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="co"># summarize data for runners on base </span></span>
-<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>data[<span class="st">'base_state'</span>] <span class="op">=</span> data.<span class="bu">apply</span>(summarize_bases, axis <span class="op">=</span> <span class="dv">1</span>)</span>
-<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a><span class="co"># group by combinations of outs and runners on base</span></span>
-<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>run_expectancy <span class="op">=</span> data.groupby([<span class="st">'outs'</span>, <span class="st">'base_state'</span>])</span>
-<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a><span class="co"># return to data frame structure</span></span>
-<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>run_expectancy <span class="op">=</span> run_expectancy[<span class="st">'runs_scored'</span>].mean().reset_index()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> get_table(data):</span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>    <span class="co">'''return expectancy table for specific data frame'''</span></span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>    exp_table <span class="op">=</span> data.groupby([<span class="st">'outs'</span>, <span class="st">'base_state'</span>])</span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>    exp_table <span class="op">=</span> exp_table[<span class="st">'runs'</span>].mean().reset_index()</span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>    exp_table <span class="op">=</span> exp_table.pivot_table(</span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>                    index <span class="op">=</span> <span class="st">'base_state'</span>, </span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>                    columns <span class="op">=</span> <span class="st">'outs'</span>, </span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>                    values <span class="op">=</span> <span class="st">'runs'</span>, </span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a>                    aggfunc <span class="op">=</span> <span class="st">'mean'</span>)</span>
+<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> exp_table.fillna(<span class="dv">0</span>)</span>
+<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> start_re(table, data, run_exp):</span>
+<span id="cb3-20"><a href="#cb3-20" aria-hidden="true" tabindex="-1"></a>    <span class="co">'''return starting run expectancy for event'''</span></span>
+<span id="cb3-21"><a href="#cb3-21" aria-hidden="true" tabindex="-1"></a>    event_re <span class="op">=</span> table.multiply(run_exp).fillna(<span class="dv">0</span>)</span>
+<span id="cb3-22"><a href="#cb3-22" aria-hidden="true" tabindex="-1"></a>    event_re <span class="op">=</span> event_re.values.<span class="bu">sum</span>() <span class="op">/</span> <span class="bu">len</span>(data)</span>
+<span id="cb3-23"><a href="#cb3-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-24"><a href="#cb3-24" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> event_re.<span class="bu">round</span>(<span class="dv">3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="05020e6f" class="cell" data-execution_count="4">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># pivot such that outs are columns</span></span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>run_expectancy_pivot <span class="op">=</span> run_expectancy.pivot_table(</span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>    index <span class="op">=</span> <span class="st">'base_state'</span>, </span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>    columns <span class="op">=</span> <span class="st">'outs'</span>, </span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>    values <span class="op">=</span> <span class="st">'runs_scored'</span>, </span>
-<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>    aggfunc <span class="op">=</span> <span class="st">'mean'</span></span>
-<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a><span class="co"># format numbers to three decimal places</span></span>
-<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>pd.options.display.float_format <span class="op">=</span> <span class="st">'</span><span class="sc">{:.3f}</span><span class="st">'</span>.<span class="bu">format</span></span>
-<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>run_expectancy_pivot</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="run-expectancies" class="level1">
+<h1>Run Expectancies</h1>
+<section id="overall-run-expectancy" class="level2">
+<h2 class="anchored" data-anchor-id="overall-run-expectancy">Overall Run Expectancy</h2>
+<div id="9734e8d8" class="cell" data-execution_count="4">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># summarize data for runners on base </span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>data[<span class="st">'base_state'</span>] <span class="op">=</span> data.<span class="bu">apply</span>(summarize_bases, axis <span class="op">=</span> <span class="dv">1</span>)</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="co"># group by combinations of outs and runners on base</span></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>run_expectancy <span class="op">=</span> data.groupby([<span class="st">'outs'</span>, <span class="st">'base_state'</span>])</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a><span class="co"># return to data frame structure</span></span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>run_expectancy <span class="op">=</span> run_expectancy[<span class="st">'runs_scored'</span>].mean().reset_index()</span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a><span class="co"># pivot such that outs are columns</span></span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>run_exp <span class="op">=</span> run_expectancy.pivot_table(</span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>            index <span class="op">=</span> <span class="st">'base_state'</span>, </span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>            columns <span class="op">=</span> <span class="st">'outs'</span>, </span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a>            values <span class="op">=</span> <span class="st">'runs_scored'</span>, </span>
+<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a>            aggfunc <span class="op">=</span> <span class="st">'mean'</span>)</span>
+<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a><span class="co"># format numbers to three decimal places</span></span>
+<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a>pd.options.display.float_format <span class="op">=</span> <span class="st">'</span><span class="sc">{:.3f}</span><span class="st">'</span>.<span class="bu">format</span></span>
+<span id="cb4-19"><a href="#cb4-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-20"><a href="#cb4-20" aria-hidden="true" tabindex="-1"></a>run_exp</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="4">
 <div>
 
@@ -141,51 +192,51 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <tbody>
 <tr class="odd">
 <td data-quarto-table-cell-role="th">123</td>
-<td>0.500</td>
-<td>1.105</td>
-<td>0.579</td>
+<td>1.400</td>
+<td>1.100</td>
+<td>0.533</td>
 </tr>
 <tr class="even">
 <td data-quarto-table-cell-role="th">12_</td>
-<td>0.714</td>
-<td>0.267</td>
-<td>0.333</td>
+<td>0.231</td>
+<td>0.288</td>
+<td>0.431</td>
 </tr>
 <tr class="odd">
 <td data-quarto-table-cell-role="th">1_3</td>
 <td>0.400</td>
-<td>0.812</td>
-<td>0.417</td>
+<td>0.783</td>
+<td>0.429</td>
 </tr>
 <tr class="even">
 <td data-quarto-table-cell-role="th">1__</td>
-<td>0.048</td>
-<td>0.164</td>
-<td>0.152</td>
+<td>0.075</td>
+<td>0.129</td>
+<td>0.140</td>
 </tr>
 <tr class="odd">
 <td data-quarto-table-cell-role="th">_23</td>
-<td>1.000</td>
-<td>0.636</td>
-<td>0.167</td>
+<td>0.750</td>
+<td>0.893</td>
+<td>0.600</td>
 </tr>
 <tr class="even">
 <td data-quarto-table-cell-role="th">_2_</td>
-<td>0.143</td>
-<td>0.189</td>
-<td>0.229</td>
+<td>0.149</td>
+<td>0.256</td>
+<td>0.250</td>
 </tr>
 <tr class="odd">
 <td data-quarto-table-cell-role="th">__3</td>
-<td>0.500</td>
-<td>0.375</td>
-<td>0.321</td>
+<td>0.400</td>
+<td>0.478</td>
+<td>0.314</td>
 </tr>
 <tr class="even">
 <td data-quarto-table-cell-role="th">___</td>
-<td>0.029</td>
-<td>0.042</td>
+<td>0.035</td>
 <td>0.036</td>
+<td>0.042</td>
 </tr>
 </tbody>
 </table>
@@ -193,6 +244,406 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
+</section>
+</section>
+<section id="homerun" class="level1">
+<h1>Homerun</h1>
+<div id="67460e56" class="cell" data-execution_count="5">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># average run expectancy for homeruns</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>hr_avg <span class="op">=</span> <span class="bu">sum</span>(hr_data[<span class="st">'runs'</span>]) <span class="op">/</span> <span class="bu">len</span>(hr_data)</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="co"># get expectancy table</span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>hr_exp_table <span class="op">=</span> get_table(hr_data)</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a><span class="co"># get starting home run expectancy</span></span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>hr_start_re <span class="op">=</span> start_re(hr_exp_table, hr_data, run_exp)</span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a><span class="co"># final hr run expectancy</span></span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>hr_re <span class="op">=</span> hr_avg <span class="op">-</span> hr_start_re</span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a>hr_re</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="5">
+<pre><code>np.float64(1.454090909090909)</code></pre>
+</div>
+</div>
+<section id="single" class="level2">
+<h2 class="anchored" data-anchor-id="single">Single</h2>
+<div id="063afb1b" class="cell" data-execution_count="6">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># average run expectancy for homeruns</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>single_avg <span class="op">=</span> <span class="bu">sum</span>(single_data[<span class="st">'runs'</span>]) <span class="op">/</span> <span class="bu">len</span>(single_data)</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="co"># get expectancy table</span></span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>single_exp_table <span class="op">=</span> get_table(single_data)</span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a><span class="co"># get starting home run expectancy</span></span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>single_start_re <span class="op">=</span> start_re(single_exp_table, single_data, run_exp)</span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a><span class="co"># final hr run expectancy</span></span>
+<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a>single_re <span class="op">=</span> single_avg <span class="op">-</span> single_start_re</span>
+<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a>single_re</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="6">
+<pre><code>np.float64(0.2935813953488372)</code></pre>
+</div>
+</div>
+</section>
+<section id="double" class="level2">
+<h2 class="anchored" data-anchor-id="double">Double</h2>
+<div id="bf2cbda4" class="cell" data-execution_count="7">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># average run expectancy for homeruns</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>double_avg <span class="op">=</span> <span class="bu">sum</span>(double_data[<span class="st">'runs'</span>]) <span class="op">/</span> <span class="bu">len</span>(double_data)</span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a><span class="co"># get expectancy table</span></span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>double_exp_table <span class="op">=</span> get_table(double_data)</span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a><span class="co"># get starting home run expectancy</span></span>
+<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a>double_start_re <span class="op">=</span> start_re(double_exp_table, double_data, run_exp)</span>
+<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a><span class="co"># final hr run expectancy</span></span>
+<span id="cb9-11"><a href="#cb9-11" aria-hidden="true" tabindex="-1"></a>double_re <span class="op">=</span> double_avg <span class="op">-</span> double_start_re</span>
+<span id="cb9-12"><a href="#cb9-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-13"><a href="#cb9-13" aria-hidden="true" tabindex="-1"></a>double_re</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="7">
+<pre><code>np.float64(0.34720338983050847)</code></pre>
+</div>
+</div>
+</section>
+<section id="triple" class="level2">
+<h2 class="anchored" data-anchor-id="triple">Triple</h2>
+<div id="409e1cca" class="cell" data-execution_count="8">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co"># average run expectancy for homeruns</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>triple_avg <span class="op">=</span> <span class="bu">sum</span>(triple_data[<span class="st">'runs'</span>]) <span class="op">/</span> <span class="bu">len</span>(triple_data)</span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a><span class="co"># get expectancy table</span></span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>triple_exp_table <span class="op">=</span> get_table(triple_data)</span>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a><span class="co"># get starting home run expectancy</span></span>
+<span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a>triple_start_re <span class="op">=</span> start_re(triple_exp_table, triple_data, run_exp)</span>
+<span id="cb11-9"><a href="#cb11-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-10"><a href="#cb11-10" aria-hidden="true" tabindex="-1"></a><span class="co"># final hr run expectancy</span></span>
+<span id="cb11-11"><a href="#cb11-11" aria-hidden="true" tabindex="-1"></a>triple_re <span class="op">=</span> triple_avg <span class="op">-</span> triple_start_re</span>
+<span id="cb11-12"><a href="#cb11-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-13"><a href="#cb11-13" aria-hidden="true" tabindex="-1"></a>triple_re</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="8">
+<pre><code>np.float64(0.4022857142857143)</code></pre>
+</div>
+</div>
+</section>
+<section id="hit-by-pitch" class="level2">
+<h2 class="anchored" data-anchor-id="hit-by-pitch">Hit by pitch</h2>
+<div id="e401dc68" class="cell" data-execution_count="9">
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co"># average run expectancy for homeruns</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>hbp_avg <span class="op">=</span> <span class="bu">sum</span>(hbp_data[<span class="st">'runs'</span>]) <span class="op">/</span> <span class="bu">len</span>(hbp_data)</span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a><span class="co"># get expectancy table</span></span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>hbp_exp_table <span class="op">=</span> get_table(hbp_data)</span>
+<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a><span class="co"># get starting home run expectancy</span></span>
+<span id="cb13-8"><a href="#cb13-8" aria-hidden="true" tabindex="-1"></a>hbp_start_re <span class="op">=</span> start_re(hbp_exp_table, hbp_data, run_exp)</span>
+<span id="cb13-9"><a href="#cb13-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-10"><a href="#cb13-10" aria-hidden="true" tabindex="-1"></a><span class="co"># final hr run expectancy</span></span>
+<span id="cb13-11"><a href="#cb13-11" aria-hidden="true" tabindex="-1"></a>hbp_re <span class="op">=</span> hbp_avg <span class="op">-</span> hbp_start_re</span>
+<span id="cb13-12"><a href="#cb13-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-13"><a href="#cb13-13" aria-hidden="true" tabindex="-1"></a>hbp_re</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="9">
+<pre><code>np.float64(0.021707865168539325)</code></pre>
+</div>
+</div>
+</section>
+<section id="walk" class="level2">
+<h2 class="anchored" data-anchor-id="walk">Walk</h2>
+<div id="e354fac3" class="cell" data-execution_count="10">
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co"># average run expectancy for homeruns</span></span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>bb_avg <span class="op">=</span> <span class="bu">sum</span>(bb_data[<span class="st">'runs'</span>]) <span class="op">/</span> <span class="bu">len</span>(bb_data)</span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a><span class="co"># get expectancy table</span></span>
+<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a>bb_exp_table <span class="op">=</span> get_table(bb_data)</span>
+<span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-7"><a href="#cb15-7" aria-hidden="true" tabindex="-1"></a><span class="co"># get starting home run expectancy</span></span>
+<span id="cb15-8"><a href="#cb15-8" aria-hidden="true" tabindex="-1"></a>bb_start_re <span class="op">=</span> start_re(bb_exp_table, bb_data, run_exp)</span>
+<span id="cb15-9"><a href="#cb15-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-10"><a href="#cb15-10" aria-hidden="true" tabindex="-1"></a><span class="co"># final hr run expectancy</span></span>
+<span id="cb15-11"><a href="#cb15-11" aria-hidden="true" tabindex="-1"></a>bb_re <span class="op">=</span> bb_avg <span class="op">-</span> bb_start_re</span>
+<span id="cb15-12"><a href="#cb15-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-13"><a href="#cb15-13" aria-hidden="true" tabindex="-1"></a>bb_re</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="10">
+<pre><code>np.float64(0.013833333333333333)</code></pre>
+</div>
+</div>
+</section>
+</section>
+<section id="calculate-wrc" class="level1">
+<h1>Calculate WRC+</h1>
+<div id="90e87576" class="cell" data-execution_count="11">
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="co"># big east 2024 stats</span></span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>league_data <span class="op">=</span> pd.DataFrame({<span class="st">'BB'</span>: [<span class="dv">1037</span>], <span class="st">'HBP'</span>: [<span class="dv">334</span>], <span class="st">'X1B'</span>: [<span class="dv">1327</span>], </span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>                                    <span class="st">'X2B'</span>: [<span class="dv">397</span>], <span class="st">'X3B'</span>: [<span class="dv">53</span>], <span class="st">'HR'</span>: [<span class="dv">253</span>],</span>
+<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a>                                    <span class="st">'AB'</span>: [<span class="dv">7270</span>], <span class="st">'SF'</span>: [<span class="dv">89</span>]})</span>
+<span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-6"><a href="#cb17-6" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> woba(player):</span>
+<span id="cb17-7"><a href="#cb17-7" aria-hidden="true" tabindex="-1"></a>    <span class="co">'''return woba for given player'''</span></span>
+<span id="cb17-8"><a href="#cb17-8" aria-hidden="true" tabindex="-1"></a>    numerator <span class="op">=</span> ((<span class="fl">0.0138</span> <span class="op">*</span> player[<span class="st">'BB'</span>]) <span class="op">+</span> (<span class="fl">0.0217</span> <span class="op">*</span> player[<span class="st">'HBP'</span>])</span>
+<span id="cb17-9"><a href="#cb17-9" aria-hidden="true" tabindex="-1"></a>                    <span class="op">+</span> (<span class="fl">0.2936</span> <span class="op">*</span> player[<span class="st">'X1B'</span>]) <span class="op">+</span> (<span class="fl">0.3472</span> <span class="op">*</span> player[<span class="st">'X2B'</span>])</span>
+<span id="cb17-10"><a href="#cb17-10" aria-hidden="true" tabindex="-1"></a>                    <span class="op">+</span> (<span class="fl">0.4023</span> <span class="op">*</span> player[<span class="st">'X1B'</span>]) <span class="op">+</span> (<span class="fl">1.4541</span> <span class="op">*</span> player[<span class="st">'HR'</span>]))</span>
+<span id="cb17-11"><a href="#cb17-11" aria-hidden="true" tabindex="-1"></a>    denominator <span class="op">=</span> player[<span class="st">'AB'</span>] <span class="op">+</span> player[<span class="st">'BB'</span>] <span class="op">+</span> player[<span class="st">'SF'</span>] <span class="op">+</span> player[<span class="st">'HBP'</span>]</span>
+<span id="cb17-12"><a href="#cb17-12" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb17-13"><a href="#cb17-13" aria-hidden="true" tabindex="-1"></a>    woba <span class="op">=</span> numerator <span class="op">/</span> denominator</span>
+<span id="cb17-14"><a href="#cb17-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-15"><a href="#cb17-15" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> woba</span>
+<span id="cb17-16"><a href="#cb17-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-17"><a href="#cb17-17" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> wraa(player):</span>
+<span id="cb17-18"><a href="#cb17-18" aria-hidden="true" tabindex="-1"></a>    <span class="co">'''return wraa for given player'''</span></span>
+<span id="cb17-19"><a href="#cb17-19" aria-hidden="true" tabindex="-1"></a>    player_woba <span class="op">=</span> woba(player)</span>
+<span id="cb17-20"><a href="#cb17-20" aria-hidden="true" tabindex="-1"></a>    league_woba <span class="op">=</span> woba(league_data)</span>
+<span id="cb17-21"><a href="#cb17-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-22"><a href="#cb17-22" aria-hidden="true" tabindex="-1"></a>    wraa <span class="op">=</span> (player_woba <span class="op">-</span> league_woba) <span class="op">*</span> player[<span class="st">'PA'</span>]</span>
+<span id="cb17-23"><a href="#cb17-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-24"><a href="#cb17-24" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> wraa</span>
+<span id="cb17-25"><a href="#cb17-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-26"><a href="#cb17-26" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> wrc(player):</span>
+<span id="cb17-27"><a href="#cb17-27" aria-hidden="true" tabindex="-1"></a>    <span class="co">'''return wrc for given player'''</span></span>
+<span id="cb17-28"><a href="#cb17-28" aria-hidden="true" tabindex="-1"></a>    player_woba <span class="op">=</span> woba(player)</span>
+<span id="cb17-29"><a href="#cb17-29" aria-hidden="true" tabindex="-1"></a>    league_woba <span class="op">=</span> woba(league_data)</span>
+<span id="cb17-30"><a href="#cb17-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-31"><a href="#cb17-31" aria-hidden="true" tabindex="-1"></a>    wrc <span class="op">=</span> ((player_woba <span class="op">-</span> league_woba) <span class="op">+</span> (<span class="dv">1462</span> <span class="op">/</span> <span class="dv">8836</span>)) <span class="op">*</span> <span class="dv">8836</span></span>
+<span id="cb17-32"><a href="#cb17-32" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-33"><a href="#cb17-33" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> wrc</span>
+<span id="cb17-34"><a href="#cb17-34" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-35"><a href="#cb17-35" aria-hidden="true" tabindex="-1"></a>bigeast_wrc <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb17-36"><a href="#cb17-36" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-37"><a href="#cb17-37" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> index, row <span class="kw">in</span> bigeast_stats.iterrows():</span>
+<span id="cb17-38"><a href="#cb17-38" aria-hidden="true" tabindex="-1"></a>    cur_player <span class="op">=</span> bigeast_stats.iloc[index]</span>
+<span id="cb17-39"><a href="#cb17-39" aria-hidden="true" tabindex="-1"></a>    bigeast_wrc <span class="op">+=</span> wrc(cur_player)</span>
+<span id="cb17-40"><a href="#cb17-40" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-41"><a href="#cb17-41" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> wrc_plus(player): </span>
+<span id="cb17-42"><a href="#cb17-42" aria-hidden="true" tabindex="-1"></a>    <span class="co">'''return wrc+ for given player'''</span></span>
+<span id="cb17-43"><a href="#cb17-43" aria-hidden="true" tabindex="-1"></a>    numerator <span class="op">=</span> ((wraa(player) <span class="op">/</span> player[<span class="st">'PA'</span>]) <span class="op">+</span> (<span class="dv">1462</span> <span class="op">/</span> <span class="dv">8836</span>)</span>
+<span id="cb17-44"><a href="#cb17-44" aria-hidden="true" tabindex="-1"></a>                    <span class="op">+</span> (<span class="dv">1462</span> <span class="op">/</span> <span class="dv">8836</span>) <span class="op">-</span> (<span class="dv">100</span> <span class="op">*</span> (<span class="dv">1462</span> <span class="op">/</span> <span class="dv">8836</span>)))</span>
+<span id="cb17-45"><a href="#cb17-45" aria-hidden="true" tabindex="-1"></a>    denominator <span class="op">=</span> bigeast_wrc <span class="op">/</span> <span class="dv">8836</span></span>
+<span id="cb17-46"><a href="#cb17-46" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-47"><a href="#cb17-47" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> numerator <span class="op">/</span> denominator</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="fall-2024-stats" class="level1">
+<h1>Fall 2024 Stats</h1>
+<div id="2cbbce63" class="cell" data-execution_count="12">
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>wrc_dict <span class="op">=</span> {}</span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> index, row <span class="kw">in</span> fall_stats.iterrows():</span>
+<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a>    cur_player <span class="op">=</span> fall_stats.iloc[index]</span>
+<span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a>    wrc_dict[<span class="bu">str</span>(cur_player[<span class="st">'First'</span>] <span class="op">+</span> <span class="st">' '</span> <span class="op">+</span> cur_player[<span class="st">'Last'</span>])] <span class="op">=</span> wrc_plus(cur_player)</span>
+<span id="cb18-6"><a href="#cb18-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-7"><a href="#cb18-7" aria-hidden="true" tabindex="-1"></a><span class="co"># convert to data frame and rename columns</span></span>
+<span id="cb18-8"><a href="#cb18-8" aria-hidden="true" tabindex="-1"></a>wrc_data <span class="op">=</span> pd.DataFrame(wrc_dict).T.reset_index()</span>
+<span id="cb18-9"><a href="#cb18-9" aria-hidden="true" tabindex="-1"></a>wrc_data <span class="op">=</span> wrc_data.rename(columns <span class="op">=</span> {<span class="st">'index'</span>: <span class="st">'name'</span>, <span class="dv">0</span>: <span class="st">'wRC+'</span>})</span>
+<span id="cb18-10"><a href="#cb18-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-11"><a href="#cb18-11" aria-hidden="true" tabindex="-1"></a><span class="co"># sort by best to worst wRC+</span></span>
+<span id="cb18-12"><a href="#cb18-12" aria-hidden="true" tabindex="-1"></a>wrc_data.sort_values(by <span class="op">=</span> <span class="st">'wRC+'</span>, ascending <span class="op">=</span> <span class="va">False</span>, inplace <span class="op">=</span> <span class="va">True</span>)</span>
+<span id="cb18-13"><a href="#cb18-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-14"><a href="#cb18-14" aria-hidden="true" tabindex="-1"></a>wrc_data</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="12">
+<div>
+
+
+<table class="dataframe table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">name</th>
+<th data-quarto-table-cell-role="th">wRC+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">2</td>
+<td>Tyler Minick</td>
+<td>-1.359</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">1</td>
+<td>Cayden Suchy</td>
+<td>-1.362</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">5</td>
+<td>Matt Garbowski</td>
+<td>-1.363</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">0</td>
+<td>Aidan Dougherty</td>
+<td>-1.363</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">7</td>
+<td>Beau Root</td>
+<td>-1.365</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">8</td>
+<td>Grant MacArthur</td>
+<td>-1.367</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">4</td>
+<td>Caleb Shpur</td>
+<td>-1.367</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">12</td>
+<td>Maddix Dalena</td>
+<td>-1.368</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">10</td>
+<td>Mike Oates</td>
+<td>-1.368</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">11</td>
+<td>Drew Kron</td>
+<td>-1.369</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">3</td>
+<td>Sam Biller</td>
+<td>-1.369</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">14</td>
+<td>Gabriel Tirado</td>
+<td>-1.369</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">6</td>
+<td>Bryan Padilla</td>
+<td>-1.370</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">16</td>
+<td>Connor Lane</td>
+<td>-1.371</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">9</td>
+<td>Jack LaRose</td>
+<td>-1.372</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">13</td>
+<td>Rob Rispoli</td>
+<td>-1.373</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">17</td>
+<td>Anthony Belisario</td>
+<td>-1.373</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">15</td>
+<td>Carter Groen</td>
+<td>-1.373</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">18</td>
+<td>Ryan Daniels</td>
+<td>-1.378</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+</section>
+<section id="spring-2024-stats" class="level1">
+<h1>Spring 2024 Stats</h1>
+<div id="4a609a43" class="cell" data-execution_count="13">
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>first <span class="op">=</span> [<span class="st">'Bryan'</span>, <span class="st">'Caleb'</span>, <span class="st">'Drew'</span>, <span class="st">'Maddix'</span>, <span class="st">'Tyler'</span>, <span class="st">'Matt'</span>, <span class="st">'Ryan'</span>]</span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>last <span class="op">=</span> [<span class="st">'Padilla'</span>, <span class="st">'Shpur'</span>, <span class="st">'Kron'</span>, <span class="st">'Dalena'</span>, <span class="st">'Minick'</span>, <span class="st">'Garbowski'</span>, <span class="st">'Daniels'</span>]</span>
+<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a>bb <span class="op">=</span> [<span class="dv">28</span>, <span class="dv">23</span>, <span class="dv">3</span>, <span class="dv">27</span>, <span class="dv">4</span>, <span class="dv">24</span>, <span class="dv">10</span>]</span>
+<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a>hbp <span class="op">=</span> [<span class="dv">3</span>, <span class="dv">11</span>, <span class="dv">1</span>, <span class="dv">8</span>, <span class="dv">4</span>, <span class="dv">2</span>, <span class="dv">1</span>]</span>
+<span id="cb19-5"><a href="#cb19-5" aria-hidden="true" tabindex="-1"></a>ab <span class="op">=</span> [<span class="dv">195</span>, <span class="dv">194</span>, <span class="dv">40</span>, <span class="dv">288</span>, <span class="dv">139</span>, <span class="dv">154</span>, <span class="dv">57</span>]</span>
+<span id="cb19-6"><a href="#cb19-6" aria-hidden="true" tabindex="-1"></a>x1b <span class="op">=</span> [<span class="dv">33</span>, <span class="dv">34</span>, <span class="dv">5</span>, <span class="dv">21</span>, <span class="dv">20</span>, <span class="dv">33</span>, <span class="dv">6</span>]</span>
+<span id="cb19-7"><a href="#cb19-7" aria-hidden="true" tabindex="-1"></a>x2b <span class="op">=</span> [<span class="dv">14</span>, <span class="dv">14</span>, <span class="dv">2</span>, <span class="dv">12</span>, <span class="dv">7</span>, <span class="dv">6</span>, <span class="dv">2</span>]</span>
+<span id="cb19-8"><a href="#cb19-8" aria-hidden="true" tabindex="-1"></a>x3b <span class="op">=</span> [<span class="dv">1</span>, <span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">0</span>, <span class="dv">0</span>]</span>
+<span id="cb19-9"><a href="#cb19-9" aria-hidden="true" tabindex="-1"></a>hr <span class="op">=</span> [<span class="dv">6</span>, <span class="dv">3</span>, <span class="dv">0</span>, <span class="dv">13</span>, <span class="dv">9</span>, <span class="dv">4</span>, <span class="dv">3</span>]</span>
+<span id="cb19-10"><a href="#cb19-10" aria-hidden="true" tabindex="-1"></a>sf <span class="op">=</span> [<span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">0</span>] </span>
+<span id="cb19-11"><a href="#cb19-11" aria-hidden="true" tabindex="-1"></a>pa <span class="op">=</span> [<span class="dv">232</span>, <span class="dv">233</span>, <span class="dv">45</span>, <span class="dv">225</span>, <span class="dv">149</span>, <span class="dv">185</span>, <span class="dv">71</span>]</span>
+<span id="cb19-12"><a href="#cb19-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-13"><a href="#cb19-13" aria-hidden="true" tabindex="-1"></a>spring_stats <span class="op">=</span> pd.DataFrame({<span class="st">'First'</span>: first, <span class="st">'Last'</span>: last, <span class="st">'BB'</span>: bb,</span>
+<span id="cb19-14"><a href="#cb19-14" aria-hidden="true" tabindex="-1"></a>                                <span class="st">'HBP'</span>: hbp, <span class="st">'AB'</span>: ab, <span class="st">'X1B'</span>: x1b, <span class="st">'X2B'</span>: x2b,</span>
+<span id="cb19-15"><a href="#cb19-15" aria-hidden="true" tabindex="-1"></a>                                <span class="st">'X3B'</span>: x3b, <span class="st">'HR'</span>: hr, <span class="st">'SF'</span>: sf, <span class="st">'PA'</span>: pa})</span>
+<span id="cb19-16"><a href="#cb19-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-17"><a href="#cb19-17" aria-hidden="true" tabindex="-1"></a>wrc_dict_2 <span class="op">=</span> {}</span>
+<span id="cb19-18"><a href="#cb19-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-19"><a href="#cb19-19" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> index, row <span class="kw">in</span> spring_stats.iterrows():</span>
+<span id="cb19-20"><a href="#cb19-20" aria-hidden="true" tabindex="-1"></a>    cur_player <span class="op">=</span> spring_stats.iloc[index]</span>
+<span id="cb19-21"><a href="#cb19-21" aria-hidden="true" tabindex="-1"></a>    wrc_dict_2[<span class="bu">str</span>(cur_player[<span class="st">'First'</span>] <span class="op">+</span> <span class="st">' '</span> <span class="op">+</span> cur_player[<span class="st">'Last'</span>])] <span class="op">=</span> wrc_plus(cur_player)</span>
+<span id="cb19-22"><a href="#cb19-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-23"><a href="#cb19-23" aria-hidden="true" tabindex="-1"></a><span class="co"># convert to data frame and rename columns</span></span>
+<span id="cb19-24"><a href="#cb19-24" aria-hidden="true" tabindex="-1"></a>wrc_data_2 <span class="op">=</span> pd.DataFrame(wrc_dict_2).T.reset_index()</span>
+<span id="cb19-25"><a href="#cb19-25" aria-hidden="true" tabindex="-1"></a>wrc_data_2 <span class="op">=</span> wrc_data_2.rename(columns <span class="op">=</span> {<span class="st">'index'</span>: <span class="st">'name'</span>, <span class="dv">0</span>: <span class="st">'wRC+'</span>})</span>
+<span id="cb19-26"><a href="#cb19-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-27"><a href="#cb19-27" aria-hidden="true" tabindex="-1"></a><span class="co"># sort by best to worst wRC+</span></span>
+<span id="cb19-28"><a href="#cb19-28" aria-hidden="true" tabindex="-1"></a>wrc_data_2.sort_values(by <span class="op">=</span> <span class="st">'wRC+'</span>, ascending <span class="op">=</span> <span class="va">False</span>, inplace <span class="op">=</span> <span class="va">True</span>)</span>
+<span id="cb19-29"><a href="#cb19-29" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-30"><a href="#cb19-30" aria-hidden="true" tabindex="-1"></a>wrc_data_2</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="13">
+<div>
+
+
+<table class="dataframe table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">name</th>
+<th data-quarto-table-cell-role="th">wRC+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">4</td>
+<td>Tyler Minick</td>
+<td>-1.366</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">5</td>
+<td>Matt Garbowski</td>
+<td>-1.368</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">0</td>
+<td>Bryan Padilla</td>
+<td>-1.369</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">1</td>
+<td>Caleb Shpur</td>
+<td>-1.370</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">6</td>
+<td>Ryan Daniels</td>
+<td>-1.371</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">3</td>
+<td>Maddix Dalena</td>
+<td>-1.373</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">2</td>
+<td>Drew Kron</td>
+<td>-1.375</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+</section>
 
 </main>
 <!-- /main column -->
