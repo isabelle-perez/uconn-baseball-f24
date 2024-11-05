@@ -1,0 +1,62 @@
+# Import Packages & Data
+
+```{python}
+import pandas as pd
+import numpy as np
+
+uconn_data = pd.read_csv('data/synergy/Fall Stats(Sheet1).csv')
+```
+
+# Data Cleaning & Necessary Information
+
+## Cleaning
+
+```{python}
+uconn_data['Name'] = uconn_data['First'] + ' ' + uconn_data['Last']
+uconn_data.drop(columns = ['First', 'Last'], inplace = True)
+```
+
+## Set Player Positions & Starters
+
+```{python}
+# players per position
+catcher = c('Matt Garbowski', 'Connor Lane', 'Mike Oates', 'Gabriel Tirado')
+first_b = c('Maddix Dalena', 'Grant MacArthur', 'Gabriel Tirado')
+second_b = c('Ryan Daniels', 'Jack LaRose', 'Bryan Padilla', 'Rob Rispoli')
+third_b = c('Tyler Minick', 'Bryan Padilla')
+ss = c('Anthony Belisario', 'Jack LaRose', 'Bryan Padilla', 'Rob Rispoli')
+left = c('Sam Biller', 'Carter Groen', 'Drew Kron', 'Beau Root')
+right = c('Sam Biller', 'Aidan Dougherty', 'Carter Groen', 'Caleb Shpur')
+center = c('Sam Biller', 'Aidan Dougherty', 'Drew Kron', 'Beau Root', 'Caleb Shpur')
+dh = c('Maddix Dalena', 'Ryan Daniels', 'Matt Garbowski')
+
+# definite starters
+starters = c('Matt Garbowski', 'Maddix Dalena', 'Bryan Padilla', 'Ryan Daniels',
+                                                    'Tyler Minick', 'Caleb Shpur')
+```
+
+## Probabilities & Simulation Preparation
+
+```{python}
+# probability assumptions
+prob_2ndtohome_single = 0.60
+prob_1sttohome_double = 0.45
+prob_2to3_double = 0.10
+
+num_games = 100
+```
+
+# Monte-Carlo Simulation
+
+```{python}
+sample = np.random.choice([0, 1, 2, 3, 4], size = 1, p = [0.4, 0.2, 0.1, 0.1, 0.2])
+
+skeleton_cols = ['Batter', 'Prob1st', 'Prob2nd', 'Prob3rd', 'ProbHome','ProbOut',
+                'Result', 'Inning', 'Outs', 'Runner1', 'Runner2', 'Runner3', 'Runs']
+
+skeleton_data = pd.DataFrame(data = [[None] * 13 for _ in range(81)], 
+                                                    columns = skeleton_cols)
+```
+
+```{python}
+```
