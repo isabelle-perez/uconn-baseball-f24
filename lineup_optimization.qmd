@@ -3,8 +3,9 @@
 ```{python}
 import pandas as pd
 import numpy as np
+import itertools
 
-uconn_data = pd.read_csv('data/synergy/Fall Stats(Sheet1).csv')
+uconn_data = pd.read_csv('data/in-game-trackman/final_fall_stats.csv')
 ```
 
 # Data Cleaning & Necessary Information
@@ -14,25 +15,27 @@ uconn_data = pd.read_csv('data/synergy/Fall Stats(Sheet1).csv')
 ```{python}
 uconn_data['Name'] = uconn_data['First'] + ' ' + uconn_data['Last']
 uconn_data.drop(columns = ['First', 'Last'], inplace = True)
+
+req_data = uconn_data[['Name', 'Prob1B', 'Prob2B', 'Prob3B', 'Prob4B', 'ProbOut']]
 ```
 
 ## Set Player Positions & Starters
 
 ```{python}
 # players per position
-catcher = c('Matt Garbowski', 'Connor Lane', 'Mike Oates', 'Gabriel Tirado')
-first_b = c('Maddix Dalena', 'Grant MacArthur', 'Gabriel Tirado')
-second_b = c('Ryan Daniels', 'Jack LaRose', 'Bryan Padilla', 'Rob Rispoli')
-third_b = c('Tyler Minick', 'Bryan Padilla', 'Jack LaRose')
-ss = c('Anthony Belisario', 'Bryan Padilla', 'Rob Rispoli')
-left = c('Sam Biller', 'Carter Groen', 'Drew Kron', 'Beau Root', 'Aidan Dougherty')
-right = c('Sam Biller', 'Aidan Dougherty', 'Carter Groen', 'Caleb Shpur', 'Drew Kron')
-center = c('Sam Biller', 'Drew Kron', 'Beau Root', 'Caleb Shpur')
-dh = c('Maddix Dalena', 'Ryan Daniels', 'Matt Garbowski', 'Carter Groen', 'Tyler Minick')
+catcher = ['Matt Garbowski', 'Connor Lane', 'Mike Oates', 'Gabriel Tirado']
+first_b = ['Maddix Dalena', 'Grant MacArthur', 'Gabriel Tirado']
+second_b = ['Ryan Daniels', 'Jack LaRose', 'Bryan Padilla', 'Rob Rispoli']
+third_b = ['Tyler Minick', 'Bryan Padilla', 'Jack LaRose']
+ss = ['Anthony Belisario', 'Bryan Padilla', 'Rob Rispoli']
+left = ['Sam Biller', 'Carter Groen', 'Drew Kron', 'Beau Root', 'Aidan Dougherty']
+right = ['Sam Biller', 'Aidan Dougherty', 'Carter Groen', 'Caleb Shpur', 'Drew Kron']
+center = ['Sam Biller', 'Drew Kron', 'Beau Root', 'Caleb Shpur']
+dh = ['Maddix Dalena', 'Ryan Daniels', 'Matt Garbowski', 'Carter Groen', 'Tyler Minick']
 
 # definite starters
-starters = c('Matt Garbowski', 'Maddix Dalena', 'Bryan Padilla', 'Ryan Daniels',
-                            'Tyler Minick', 'Caleb Shpur', 'Sam Biller', 'Rob Rispoli')
+starters = ['Matt Garbowski', 'Maddix Dalena', 'Bryan Padilla', 'Ryan Daniels',
+                            'Tyler Minick', 'Caleb Shpur', 'Sam Biller', 'Rob Rispoli']
 ```
 
 ## Probabilities & Simulation Preparation
@@ -59,4 +62,58 @@ skeleton_data = pd.DataFrame(data = [[None] * 13 for _ in range(81)],
 ```
 
 ```{python}
+lookup_table = pd.DataFrame({'Number_for_Player': range(1, 20), 
+                                        'Player_Name': req_data['Name']})
+
+lookup_table
+```
+
+```{python}
+c_nums = np.empty(len(catcher))
+first_nums = np.empty(len(first_b))
+second_nums = np.empty(len(second_b))
+third_nums = np.empty(len(third_b))
+short_nums = np.empty(len(ss))
+left_nums = np.empty(len(left))
+center_nums = np.empty(len(center))
+right_nums = np.empty(len(right))
+dh_nums = np.empty(len(dh))
+
+def fill_lookup(pos, pos_lst):
+    for i in range(len(pos_lst)):
+        try:
+            pos_lst[i] = lookup_table['Player_Name'].tolist().index(pos[i]) + 1
+        except ValueError:
+            pos_lst[i] = np.nan
+
+fill_lookup(catcher, c_nums)
+fill_lookup(first_b, first_nums)
+fill_lookup(second_b, second_nums)
+fill_lookup(third_b, third_nums)
+fill_lookup(ss, short_nums)
+fill_lookup(left, left_nums)
+fill_lookup(center, center_nums)
+fill_lookup(right, right_nums)
+fill_lookup(dh, dh_nums)
+```
+
+```{python}
+comb_grid = pd.DataFrame(
+    itertools.product(c_nums, first_nums, second_nums, third_nums, short_nums, 
+                                    left_nums, right_nums, center_nums, dh_nums),
+    columns=['C_Numbers', 'First_Numbers', 'Second_Numbers', 'Short_Numbers', 
+             'Third_Numbers', 'LF_Numbers', 'RF_Numbers', 'CF_Numbers', 'DH_Numbers']
+)
+
+comb_grid = comb_grid.values
+cols = ['C_Numbers', 'First_Numbers', 'Second_Numbers', 'Short_Numbers', 'Third_Numbers',
+                                    'LF_Numbers', 'RF_Numbers', 'CF_Numbers', 'DH_Numbers']
+
+comb_grid = pd.DataFrame(comb_grid, columns = cols)
+
+comb_grid['TestingColumn'] = 'tmp'
+
+comb_grid['TestingColumn'] = comb_grid.iloc[:, :9].apply(lambda row: len(set(row)), axis=1)
+
+comb_grid = comb_grid[comb_grid['TestingColumn'] == 9]
 ```
