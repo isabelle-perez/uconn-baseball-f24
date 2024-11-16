@@ -117,3 +117,27 @@ comb_grid['TestingColumn'] = comb_grid.iloc[:, :9].apply(lambda row: len(set(row
 
 comb_grid = comb_grid[comb_grid['TestingColumn'] == 9]
 ```
+
+```{python}
+starters = [lookup_table['Player_Name'].tolist().index(starter) + 1 for starter in starters]
+
+comb_grid['start_test'] = comb_grid.iloc[:, :9].apply(
+    lambda row: all(num in row.values for num in starters), axis=1
+)
+
+comb_grid = comb_grid[comb_grid['start_test'] == 'True']
+
+comb_grid.drop(columns=['start_test', 'TestingColumn'], inplace = True)
+
+comb_grid.columns = ['C', '1B', '2B', 'SS', '3B', 'LF', 'RF', 'CF', 'DH']
+
+comb_grid_text = comb_grid.copy()
+
+for col in comb_grid_text.columns:
+    comb_grid_text[col] = comb_grid_text[col].apply(
+        lambda num: lookup_table.iloc[int(num) - 1, 1]
+    )
+```
+
+```{python}
+```
