@@ -4,6 +4,7 @@
 import pandas as pd
 import numpy as np
 import itertools
+import random
 
 uconn_data = pd.read_csv('data/in-game-trackman/final_fall_stats.csv')
 ```
@@ -36,6 +37,35 @@ dh = ['Maddix Dalena', 'Ryan Daniels', 'Matt Garbowski', 'Carter Groen', 'Tyler 
 # definite starters
 starters = ['Matt Garbowski', 'Maddix Dalena', 'Bryan Padilla', 'Ryan Daniels',
                             'Tyler Minick', 'Caleb Shpur', 'Sam Biller', 'Rob Rispoli']
+
+# possible lineup positions
+first_names = ['Matt Garbowski', 'Mike Oates', 'Maddix Dalena', 'Grant MacArthur', 'Jack LaRose', 
+                'Bryan Padilla', 'Tyler Minick', 'Drew Kron', 'Beau Root', 'Caleb Shpur', 'Sam Biller',
+                                                                            'Carter Groen', 'Rob Rispoli']
+second_names = ['Matt Garbowski', 'Mike Oates', 'Maddix Dalena', 'Grant MacArthur', 'Jack LaRose', 
+                            'Bryan Padilla', 'Tyler Minick', 'Drew Kron', 'Beau Root', 'Sam Biller',
+                                                                        'Carter Groen', 'Rob Rispoli']
+third_names = ['Matt Garbowski', 'Mike Oates', 'Maddix Dalena', 'Grant MacArthur', 'Jack LaRose', 
+                            'Bryan Padilla', 'Tyler Minick', 'Drew Kron', 'Beau Root', 'Sam Biller',
+                            'Carter Groen', 'Rob Rispoli', 'Ryan Daniels', 'Connor Lane', 'Gabriel Tirado']
+fourth_names = ['Matt Garbowski', 'Mike Oates', 'Maddix Dalena', 'Grant MacArthur', 'Jack LaRose', 
+                            'Bryan Padilla', 'Tyler Minick', 'Drew Kron', 'Beau Root', 'Sam Biller',
+                            'Carter Groen', 'Rob Rispoli', 'Ryan Daniels', 'Connor Lane', 'Gabriel Tirado']
+fifth_names = ['Matt Garbowski', 'Maddix Dalena', 'Beau Root', 'Caleb Shpur', 'Bryan Padilla', 'Tyler Minick',
+                            'Ryan Daniels', 'Anthony Belisario', 'Connor Lane', 'Gabriel Tirado', 'Sam Biller',
+                            'Carter Groen', 'Rob Rispoli', 'Mike Oates', 'Grant MacArthur', 'Jack LaRose', 'Drew Kron']
+sixth_names = ['Matt Garbowski', 'Maddix Dalena', 'Beau Root', 'Caleb Shpur', 'Bryan Padilla', 'Tyler Minick',
+                            'Ryan Daniels', 'Anthony Belisario', 'Connor Lane', 'Gabriel Tirado', 'Sam Biller',
+                            'Carter Groen', 'Rob Rispoli', 'Mike Oates', 'Grant MacArthur', 'Jack LaRose', 'Drew Kron']
+seventh_names = ['Caleb Shpur', 'Ryan Daniels', 'Anthony Belisario', 'Connor Lane', 'Gabriel Tirado',
+                    'Sam Biller', 'Carter Groen', 'Rob Rispoli', 'Mike Oates', 'Grant MacArthur', 'Jack LaRose',
+                                                                                                    'Drew Kron']
+eighth_names = ['Caleb Shpur', 'Ryan Daniels', 'Anthony Belisario', 'Connor Lane', 'Gabriel Tirado', 
+                    'Sam Biller', 'Carter Groen', 'Rob Rispoli', 'Mike Oates', 'Grant MacArthur', 'Jack LaRose',
+                                                                                                    'Drew Kron']
+ninth_names = ['Caleb Shpur', 'Ryan Daniels', 'Anthony Belisario', 'Connor Lane', 'Gabriel Tirado',
+                    'Sam Biller', 'Carter Groen', 'Rob Rispoli', 'Mike Oates', 'Grant MacArthur', 'Jack LaRose',
+                                                                                                    'Drew Kron']
 ```
 
 ## Probabilities & Simulation Preparation
@@ -59,13 +89,13 @@ skeleton_cols = ['Batter', 'Prob1st', 'Prob2nd', 'Prob3rd', 'ProbHome','ProbOut'
 
 skeleton_data = pd.DataFrame(data = [[None] * 13 for _ in range(81)], 
                                                     columns = skeleton_cols)
+
+skeleton_data
 ```
 
 ```{python}
 lookup_table = pd.DataFrame({'Number_for_Player': range(1, 20), 
                                         'Player_Name': req_data['Name']})
-
-lookup_table
 ```
 
 ```{python}
@@ -125,9 +155,9 @@ comb_grid['start_test'] = comb_grid.iloc[:, :9].apply(
     lambda row: all(num in row.values for num in starters), axis=1
 )
 
-comb_grid = comb_grid[comb_grid['start_test'] == 'True']
+comb_grid = comb_grid[comb_grid['start_test'] == True]
 
-comb_grid.drop(columns=['start_test', 'TestingColumn'], inplace = True)
+comb_grid.drop(columns = ['start_test', 'TestingColumn'], inplace = True)
 
 comb_grid.columns = ['C', '1B', '2B', 'SS', '3B', 'LF', 'RF', 'CF', 'DH']
 
@@ -140,4 +170,194 @@ for col in comb_grid_text.columns:
 ```
 
 ```{python}
+first_permutations = list(itertools.permutations(comb_grid.iloc[0, :].astype(int)))
+
+permutations_expanded = pd.DataFrame(first_permutations)
+
+for i in range(1, comb_grid.shape[0]):
+    row_permutations = list(itertools.permutations(comb_grid.iloc[i, :].astype(int)))
+    permutations_expanded = pd.concat(
+        [permutations_expanded, pd.DataFrame(row_permutations)], ignore_index=True
+    )
+
+permutations_expanded.columns = ['first', 'second', 'third', 'fourth', 'fifth', 'sixth',
+                                                            'seventh', 'eighth', 'ninth']
+
+permutations_expanded = permutations_expanded.drop_duplicates()
+```
+
+```{python}
+def map_to_indices(names, lookup_table):
+    return lookup_table.loc[lookup_table['Player_Name'].isin(names), 'Number_for_Player'].tolist()
+
+first_opt = map_to_indices(first_names, lookup_table)
+second_opt = map_to_indices(second_names, lookup_table)
+third_opt = map_to_indices(third_names, lookup_table)
+fourth_opt = map_to_indices(fourth_names, lookup_table)
+fifth_opt = map_to_indices(fifth_names, lookup_table)
+sixth_opt = map_to_indices(sixth_names, lookup_table)
+seventh_opt = map_to_indices(seventh_names, lookup_table)
+eighth_opt = map_to_indices(eighth_names, lookup_table)
+ninth_opt = map_to_indices(ninth_names, lookup_table)
+
+permutations_condensed = permutations_expanded[
+    (permutations_expanded['first'].isin(first_opt)) &
+    (permutations_expanded['second'].isin(second_opt)) &
+    (permutations_expanded['third'].isin(third_opt)) &
+    (permutations_expanded['fourth'].isin(fourth_opt)) &
+    (permutations_expanded['fifth'].isin(fifth_opt)) &
+    (permutations_expanded['sixth'].isin(sixth_opt)) &
+    (permutations_expanded['seventh'].isin(seventh_opt)) &
+    (permutations_expanded['eighth'].isin(eighth_opt)) &
+    (permutations_expanded['ninth'].isin(ninth_opt))
+]
+```
+
+```{python}
+def process_event(cur_row, prev_row):
+    if prev_row['Inning'] == 9 and prev_row['Outs'] == 3:
+        cur_row['Inning'] = 9
+        cur_row['Outs'] = 9
+        cur_row['Runs'] = prev_row['Runs']
+
+    # no hit
+    elif cur_row['Result'] == 0:
+        if prev_row['Outs'] != 3:
+            cur_row['Outs'] = 1 + prev_row['Outs']
+            cur_row[9:] = prev_row[9:]
+            cur_row['Inning'] = prev_row['Inning']
+        else:
+            cur_row['Outs'] = 1
+            cur_row[9:12] = 0
+            cur_row['Runs'] = prev_row['Runs']
+            cur_row['Inning'] = 1 + prev_row['Inning'] 
+
+    # single 
+    elif cur_row['Result'] == 1:
+        if prev_row['Outs'] != 3:
+            cur_row['Outs'] = prev_row['Outs']
+            cur_row['Inning'] = prev_row['Inning']
+        else:
+            cur_row['Outs'] = 0
+            cur_row['Inning'] = 1 + prev_row['Inning']
+
+        # no runners on 
+        if prev_row['Runner1'] == 0 or prev_row['Outs'] == 3:
+            cur_row['Runner1'] = 1
+            cur_row[10:12] = 0
+            cur_row['Runs'] = prev_row['Runs']
+        # runner on first
+        elif prev_row['Runner1'] == 1:
+            cur_row['Runner1'] = 2
+            cur_row['Runner2'] = 1
+            cur_row['Runner3'] = 0
+        # runner on second
+        elif prev_row['Runner1'] == 2 and prev_row['Runner2'] == 0:
+            cur_row['Runner1'] = random.choices([3, 1], weights = [1 - prob_2ndtohome_single, prob_2ndtohome_single], 
+                                                                                                            k = 1)[0]
+            if cur_row['Runner1'] == 3:
+                cur_row['Runner2'] = 1
+                cur_row['Runs'] = prev_row['Runs']
+            else:
+                cur_row['Runner2'] = 0
+                cur_row['Runs'] = 1 + prev_row['Runs']
+
+            cur_row['Runner3'] = 0
+        # runners on first and second 
+        elif prev_row['Runner1'] == 2 and prev_row['Runner2'] == 1:
+            cur_row['Runner1'] = random.choices([3, 2], weights = [1 - prob_2ndtohome_single, prob_2ndtohome_single],
+                                                                                                            k = 1)[0]
+            if cur_row['Runner1'] == 3:
+                cur_row['Runner2'] = 2
+                cur_row['Runner3'] = 1
+                cur_row['Runs'] = prev_row['Runs']
+            else:
+                cur_row['Runner2'] = 1
+                cur_row['Runner3'] = 0
+                cur_row['Runs'] = 1 + prev_row['Runs']
+        # runner on third
+        elif prev_row['Runner1'] == 3 and prev_row['Runner1'] == 0:
+            cur_row['Runner1'] = 1
+            cur_row[10:12] = 0
+            cur_row['Runs'] = 1 + prev_row['Runs']
+        # runners on first and third
+        elif prev_row['Runner1'] == 3 and prev_row['Runner2'] == 1:
+            cur_row['Runner1'] = 2
+            cur_row['Runner2'] = 1
+            cur_row['Runner3'] = 0
+            cur_row['Runs'] = 1 + prev_row['Runs']
+        # runners on second and third
+        elif prev_row['Runner1'] == 3 and prev_row['Runner2'] == 2:
+            cur_row['Runner1'] = random.choices([3, 1], weights = [1 - prob_2ndtohome_single, prob_2ndtohome_single],
+                                                                                                            k = 1)[0]
+
+```
+
+```{python}
+np.random.seed(1)
+
+run_total = pd.DataFrame({'Runs': np.zeros(num_games)})
+
+for i in range(len(permutations_condensed)):
+    batter_vec = req_data.iloc[permutations_condensed.iloc[i, :9].values - 1, 0].values
+    prob1_vec = req_data.iloc[permutations_condensed.iloc[i, :9].values - 1, 1].values
+    prob2_vec = req_data.iloc[permutations_condensed.iloc[i, :9].values - 1, 2].values
+    prob3_vec = req_data.iloc[permutations_condensed.iloc[i, :9].values - 1, 3].values
+    prob4_vec = req_data.iloc[permutations_condensed.iloc[i, :9].values - 1, 4].values
+    probout_vec = req_data.iloc[permutations_condensed.iloc[i, :9].values - 1, 5].values
+
+    skeleton_data['Batter'] = np.tile(batter_vec, 9)
+    skeleton_data['Prob1st'] = np.tile(prob1_vec, 9)
+    skeleton_data['Prob2nd'] = np.tile(prob2_vec, 9)
+    skeleton_data['Prob3rd'] = np.tile(prob3_vec, 9)
+    skeleton_data['ProbHome'] = np.tile(prob4_vec, 9)
+    skeleton_data['ProbOut'] = np.tile(probout_vec, 9)
+
+    for j in range(num_games):
+        skeleton_data_tmp = skeleton_data.copy()
+        skeleton_data_tmp['Result'] = np.random.choice(
+            [0, 1, 2, 3, 4],
+            size = len(skeleton_data_tmp),
+            p = [
+                skeleton_data_tmp['ProbOut'][0],
+                skeleton_data_tmp['Prob1st'][0],
+                skeleton_data_tmp['Prob2nd'][0],
+                skeleton_data_tmp['Prob3rd'][0],
+                skeleton_data_tmp['ProbHome'][0]
+            ]
+        )
+
+        skeleton_data_tmp['Inning'] = 1
+        skeleton_data_tmp['Runs'] = 0
+        skeleton_data_tmp['Outs'] = 0
+
+        # fill in first row (first at-bat in first inning)
+        if skeleton_data_tmp['Result'][0] == 0:
+            skeleton_data_tmp.iloc[0, 9:] = 0
+            skeleton_data_tmp['Outs'][0] = 1
+        elif skeleton_data_tmp['Result'][0] == 1:
+            skeleton_data_tmp.iloc[0, 10:] = 0
+            skeleton_data_tmp['Runner1'][0] = 1
+            skeleton_data_tmp['Outs'][0] = 0
+        elif skeleton_data_tmp['Result'][0] == 2:
+            skeleton_data_tmp.iloc[0, 10:] = 0
+            skeleton_data_tmp['Runner1'][0] = 2
+            skeleton_data_tmp['Outs'][0] = 0
+        elif skeleton_data_tmp['Result'][0] == 3:
+            skeleton_data_tmp.iloc[0, 10:] = 0
+            skeleton_data_tmp['Runner1'][0] = 3
+            skeleton_data_tmp['Outs'][0] = 0
+        else:
+            skeleton_data_tmp['Runs'] = 1
+            skeleton_data_tmp.iloc[0, 8:12] = 0
+
+        for k in range(1, len(skeleton_data_tmp)):
+            # ninth inning, third out
+            if (skeleton_data_tmp.loc[k - 1, 'Inning'] == 9 and 
+                skeleton_data_tmp.loc[k - 1, 'Outs'] == 3):
+                skeleton_data_tmp.loc[k, 'Inning'] = 9
+                skeleton_data_tmp.loc[k, 'Outs'] = 3
+                skeleton_data_tmp.loc[k, 'Runs'] = skeleton_data_tmp.loc[k - 1, 'Runs']
+            elif skeleton_data_tmp['Result'][i] == 0:
+                pass
 ```
