@@ -71,7 +71,7 @@ ninth_names = ['Ryan Daniels', 'Anthony Belisario', 'Connor Lane', 'Gabriel Tira
 # probability assumptions
 prob_2ndtohome_single = 0.60
 prob_1sttohome_double = 0.45
-prob_2to3_double = 0.10
+prob_2ndto3rd_double = 0.10
 
 num_games = 100
 ```
@@ -241,19 +241,28 @@ def process_event(cur_row, prev_row):
             cur_row['Outs'] = 0
             cur_row['Inning'] = 1 + prev_row['Inning']
             cur_row[9:12] = 0
-            cur_row['Runs'] = prev_row['Runs']
 
-        # no runners on 
-        if prev_row['Runner1'] == 0:
-            cur_row['Runner1'] = 1
-            cur_row[10:12] = 0
-            cur_row['Runs'] = prev_row['Runs']
-        
+        cur_row.iloc[9:] = update_cols(prev_row, 1, [1 - prob_2ndtohome_single, prob_2ndtohome_single])
+
+    # double
+    elif cur_row['Result'] == 2:
+        if prev_row['Outs'] != 3:
+            cur_row['Outs'] = prev_row['Outs']
+            cur_row['Inning'] = prev_row['Inning']
         else:
-            cur_row.iloc[9:] = update_cols(prev_row, 1, [1 - prob_2ndtohome_single, prob_2ndtohome_single])
-
-        # double
+            cur_row['Outs'] = 0
+            cur_row['Inning'] = 1 + prev_row['Inning']
+            cur_row[9:12] = 0
         
+        if prev_row['Runner1'] == 0 or prev_row['Runner1'] == 1 or prev_row['Runner3'] == 1:
+            cur_row.iloc[9:] = update_cols(prev_row, 1, [1 - prob_1sttohome_double, prob_1sttohome_double])
+        else:
+            cur_row.iloc[9:] = update_cols(prev_row, 1, [1 - prob_2ndto3rd_double, prob_2ndto3rd_double])
+
+    # triple 
+    if cur_row['Result'] == 3:
+        pass
+
 
 def update_cols(prev_row, hit, prob_wts):
     r1 = prev_row['Runner1']
@@ -261,24 +270,72 @@ def update_cols(prev_row, hit, prob_wts):
     r3 = prev_row['Runner3']
     runs = prev_row['Runs']
 
+    # single
     if hit == 1:
+        # no runners
         if r1 == 0: return 1, 0, 0, runs
+        # 1b
+        elif r1 == 1 and r2 == 0:
+            return 2, 1, 0, runs
+        # 2b
         elif r1 == 2 and r2 == 0: 
             r1 = random.choices([3, 1], weights = prob_wts, k = 1)[0]
             return 3, 1, 0, runs if r1 == 3 else 1, 0, 0, 1 + runs
+        # 1b & 2b
         elif r1 == 2 and r2 == 1:
             r1 = random.choices([3, 2], weights = prob_wts, k = 1)[0]
             return 3, 2, 1, runs if r1 == 3 else 2, 1, 0, 1 + runs 
+        # 3b
         elif r1 == 3 and r2 == 0: return 1, 0, 0, 1 + runs
+        # 1b & 3b
         elif r1 == 3 and r2 == 1: 2, 1, 0, 1 + runs
-        elif r1 == 3 and r2 == 2:
+        # 2b & 3b
+        elif r1 == 3 and r2 == 2 and r3 == 0:
             r1 = random.choices([3, 1], weights = prob_wts, k = 1)[0]
             return 3, 1, 0, 1 + runs if r1 == 3 else 1, 0, 0, 2 + runs
+        # bases loaded
         elif r3 == 1:
             r1 = random.choices([3, 2], weights = prob_wts, k = 1)[0]
             return 3, 2, 1, 1 + runs if r1 == 3 else 2, 1, 0, 2 + runs
         else:
             return 'error', 'error', 'error', 'error'
+
+    # double
+    elif hit == 2:
+        # no runners
+        if r1 == 0: return 2, 0, 0, runs
+        # 1b -- homebydouble
+        elif r1 == 1: 
+            r1 = random.choices([3, 2], weights = prob_wts, k = 1)[0]
+            return 3, 2, 0, runs if r1 == 3 else 2, 0, 0, 1 + runs
+        # 2b -- 2ndto3rd
+        elif r1 == 2 and r2 == 0:
+            r1 = random.choices([2, 3], weights = prob_wts, k = 1)[0]
+            return 2, 0, 0, 1 + runs if r1 == 2 else 3, 2, 0, runs
+        # 1b & 2b -- homebydouble
+        elif r1 == 2 and r2 == 1:
+            r1 = random.choices([3, 2], weights = prob_wts, k = 1)[0]
+            return 3, 2, 0, 1 + runs if r1 == 3 else 2, 0, 0, 2 + runs
+        # 3b 
+        elif r1 == 3 and r2 == 0: return 2, 0, 0, 1 + runs
+        # 1b & 3b -- homebydouble
+        elif r1 == 3 and r2 == 1:
+            r1 = random.choices([3, 2], weights = prob_wts, k = 1)[0]
+            3, 2, 0, 1 + runs if r1 == 3 else 2, 0, 0, 2 + runs 
+        # 2b & 3b -- 2ndto3rd
+        elif r1 == 3 and r2 == 2 and r1 == 0:
+            r1 = random.choices([2, 3], weights = prob_wts, k = 1)[0]
+            return 2, 0, 0, 2 + runs if r1 == 2 else 3, 2, 0, 1 + runs
+        # bases loaded -- homebydouble
+        elif r3 == 1: 
+            r1 = random.choices([3, 2], weights = prob_wts, k = 1)[0]
+            return 3, 2, 0, 2 + runs if r1 == 3 else 2, 0, 0, 3 + runs
+        else:
+            return 'error', 'error', 'error', 'error'
+
+    # triple
+    elif hit == 3:
+        pass
 
 ```
 
