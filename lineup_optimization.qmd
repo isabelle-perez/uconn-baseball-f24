@@ -221,15 +221,15 @@ def process_event(cur_row, prev_row):
         cur_row['Runs'] = prev_row['Runs']
 
     if prev_row['Outs'] != 3:
-            cur_row['Outs'] = prev_row['Outs']
-            cur_row['Inning'] = prev_row['Inning']
-        else:
-            cur_row['Outs'] = 0
-            cur_row['Inning'] = 1 + prev_row['Inning']
-            cur_row[9:12] = 0
+        cur_row['Outs'] = prev_row['Outs']
+        cur_row['Inning'] = prev_row['Inning']
+    else:
+        cur_row['Outs'] = 0
+        cur_row['Inning'] = 1 + prev_row['Inning']
+        cur_row[9:12] = 0
 
     # no hit
-    elif cur_row['Result'] == 0:
+    if cur_row['Result'] == 0:
         if prev_row['Outs'] != 3:
             cur_row['Outs'] = 1 + prev_row['Outs']
             cur_row[9:] = prev_row[9:]
@@ -254,7 +254,12 @@ def process_event(cur_row, prev_row):
 
     # homerun
     if cur_row['Result'] == 4:
-        pass
+        cur_row.iloc[9:] = update_cols(prev_row, 4)
+
+    cur_row = cur_row.apply(lambda x: 0 if x is None else x)
+
+    print(cur_row)
+    return cur_row
 
 
 def update_cols(prev_row, hit, prob_wts = None):
@@ -402,7 +407,7 @@ for i in range(len(permutations_condensed)):
         # set runner placements to zero for a homerun
         skeleton_data_tmp.iloc[0, 8:12] = np.where(res_4, 0, skeleton_data_tmp.iloc[0, 8:12])
 
-        for k in range(1, len(skeleton_data_tmp)):
+        for k in range(1, 3):
             prev_row = skeleton_data_tmp.iloc[k - 1]
             cur_row = skeleton_data_tmp.iloc[k].copy()
 
@@ -412,8 +417,10 @@ for i in range(len(permutations_condensed)):
                 skeleton_data_tmp.loc[k, 'Outs'] = 3
                 skeleton_data_tmp.loc[k, 'Runs'] = prev_row['Runs']
             else:
-                skeleton_data_tmp.iloc[k] = process_event(cur_row, 
-                                                            prev_row)
+                print(prev_row, cur_row)
+                skeleton_data_tmp.loc[k] = process_event(cur_row, prev_row)
+
+        run_total.loc[j, 1] = skeleton_data_tmp.loc[80, 'Runs']
 
 skeleton_data_tmp
 ```
