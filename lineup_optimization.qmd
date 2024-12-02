@@ -216,6 +216,97 @@ permutations_condensed.loc['sd_runs'] = 0
 ```{python}
 np.random.seed(0)
 
+def update_cols(prev_row, hit, prob_wts = None):
+    r1 = prev_row['Runner1']
+    r2 = prev_row['Runner2']
+    r3 = prev_row['Runner3']
+    runs = prev_row['Runs']
+
+    # single
+    if hit == 1:
+        # no runners
+        if r1 == 0: return [1, 0, 0, runs]
+        # 1b
+        elif r1 == 1 and r2 == 0:
+            return [2, 1, 0, runs]
+        # 2b
+        elif r1 == 2 and r2 == 0: 
+            r1 = random.choices([3, 1], weights = prob_wts, k = 1)[0]
+            return [3, 1, 0, runs] if r1 == 3 else [1, 0, 0, 1 + runs]
+        # 1b & 2b
+        elif r1 == 2 and r2 == 1:
+            r1 = random.choices([3, 2], weights = prob_wts, k = 1)[0]
+            return [3, 2, 1, runs] if r1 == 3 else [2, 1, 0, 1 + runs]
+        # 3b
+        elif r1 == 3 and r2 == 0: return [1, 0, 0, 1 + runs]
+        # 1b & 3b
+        elif r1 == 3 and r2 == 1: return [2, 1, 0, 1 + runs]
+        # 2b & 3b
+        elif r1 == 3 and r2 == 2 and r3 == 0:
+            r1 = random.choices([3, 1], weights = prob_wts, k = 1)[0]
+            return [3, 1, 0, 1 + runs] if r1 == 3 else [1, 0, 0, 2 + runs]
+        # bases loaded
+        elif r3 == 1:
+            r1 = random.choices([3, 2], weights = prob_wts, k = 1)[0]
+            return [3, 2, 1, 1 + runs] if r1 == 3 else [2, 1, 0, 2 + runs]
+        else: return [0, 0, 0, 0]
+
+    # double
+    elif hit == 2:
+        # no runners
+        if r1 == 0: return [2, 0, 0, runs]
+        # 1b -- homebydouble
+        elif r1 == 1: 
+            r1 = random.choices([3, 2], weights = prob_wts, k = 1)[0]
+            return [3, 2, 0, runs] if r1 == 3 else [2, 0, 0, 1 + runs]
+        # 2b -- 2ndto3rd
+        elif r1 == 2 and r2 == 0:
+            r1 = random.choices([2, 3], weights = prob_wts, k = 1)[0]
+            return [2, 0, 0, 1 + runs] if r1 == 2 else [3, 2, 0, runs]
+        # 1b & 2b -- homebydouble
+        elif r1 == 2 and r2 == 1:
+            r1 = random.choices([3, 2], weights = prob_wts, k = 1)[0]
+            return [3, 2, 0, 1 + runs] if r1 == 3 else [2, 0, 0, 2 + runs]
+        # 3b 
+        elif r1 == 3 and r2 == 0: return [2, 0, 0, 1 + runs]
+        # 1b & 3b -- homebydouble
+        elif r1 == 3 and r2 == 1:
+            r1 = random.choices([3, 2], weights = prob_wts, k = 1)[0]
+            [3, 2, 0, 1 + runs] if r1 == 3 else [2, 0, 0, 2 + runs]
+        # 2b & 3b -- 2ndto3rd
+        elif r1 == 3 and r2 == 2 and r1 == 0:
+            r1 = random.choices([2, 3], weights = prob_wts, k = 1)[0]
+            return [2, 0, 0, 2 + runs] if r1 == 2 else [3, 2, 0, 1 + runs]
+        # bases loaded -- homebydouble
+        elif r3 == 1: 
+            r1 = random.choices([3, 2], weights = prob_wts, k = 1)[0]
+            return [3, 2, 0, 2 + runs] if r1 == 3 else [2, 0, 0, 3 + runs]
+        else: return [0, 0, 0, 0]
+
+    # triple
+    elif hit == 3:
+        # no runners
+        if r1 == 0: return [3, 0, 0, runs]
+        # 1b or 2b or 3b
+        elif r1 != 0 and r2 == 0: return [3, 0, 0, 1 + runs]
+        # 1b & 2b or 1b & 3b or 2b & 3b
+        elif r1 != 0 and r2 != 0 and r3 == 0: return [3, 0, 0, 2 + runs]
+        # bases loaded
+        elif r3 == 1: return [3, 0, 0, 3 + runs]
+        else: return [0, 0, 0, 0]
+
+    # homerun
+    elif hit == 4:
+        # no runners
+        if r1 == 0: return [0, 0, 0, 1 + runs]
+        # 1b, 2b, 3b
+        elif r1 != 0 and r2 == 0: return [0, 0, 0, 2 + runs] 
+        # 1b & 2b, 1b & 3b, 2b & 3b
+        elif r1 != 0 and r2 != 0 and r3 == 0: return [0, 0, 0, 3 + runs]
+        # bases loaded
+        elif r3 == 1: return [0, 0, 0, 4 + runs]  
+        else: return [0, 0, 0, 0]
+
 def process_event(cur_row, prev_row):
     prev_row = prev_row.apply(lambda x: 0 if x is None else x)
 
@@ -264,99 +355,12 @@ def process_event(cur_row, prev_row):
         settings = update_cols(prev_row, 4)
 
     if cur_row['Result'] != 0:
+        print(prev_row, cur_row)
         cur_row['Runner1'], cur_row['Runner2'], cur_row['Runner3'], cur_row['Runs'] = settings[0], settings[1], settings[2], settings[3]
 
     cur_row = cur_row.apply(lambda x: 0 if x is None else x)
 
     return cur_row
-
-
-def update_cols(prev_row, hit, prob_wts = None):
-    r1 = prev_row['Runner1']
-    r2 = prev_row['Runner2']
-    r3 = prev_row['Runner3']
-    runs = prev_row['Runs']
-
-    # single
-    if hit == 1:
-        # no runners
-        if r1 == 0: return [1, 0, 0, runs]
-        # 1b
-        elif r1 == 1 and r2 == 0:
-            return [2, 1, 0, runs]
-        # 2b
-        elif r1 == 2 and r2 == 0: 
-            r1 = random.choices([3, 1], weights = prob_wts, k = 1)[0]
-            return [3, 1, 0, runs] if r1 == 3 else [1, 0, 0, 1 + runs]
-        # 1b & 2b
-        elif r1 == 2 and r2 == 1:
-            r1 = random.choices([3, 2], weights = prob_wts, k = 1)[0]
-            return [3, 2, 1, runs] if r1 == 3 else [2, 1, 0, 1 + runs]
-        # 3b
-        elif r1 == 3 and r2 == 0: return [1, 0, 0, 1 + runs]
-        # 1b & 3b
-        elif r1 == 3 and r2 == 1: [2, 1, 0, 1 + runs]
-        # 2b & 3b
-        elif r1 == 3 and r2 == 2 and r3 == 0:
-            r1 = random.choices([3, 1], weights = prob_wts, k = 1)[0]
-            return [3, 1, 0, 1 + runs] if r1 == 3 else [1, 0, 0, 2 + runs]
-        # bases loaded
-        elif r3 == 1:
-            r1 = random.choices([3, 2], weights = prob_wts, k = 1)[0]
-            return [3, 2, 1, 1 + runs] if r1 == 3 else [2, 1, 0, 2 + runs]
-
-    # double
-    elif hit == 2:
-        # no runners
-        if r1 == 0: return [2, 0, 0, runs]
-        # 1b -- homebydouble
-        elif r1 == 1: 
-            r1 = random.choices([3, 2], weights = prob_wts, k = 1)[0]
-            return [3, 2, 0, runs] if r1 == 3 else [2, 0, 0, 1 + runs]
-        # 2b -- 2ndto3rd
-        elif r1 == 2 and r2 == 0:
-            r1 = random.choices([2, 3], weights = prob_wts, k = 1)[0]
-            return [2, 0, 0, 1 + runs] if r1 == 2 else [3, 2, 0, runs]
-        # 1b & 2b -- homebydouble
-        elif r1 == 2 and r2 == 1:
-            r1 = random.choices([3, 2], weights = prob_wts, k = 1)[0]
-            return [3, 2, 0, 1 + runs] if r1 == 3 else [2, 0, 0, 2 + runs]
-        # 3b 
-        elif r1 == 3 and r2 == 0: return [2, 0, 0, 1 + runs]
-        # 1b & 3b -- homebydouble
-        elif r1 == 3 and r2 == 1:
-            r1 = random.choices([3, 2], weights = prob_wts, k = 1)[0]
-            [3, 2, 0, 1 + runs] if r1 == 3 else [2, 0, 0, 2 + runs]
-        # 2b & 3b -- 2ndto3rd
-        elif r1 == 3 and r2 == 2 and r1 == 0:
-            r1 = random.choices([2, 3], weights = prob_wts, k = 1)[0]
-            return [2, 0, 0, 2 + runs] if r1 == 2 else [3, 2, 0, 1 + runs]
-        # bases loaded -- homebydouble
-        elif r3 == 1: 
-            r1 = random.choices([3, 2], weights = prob_wts, k = 1)[0]
-            return [3, 2, 0, 2 + runs] if r1 == 3 else [2, 0, 0, 3 + runs]
-
-    # triple
-    elif hit == 3:
-        # no runners
-        if r1 == 0: return [3, 0, 0, runs]
-        # 1b or 2b or 3b
-        if r1 != 0 and r2 == 0: return [3, 0, 0, 1 + runs]
-        # 1b & 2b or 1b & 3b or 2b & 3b
-        if r1 != 0 and r2 != 0 and r3 == 0: return [3, 0, 0, 2 + runs]
-        # bases loaded
-        if r3 == 1: return [3, 0, 0, 3 + runs]
-
-    # homerun
-    elif hit == 4:
-        # no runners
-        if r1 == 0: return [0, 0, 0, 1 + runs]
-        # 1b, 2b, 3b
-        elif r1 != 0 and r2 == 0: return [0, 0, 0, 2 + runs] 
-        # 1b & 2b, 1b & 3b, 2b & 3b
-        elif r1 != 0 and r2 != 0 and r3 == 0: return [0, 0, 0, 3 + runs]
-        # bases loaded
-        elif r3 == 1: return [0, 0, 0, 4 + runs]  
 ```
 
 ```{python}
