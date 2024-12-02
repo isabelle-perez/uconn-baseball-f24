@@ -207,13 +207,18 @@ permutations_condensed = permutations_expanded[
     (permutations_expanded['seventh'].isin(seventh_opt)) &
     (permutations_expanded['eighth'].isin(eighth_opt)) &
     (permutations_expanded['ninth'].isin(ninth_opt))
-]
+].copy()
 
-permutations_condensed
+permutations_condensed.loc['mean_runs'] = 0
+permutations_condensed.loc['sd_runs'] = 0
 ```
 
 ```{python}
+np.random.seed(0)
+
 def process_event(cur_row, prev_row):
+    prev_row = prev_row.apply(lambda x: 0 if x is None else x)
+
     # last out of the game -- nothing left to update
     if prev_row['Inning'] == 9 and prev_row['Outs'] == 3:
         cur_row['Inning'] = 9
@@ -223,6 +228,7 @@ def process_event(cur_row, prev_row):
     if prev_row['Outs'] != 3:
         cur_row['Outs'] = prev_row['Outs']
         cur_row['Inning'] = prev_row['Inning']
+        cur_row['Runs'] = prev_row['Runs']
     else:
         cur_row['Outs'] = 0
         cur_row['Inning'] = 1 + prev_row['Inning']
@@ -239,26 +245,29 @@ def process_event(cur_row, prev_row):
 
     # single 
     elif cur_row['Result'] == 1:
-        cur_row.iloc[9:] = update_cols(prev_row, 1, [1 - prob_2ndtohome_single, prob_2ndtohome_single])
+        settings = update_cols(prev_row, 1, [1 - prob_2ndtohome_single, prob_2ndtohome_single])
 
     # double
     elif cur_row['Result'] == 2:
         if prev_row['Runner1'] == 0 or prev_row['Runner1'] == 1 or prev_row['Runner3'] == 1:
-            cur_row.iloc[9:] = update_cols(prev_row, 2, [1 - prob_1sttohome_double, prob_1sttohome_double])
+            probs = [1 - prob_1sttohome_double, prob_1sttohome_double]
         else:
-            cur_row.iloc[9:] = update_cols(prev_row, 2, [1 - prob_2ndto3rd_double, prob_2ndto3rd_double])
+            probs = [1 - prob_2ndto3rd_double, prob_2ndto3rd_double]
+        settings = update_cols(prev_row, 2, probs)
 
     # triple 
     if cur_row['Result'] == 3:
-        cur_row.iloc[9:] = update_cols(prev_row, 3)
+        settings = update_cols(prev_row, 3)
 
     # homerun
     if cur_row['Result'] == 4:
-        cur_row.iloc[9:] = update_cols(prev_row, 4)
+        settings = update_cols(prev_row, 4)
+
+    if cur_row['Result'] != 0:
+        cur_row['Runner1'], cur_row['Runner2'], cur_row['Runner3'], cur_row['Runs'] = settings[0], settings[1], settings[2], settings[3]
 
     cur_row = cur_row.apply(lambda x: 0 if x is None else x)
 
-    print(cur_row)
     return cur_row
 
 
@@ -271,97 +280,92 @@ def update_cols(prev_row, hit, prob_wts = None):
     # single
     if hit == 1:
         # no runners
-        if r1 == 0: return 1, 0, 0, runs
+        if r1 == 0: return [1, 0, 0, runs]
         # 1b
         elif r1 == 1 and r2 == 0:
-            return 2, 1, 0, runs
+            return [2, 1, 0, runs]
         # 2b
         elif r1 == 2 and r2 == 0: 
             r1 = random.choices([3, 1], weights = prob_wts, k = 1)[0]
-            return 3, 1, 0, runs if r1 == 3 else 1, 0, 0, 1 + runs
+            return [3, 1, 0, runs] if r1 == 3 else [1, 0, 0, 1 + runs]
         # 1b & 2b
         elif r1 == 2 and r2 == 1:
             r1 = random.choices([3, 2], weights = prob_wts, k = 1)[0]
-            return 3, 2, 1, runs if r1 == 3 else 2, 1, 0, 1 + runs 
+            return [3, 2, 1, runs] if r1 == 3 else [2, 1, 0, 1 + runs]
         # 3b
-        elif r1 == 3 and r2 == 0: return 1, 0, 0, 1 + runs
+        elif r1 == 3 and r2 == 0: return [1, 0, 0, 1 + runs]
         # 1b & 3b
-        elif r1 == 3 and r2 == 1: 2, 1, 0, 1 + runs
+        elif r1 == 3 and r2 == 1: [2, 1, 0, 1 + runs]
         # 2b & 3b
         elif r1 == 3 and r2 == 2 and r3 == 0:
             r1 = random.choices([3, 1], weights = prob_wts, k = 1)[0]
-            return 3, 1, 0, 1 + runs if r1 == 3 else 1, 0, 0, 2 + runs
+            return [3, 1, 0, 1 + runs] if r1 == 3 else [1, 0, 0, 2 + runs]
         # bases loaded
         elif r3 == 1:
             r1 = random.choices([3, 2], weights = prob_wts, k = 1)[0]
-            return 3, 2, 1, 1 + runs if r1 == 3 else 2, 1, 0, 2 + runs
-        else: return 'error', 'error', 'error', 'error'
+            return [3, 2, 1, 1 + runs] if r1 == 3 else [2, 1, 0, 2 + runs]
 
     # double
     elif hit == 2:
         # no runners
-        if r1 == 0: return 2, 0, 0, runs
+        if r1 == 0: return [2, 0, 0, runs]
         # 1b -- homebydouble
         elif r1 == 1: 
             r1 = random.choices([3, 2], weights = prob_wts, k = 1)[0]
-            return 3, 2, 0, runs if r1 == 3 else 2, 0, 0, 1 + runs
+            return [3, 2, 0, runs] if r1 == 3 else [2, 0, 0, 1 + runs]
         # 2b -- 2ndto3rd
         elif r1 == 2 and r2 == 0:
             r1 = random.choices([2, 3], weights = prob_wts, k = 1)[0]
-            return 2, 0, 0, 1 + runs if r1 == 2 else 3, 2, 0, runs
+            return [2, 0, 0, 1 + runs] if r1 == 2 else [3, 2, 0, runs]
         # 1b & 2b -- homebydouble
         elif r1 == 2 and r2 == 1:
             r1 = random.choices([3, 2], weights = prob_wts, k = 1)[0]
-            return 3, 2, 0, 1 + runs if r1 == 3 else 2, 0, 0, 2 + runs
+            return [3, 2, 0, 1 + runs] if r1 == 3 else [2, 0, 0, 2 + runs]
         # 3b 
-        elif r1 == 3 and r2 == 0: return 2, 0, 0, 1 + runs
+        elif r1 == 3 and r2 == 0: return [2, 0, 0, 1 + runs]
         # 1b & 3b -- homebydouble
         elif r1 == 3 and r2 == 1:
             r1 = random.choices([3, 2], weights = prob_wts, k = 1)[0]
-            3, 2, 0, 1 + runs if r1 == 3 else 2, 0, 0, 2 + runs 
+            [3, 2, 0, 1 + runs] if r1 == 3 else [2, 0, 0, 2 + runs]
         # 2b & 3b -- 2ndto3rd
         elif r1 == 3 and r2 == 2 and r1 == 0:
             r1 = random.choices([2, 3], weights = prob_wts, k = 1)[0]
-            return 2, 0, 0, 2 + runs if r1 == 2 else 3, 2, 0, 1 + runs
+            return [2, 0, 0, 2 + runs] if r1 == 2 else [3, 2, 0, 1 + runs]
         # bases loaded -- homebydouble
         elif r3 == 1: 
             r1 = random.choices([3, 2], weights = prob_wts, k = 1)[0]
-            return 3, 2, 0, 2 + runs if r1 == 3 else 2, 0, 0, 3 + runs
-        else: return 'error', 'error', 'error', 'error'
+            return [3, 2, 0, 2 + runs] if r1 == 3 else [2, 0, 0, 3 + runs]
 
     # triple
     elif hit == 3:
         # no runners
-        if r1 == 0: return 3, 0, 0, runs
+        if r1 == 0: return [3, 0, 0, runs]
         # 1b or 2b or 3b
-        if r1 != 0 and r2 == 0: return 3, 0, 0, 1 + runs
+        if r1 != 0 and r2 == 0: return [3, 0, 0, 1 + runs]
         # 1b & 2b or 1b & 3b or 2b & 3b
-        if r1 != 0 and r2 != 0 and r3 == 0: return 3, 0, 0, 2 + runs
+        if r1 != 0 and r2 != 0 and r3 == 0: return [3, 0, 0, 2 + runs]
         # bases loaded
-        if r3 == 1: return 3, 0, 0, 3 + runs
-        else: return 'error', 'error', 'error', 'error'
+        if r3 == 1: return [3, 0, 0, 3 + runs]
 
     # homerun
     elif hit == 4:
         # no runners
-        if r1 == 0: return 0, 0, 0, 1 + runs
+        if r1 == 0: return [0, 0, 0, 1 + runs]
         # 1b, 2b, 3b
-        elif r1 != 0 and r2 == 0: return 0, 0, 0, 2 + runs 
+        elif r1 != 0 and r2 == 0: return [0, 0, 0, 2 + runs] 
         # 1b & 2b, 1b & 3b, 2b & 3b
-        elif r1 != 0 and r2 != 0 and r3 == 0: return 0, 0, 0, 3 + runs
+        elif r1 != 0 and r2 != 0 and r3 == 0: return [0, 0, 0, 3 + runs]
         # bases loaded
-        elif r3 == 1: return 0, 0, 0, 4 + runs 
-        else: return 'error', 'error', 'error', 'error'
-    
+        elif r3 == 1: return [0, 0, 0, 4 + runs]  
 ```
 
 ```{python}
-np.random.seed(1)
+np.random.seed(0)
 
 run_total = pd.DataFrame({'Runs': np.zeros(num_games)})
 
 for i in range(len(permutations_condensed)):
-    indices = permutations_condensed.iloc[i, :9].values - 1  # Adjust for 0-based index
+    indices = permutations_condensed.iloc[i, :9].values - 1
     batter_vec = req_data.iloc[indices, 0].values
     prob_vecs = req_data.iloc[indices, 1:6].values
 
@@ -407,7 +411,7 @@ for i in range(len(permutations_condensed)):
         # set runner placements to zero for a homerun
         skeleton_data_tmp.iloc[0, 8:12] = np.where(res_4, 0, skeleton_data_tmp.iloc[0, 8:12])
 
-        for k in range(1, 3):
+        for k in range(1, len(skeleton_data_tmp)):
             prev_row = skeleton_data_tmp.iloc[k - 1]
             cur_row = skeleton_data_tmp.iloc[k].copy()
 
@@ -417,10 +421,15 @@ for i in range(len(permutations_condensed)):
                 skeleton_data_tmp.loc[k, 'Outs'] = 3
                 skeleton_data_tmp.loc[k, 'Runs'] = prev_row['Runs']
             else:
-                print(prev_row, cur_row)
-                skeleton_data_tmp.loc[k] = process_event(cur_row, prev_row)
+                skeleton_data_tmp.loc[k, :] = process_event(cur_row, prev_row)
 
         run_total.loc[j, 1] = skeleton_data_tmp.loc[80, 'Runs']
+
+    orderopt_mean = run_total['Runs'].mean()
+    orderopt_sd = run_total['Runs'].std()
+
+    permutations_condensed.loc[i, 'mean_runs'] = orderopt_mean
+    permutations_condensed.loc[i, 'sd_runs'] = orderopt_sd
 
 skeleton_data_tmp
 ```
