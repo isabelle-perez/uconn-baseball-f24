@@ -5,6 +5,7 @@ import pandas as pd
 import numpy as np
 import itertools
 import random
+from joblib import Parallel, delayed
 
 uconn_data = pd.read_csv('data/in-game-trackman/final_fall_stats.csv')
 ```
@@ -272,7 +273,7 @@ def update_cols(prev_row, hit, prob_wts = None):
         # 1b & 3b -- homebydouble
         elif r1 == 3 and r2 == 1:
             r1 = random.choices([3, 2], weights = prob_wts, k = 1)[0]
-            [3, 2, 0, 1 + runs] if r1 == 3 else [2, 0, 0, 2 + runs]
+            return [3, 2, 0, 1 + runs] if r1 == 3 else [2, 0, 0, 2 + runs]
         # 2b & 3b -- 2ndto3rd
         elif r1 == 3 and r2 == 2 and r1 == 0:
             r1 = random.choices([2, 3], weights = prob_wts, k = 1)[0]
@@ -355,7 +356,6 @@ def process_event(cur_row, prev_row):
         settings = update_cols(prev_row, 4)
 
     if cur_row['Result'] != 0:
-        print(prev_row, cur_row)
         cur_row['Runner1'], cur_row['Runner2'], cur_row['Runner3'], cur_row['Runs'] = settings[0], settings[1], settings[2], settings[3]
 
     cur_row = cur_row.apply(lambda x: 0 if x is None else x)
@@ -380,7 +380,7 @@ for i in range(len(permutations_condensed)):
     prob_cols = ['Prob1st', 'Prob2nd', 'Prob3rd', 'ProbHome', 'ProbOut']
     skeleton_data[prob_cols] = skeleton_data[prob_cols].div(skeleton_data[prob_cols].sum(axis = 1), axis = 0)
 
-    for j in range(1):
+    for j in range(num_games):
         skeleton_data_tmp = skeleton_data.copy()
 
         skeleton_data_tmp[prob_cols] = skeleton_data_tmp[prob_cols].apply(pd.to_numeric, errors = 'coerce')
@@ -434,6 +434,8 @@ for i in range(len(permutations_condensed)):
 
     permutations_condensed.loc[i, 'mean_runs'] = orderopt_mean
     permutations_condensed.loc[i, 'sd_runs'] = orderopt_sd
+
+    print('{} iterations finished!'.format(i + 1))
 
 skeleton_data_tmp
 ```
