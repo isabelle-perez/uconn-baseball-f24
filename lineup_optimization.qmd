@@ -5,7 +5,6 @@ import pandas as pd
 import numpy as np
 import itertools
 import random
-from joblib import Parallel, delayed
 
 uconn_data = pd.read_csv('data/in-game-trackman/final_fall_stats.csv')
 ```
@@ -74,7 +73,7 @@ prob_2ndtohome_single = 0.60
 prob_1sttohome_double = 0.45
 prob_2ndto3rd_double = 0.10
 
-num_games = 100
+num_games = 1
 ```
 
 # Monte-Carlo Simulation
@@ -210,8 +209,11 @@ permutations_condensed = permutations_expanded[
     (permutations_expanded['ninth'].isin(ninth_opt))
 ].copy()
 
-permutations_condensed.loc['mean_runs'] = 0
-permutations_condensed.loc['sd_runs'] = 0
+permutations_condensed['mean_runs'] = 0
+permutations_condensed['sd_runs'] = 0
+
+permutations_condensed = permutations_condensed.reset_index()
+permutations_condensed = permutations_condensed.drop(columns = ['index'])
 ```
 
 ```{python}
@@ -378,7 +380,8 @@ for i in range(len(permutations_condensed)):
 
     # normalize data so probabilities add to one
     prob_cols = ['Prob1st', 'Prob2nd', 'Prob3rd', 'ProbHome', 'ProbOut']
-    skeleton_data[prob_cols] = skeleton_data[prob_cols].div(skeleton_data[prob_cols].sum(axis = 1), axis = 0)
+    prob_sum = skeleton_data[prob_cols].sum(axis = 1).values
+    skeleton_data[prob_cols] = skeleton_data[prob_cols].div(prob_sum, axis = 0)
 
     for j in range(num_games):
         skeleton_data_tmp = skeleton_data.copy()
@@ -427,7 +430,7 @@ for i in range(len(permutations_condensed)):
             else:
                 skeleton_data_tmp.loc[k, :] = process_event(cur_row, prev_row)
 
-        run_total.loc[j, 1] = skeleton_data_tmp.loc[80, 'Runs']
+        run_total.loc[j, 'Runs'] = skeleton_data_tmp.loc[80, 'Runs']
 
     orderopt_mean = run_total['Runs'].mean()
     orderopt_sd = run_total['Runs'].std()
@@ -435,7 +438,21 @@ for i in range(len(permutations_condensed)):
     permutations_condensed.loc[i, 'mean_runs'] = orderopt_mean
     permutations_condensed.loc[i, 'sd_runs'] = orderopt_sd
 
-    print('{} iterations finished!'.format(i + 1))
+    print('finished iteration {}!'.format(i + 1))
+    print(permutations_condensed)
 
 skeleton_data_tmp
+```
+
+```{python}
+text_results = permutations_condensed
+#text_results = text_results.apply(lambda x: 0 if x == 'nan' else x)
+
+for i in range(10):
+    for j in range(len(text_results)):
+        numeric_value = int(text_results.iloc[i, j]) - 1
+        text_results.iloc[i, j] = lookup_table.iloc[numeric_value, 1]
+        #pass
+
+permutations_condensed
 ```
