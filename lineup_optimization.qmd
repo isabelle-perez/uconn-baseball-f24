@@ -217,7 +217,7 @@ permutations_condensed = permutations_condensed.drop(columns = ['index'])
 ```
 
 ```{python}
-np.random.seed(0)
+'''np.random.seed(0)
 
 def update_cols(prev_row, hit, prob_wts = None):
     r1 = prev_row['Runner1']
@@ -362,18 +362,17 @@ def process_event(cur_row, prev_row):
 
     cur_row = cur_row.apply(lambda x: 0 if x is None else x)
 
-    return cur_row
+    return cur_row'''
 ```
 
 ```{python}
-# TODO: vectorized version
 np.random.seed(0)
 
 def update_cols(prev_row, hit, prob_wts = None):
-    r1 = prev_row[:, 9]
-    r2 = prev_row[:, 10]
-    r3 = prev_row[:, 11]
-    runs = prev_row[:, 12]
+    r1 = prev_row[9]
+    r2 = prev_row[10]
+    r3 = prev_row[11]
+    runs = prev_row[12]
 
     # single
     if hit == 1:
@@ -464,53 +463,137 @@ def process_event(cur_row, prev_row):
     prev_row = np.nan_to_num(prev_row, nan = 0)    
 
     # last out of game -- nothing left to update
-    if prev_row[:, 7] == 9 and prev_row[:, 8] == 3:
-        cur_row[:, 7] = 9
-        # TODO: double check value
-        cur_row[:, 8] = 0
-        cur_row[:, 12] = prev_row[:, 12]
+    if prev_row[7] == 9 and prev_row[8] == 3:
+        cur_row[7] = 9
+        cur_row[8] = 3
+        cur_row[12] = prev_row[12]
 
-    if prev_row[:, 8] != 3:
-        cur_row[:, 7:9] = prev_row[:, 7:9]
-        cur_row[:, 12] = prev_row[:, 12]
+    if prev_row[8] != 3:
+        cur_row[7:9] = prev_row[7:9]
+        cur_row[12] = prev_row[12]
 
     # no hit
-    if cur_row[:, 6] == 0:
-        if prev_row[:, 8] != 3:
-            cur_row[:, 8] = 1 + prev_row[:, 8]
-            cur_row[:, 9:] = prev_row[:, 9:]
+    if cur_row[6] == 0:
+        if prev_row[8] != 3:
+            cur_row[8] = 1 + prev_row[8]
+            cur_row[9:] = prev_row[9:]
+        else:
+            cur_row[8] = 1
+            cur_row[12] = prev_row[12]
+    
+    # single
+    elif cur_row[12] == 1:
+        settings = update_cols(prev_row, 1, [1 - prob_2ndtohome_single, prob_2ndtohome_single])
+
+    # double 
+    elif cur_row[12] == 2:
+        if prev_row[9] == 0 or prev_row[9] == 1 or prev_row[11] == 1:
+            probs = [1 - prob_1sttohome_double, prob_1sttohome_double]
+        else:
+            probs = [1 - prob_2ndto3rd_double, prob_2ndto3rd_double]
+        settings = update_cols(prev_row, 2, probs)
+
+    # triple
+    elif cur_row[12] == 3:
+        settings = update_cols(prev_row, 3)
+
+    # homerun
+    elif cur_row[12] == 4:
+        settings = update_cols(prev_row, 4)
+
+    if cur_row[12] != 0:
+        cur_row[9], cur_row[10], cur_row[11], cur_row[12] = settings
+
+    cur_row = np.nan_to_num(cur_row, nan = 0) 
+
+    return cur_row
 ```
 
 ```{python}
-# TODO: vectorized version 
 np.random.seed(0)
 
-prob_cols = ['Prob1st', 'Prob2nd', 'Prob3rd', 'ProbHome', 'ProbOut']
+# map batter names to integers
+batter_names = req_data.iloc[:, 0].unique()
+batter_map = {name: idx for idx, name in enumerate(batter_names)}
 
 # get all lineup combinations by name
 all_indices = permutations_condensed.iloc[:, :9].values - 1
 batter_vecs = req_data.iloc[all_indices.flatten(), 0].values.reshape(all_indices.shape)
+batter_vecs = np.vectorize(lambda name: batter_map[name])(batter_vecs)
 
 prob_vecs = req_data.iloc[all_indices.flatten(), 1:6].values.reshape(all_indices.shape[0], 9, 5)
 
 # initialize storage for run counts and game data
 run_total = np.zeros(num_games)
 num_permutations = all_indices.shape[0]
-skeleton_arr = np.zeros((num_permutations * 9, 6))
+skeleton_arr = np.full((num_permutations * 9, 13), np.nan, dtype = float)
 
 for i in range(num_permutations):
     # combine batter and probability vectors
     combined_data = np.column_stack([batter_vecs[i], prob_vecs[i]])
     
     # reassign to skeleton_arr
-    # TODO: map batter names to numeric representations
-    skeleton_arr[i * 9:(i + 1) * 9, :] = combined_data
+    skeleton_arr[i * 9:(i + 1) * 9, 0:6] = combined_data
 
-skeleton_arr.shape
+# normalize data so probabilities add to one
+prob_cols = skeleton_arr[:, 1:6]
+prob_sums = prob_cols.sum(axis = 1, keepdims = True)
+skeleton_arr[:, 1:6] = prob_cols / prob_sums
+# ------------------------------------------
+for i in range(num_games):
+    skeleton_arr_tmp = skeleton_arr.copy()
+
+    # assign a random result (out, single, double, triple, homerun) to each row
+    skeleton_arr_tmp[:, 6] = np.array([
+        np.random.choice([0, 1, 2, 3, 4], size = 1, p = row)[0]
+        for row in skeleton_arr_tmp[:, 1:6]
+    ])
+
+    # initial states
+    skeleton_arr_tmp[:, 7] = 1  # inning
+    skeleton_arr_tmp[:, 12] = 0  # runs
+    skeleton_arr_tmp[:, 8] = 0  # outs
+
+    # first outcome of game
+    first_res = skeleton_arr_tmp[0, 12]
+
+    # adjust outs and runs according to first outcome
+    skeleton_arr_tmp[0, 8] = 1 if first_res == 0 else 0
+    skeleton_arr_tmp[0, 12] = 1 if first_res == 4 else 0
+
+    # update runner placements according to first outcome
+    skeleton_arr_tmp[0, 9:12] = 0
+    skeleton_arr_tmp[0, 9] = 1 if first_res == 1 else 0
+    skeleton_arr_tmp[0, 10] = 1 if first_res == 2 else 0
+    skeleton_arr_tmp[0, 11] = 1 if first_res == 3 else 0
+    # ------------------------------------------
+    for j in range(1, len(skeleton_arr_tmp)): 
+        # store previous and current rows
+        prev_row = skeleton_arr_tmp[j - 1, :]
+        cur_row = skeleton_arr_tmp[j, :]
+
+        # end of game -- stop
+        if (prev_row[7] == 9 and prev_row[8] == 3):
+            skeleton_arr_tmp[j, 7] = 9
+            skeleton_arr_tmp[j, 8] = 3
+            skeleton_arr_tmp[j, 12] = prev_row[12]
+        # process next outcome of game
+        else:
+            skeleton_arr_tmp[j, :] = process_event(cur_row, prev_row)
+    
+    run_total[i] = skeleton_arr_tmp[80, 12]
+    print(run_total)
+    print(skeleton_arr_tmp)
+
+orderopt_mean = np.mean(run_total)
+orderopt_sd = np.std(run_total)
+
+permutations_condensed.loc[i, 'mean_runs'] = orderopt_mean
+permutations_condensed.loc[i, 'sd_runs'] = orderopt_sd
 ```
 
 ```{python}
-np.random.seed(0)
+'''np.random.seed(0)
 
 run_total = pd.DataFrame({'Runs': np.zeros(num_games)})
 
@@ -574,6 +657,7 @@ for i in range(len(permutations_condensed)):
             else:
                 skeleton_data_tmp.loc[k, :] = process_event(cur_row, prev_row)
 
+        # TODO: fix error with run update
         run_total.loc[j, 'Runs'] = skeleton_data_tmp.loc[80, 'Runs']
 
     orderopt_mean = run_total['Runs'].mean()
@@ -584,7 +668,7 @@ for i in range(len(permutations_condensed)):
 
     print('finished iteration {}!'.format(i + 1))
 
-skeleton_data_tmp
+skeleton_data'''
 ```
 
 ```{python}
