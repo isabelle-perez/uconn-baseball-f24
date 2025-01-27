@@ -11,8 +11,6 @@ uconn_data = pd.read_csv('data/in-game-trackman/final_fall_stats.csv')
 
 # Data Cleaning & Necessary Information
 
-## Cleaning
-
 ```{python}
 uconn_data['Name'] = uconn_data['First'] + ' ' + uconn_data['Last']
 uconn_data.drop(columns = ['First', 'Last'], inplace = True)
@@ -20,7 +18,7 @@ uconn_data.drop(columns = ['First', 'Last'], inplace = True)
 req_data = uconn_data[['Name', 'Prob1B', 'Prob2B', 'Prob3B', 'Prob4B', 'ProbOut']]
 ```
 
-## Set Player Positions & Starters
+## TODO 1: Set Player Positions
 
 ```{python}
 # players per position
@@ -33,11 +31,19 @@ left = ['Sam Biller', 'Carter Groen', 'Drew Kron', 'Beau Root', 'Aidan Dougherty
 right = ['Sam Biller', 'Aidan Dougherty', 'Carter Groen', 'Caleb Shpur', 'Drew Kron']
 center = ['Sam Biller', 'Drew Kron', 'Beau Root', 'Caleb Shpur']
 dh = ['Maddix Dalena', 'Ryan Daniels', 'Matt Garbowski', 'Carter Groen', 'Tyler Minick']
+```
 
+## TODO 2: Establish Definite Starters
+
+```{python}
 # definite starters
 starters = ['Matt Garbowski', 'Maddix Dalena', 'Bryan Padilla', 'Ryan Daniels',
                             'Tyler Minick', 'Caleb Shpur', 'Sam Biller', 'Rob Rispoli']
+```
 
+## TODO 3: Limit Player Positions in Lineup
+
+```{python}
 # possible lineup positions
 first_names = ['Matt Garbowski', 'Bryan Padilla', 'Tyler Minick', 'Drew Kron', 'Beau Root', 
                                                     'Caleb Shpur', 'Sam Biller', 'Rob Rispoli']
@@ -79,16 +85,7 @@ num_games = 100
 # Monte-Carlo Simulation
 
 ```{python}
-sample = np.random.choice([0, 1, 2, 3, 4], size = 1, p = [0.4, 0.2, 0.1, 0.1, 0.2])
-
-skeleton_cols = ['Batter', 'Prob1st', 'Prob2nd', 'Prob3rd', 'ProbHome','ProbOut',
-                'Result', 'Inning', 'Outs', 'Runner1', 'Runner2', 'Runner3', 'Runs']
-
-skeleton_data = pd.DataFrame(data = [[None] * 13 for _ in range(81)], 
-                                                    columns = skeleton_cols)
-```
-
-```{python}
+# table for mapping player names to numbers
 lookup_table = pd.DataFrame({'Number_for_Player': range(1, 20), 
                                         'Player_Name': req_data['Name']})
 ```
@@ -218,6 +215,7 @@ permutations_condensed = permutations_condensed.drop(columns = ['index'])
 np.random.seed(2025)
 
 def update_cols(prev_row, hit, prob_wts = None):
+    '''Move runners and update score.'''
     r1 = prev_row[9]
     r2 = prev_row[10]
     r3 = prev_row[11]
@@ -309,6 +307,7 @@ def update_cols(prev_row, hit, prob_wts = None):
         else: return [0, 0, 0, 0]
 
 def process_event(cur_row, prev_row):
+    '''Update game settings and score based on event.'''
     prev_row = np.nan_to_num(prev_row, nan = 0)    
 
     # last out of game -- nothing left to update
@@ -364,7 +363,7 @@ np.random.seed(2025)
 
 # map batter names to integers
 batter_names = req_data.iloc[:, 0].unique()
-batter_map = {name: idx for idx, name in enumerate(batter_names)}
+batter_map = dict(zip(lookup_table['Player_Name'], lookup_table['Number_for_Player']))
 
 num_permutations = len(permutations_condensed)
 
@@ -372,6 +371,7 @@ num_permutations = len(permutations_condensed)
 run_total = np.zeros(num_games)
 skeleton_arr = np.full((81, 13), np.nan, dtype = float)
 
+# iterate through lineups
 for i in range(num_permutations):
     # get possible lineup 
     indices = permutations_condensed.iloc[i, :9].values - 1
@@ -390,7 +390,8 @@ for i in range(num_permutations):
     prob_cols = skeleton_arr[:, 1:6]
     prob_sums = prob_cols.sum(axis = 1, keepdims = True)
     skeleton_arr[:, 1:6] = prob_cols / prob_sums
-# ------------------------------------------
+
+    # iterate through games
     for j in range(num_games):
         skeleton_arr_tmp = skeleton_arr.copy()
         
@@ -417,7 +418,8 @@ for i in range(num_permutations):
         skeleton_arr_tmp[0, 9] = 1 if first_res == 1 else 0
         skeleton_arr_tmp[0, 10] = 1 if first_res == 2 else 0
         skeleton_arr_tmp[0, 11] = 1 if first_res == 3 else 0
-        # ------------------------------------------
+
+        # iterate through each at bat
         for k in range(1, len(skeleton_arr_tmp)): 
             # store previous and current rows
             prev_row = skeleton_arr_tmp[k - 1, :]
@@ -446,14 +448,18 @@ for i in range(num_permutations):
     print('finished iteration {}!'.format(i + 1))
 ```
 
+# Results
+
 ```{python}
 text_results = permutations_condensed
 
 # convert numbers back to player names
-for i in range(9):
+'''for i in range(9):
     for j in range(len(text_results)):
         numeric_value = int(text_results.iloc[j, i]) - 1
-        text_results.iloc[j, i] = lookup_table.iloc[numeric_value, 1]
+        text_results.iloc[j, i] = lookup_table.iloc[numeric_value, 1]'''
+
+text_results
 ```
 
 ```{python}
@@ -465,3 +471,21 @@ top_3 = text_results.iloc[:3, :-2]
 
 top_3
 ```
+
+# Additional Notes
+
+1. The current runtime is about 20-25 minutes for the number of players currently used and the number
+of preset starters. This could change depending on how many starters you manually set (currently has $8$),
+but overall this shouldn't exceed an hour.
+2. The most optimal lineups may not include players in the exact positions you want. To set more
+strict restrictions, you can edit the nine list in the first TODO section. These state the 
+players that can be chosen for each position and are currently pretty generous in terms of providing
+multiple players for each position. Obviously, you may have a single player in mind for a certain 
+position, so you can limit those lists if needed.
+3. If players are added or removed from the roster, they need to also be added/removed from multiple
+places in the TODO sections. In TODO 1, they need to be removed from all positions lists they're included
+in or added to any lists for positions they may play. For TODO 2, removed players must be removed and
+added players should be added if they have a definite starting position. Lastly, for TODO 3, removed
+players must be removed fromm all lists they're included in and new players must be added to at least
+one list.
+4. 
