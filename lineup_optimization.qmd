@@ -490,5 +490,11 @@ as even without proper testing, it's clear that wouldn't be an appropriate posit
 really like to see all lineup combinations, you can put the entire roster in each of the nine lists. I 
 discourage this though, as it will make the running time of the code exponentially larger. Feel free
 to play around with smaller changes if you'd like.
+5. You may run into issues with importing the data since I have it saved with a specific name and in 
+a specific folder. In the last line of the first code block, the data is currently imported as
+'data/in-game-trackman/final_fall_stats.csv'. For me, this is inside a data folder containing another
+folder title in-game-trackman, and the file itself is 'final_fall_stats.csv'. You can rename anything
+you'd like, and remove everything but 'final_fall_stats.csv' if you don't have the data stored
+in a folder.
 
 :::
