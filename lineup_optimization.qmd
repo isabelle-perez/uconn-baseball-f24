@@ -1,3 +1,12 @@
+---
+title: "Lineup Optimization"
+format:
+  pdf:
+    toc: true
+    number-sections: true
+    colorlinks: true
+---
+
 # Import Packages & Data
 
 ```{python}
@@ -5,6 +14,9 @@ import pandas as pd
 import numpy as np
 import itertools
 import random
+import warnings
+
+warnings.filterwarnings('ignore')
 
 uconn_data = pd.read_csv('data/in-game-trackman/final_fall_stats.csv')
 ```
@@ -212,7 +224,7 @@ permutations_condensed = permutations_condensed.drop(columns = ['index'])
 ```
 
 ```{python}
-np.random.seed(2025)
+np.random.seed(777)
 
 def update_cols(prev_row, hit, prob_wts = None):
     '''Move runners and update score.'''
@@ -359,7 +371,7 @@ def process_event(cur_row, prev_row):
 ```
 
 ```{python}
-np.random.seed(2025)
+np.random.seed(777)
 
 # map batter names to integers
 batter_names = req_data.iloc[:, 0].unique()
