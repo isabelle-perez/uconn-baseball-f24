@@ -170,7 +170,7 @@ comb_grid = comb_grid[comb_grid['TestingColumn'] == 9]
 ```
 
 ```{python}
-starters = [lookup_table['Player_Name'].tolist().index(starter) + 1 for starter in starters]
+starters = [lookup_table['Player_Name'].tolist().index(s) + 1 for s in starters]
 
 comb_grid['start_test'] = comb_grid.iloc[:, :9].apply(
     lambda row: all(num in row.values for num in starters), axis=1
@@ -191,25 +191,27 @@ for col in comb_grid_text.columns:
 ```
 
 ```{python}
-first_permutations = list(itertools.permutations(comb_grid.iloc[0, :].astype(int)))
+first_perm = list(itertools.permutations(comb_grid.iloc[0, :].astype(int)))
 
-permutations_expanded = pd.DataFrame(first_permutations)
+permutations_expanded = pd.DataFrame(first_perm)
 
 for i in range(1, comb_grid.shape[0]):
-    row_permutations = list(itertools.permutations(comb_grid.iloc[i, :].astype(int)))
+    row_perm = list(itertools.permutations(comb_grid.iloc[i, :].astype(int)))
     permutations_expanded = pd.concat(
-        [permutations_expanded, pd.DataFrame(row_permutations)], ignore_index=True
+        [permutations_expanded, pd.DataFrame(row_perm)], ignore_index = True
     )
 
-permutations_expanded.columns = ['first', 'second', 'third', 'fourth', 'fifth', 'sixth',
-                                                            'seventh', 'eighth', 'ninth']
+permutations_expanded.columns = ['first', 'second', 'third', 'fourth', 
+                                    'fifth', 'sixth', 'seventh', 'eighth', 
+                                                                    'ninth']
 
 permutations_expanded = permutations_expanded.drop_duplicates()
 ```
 
 ```{python}
 def map_to_indices(names, lookup_table):
-    return lookup_table.loc[lookup_table['Player_Name'].isin(names), 'Number_for_Player'].tolist()
+    return lookup_table.loc[lookup_table['Player_Name'].isin(names), 
+                                                'Number_for_Player'].tolist()
 
 first_opt = map_to_indices(first_names, lookup_table)
 second_opt = map_to_indices(second_names, lookup_table)
@@ -361,7 +363,8 @@ def process_event(cur_row, prev_row):
     
     # single
     elif cur_row[6] == 1:
-        settings = update_cols(prev_row, 1, [1 - prob_2ndtohome_single, prob_2ndtohome_single])
+        settings = update_cols(prev_row, 1, [1 - prob_2ndtohome_single, 
+                                                    prob_2ndtohome_single])
 
     # double 
     elif cur_row[6] == 2:
@@ -392,7 +395,8 @@ np.random.seed(777)
 
 # map batter names to integers
 batter_names = req_data.iloc[:, 0].unique()
-batter_map = dict(zip(lookup_table['Player_Name'], lookup_table['Number_for_Player']))
+batter_map = dict(zip(lookup_table['Player_Name'], 
+                        lookup_table['Number_for_Player']))
 
 num_permutations = len(permutations_condensed)
 
@@ -413,7 +417,8 @@ for i in range(num_permutations):
     prob_vecs = req_data.iloc[indices, 1:6].values
 
     # combine batter and probability vectors into array of length 81
-    skeleton_arr[:, :6] = np.tile(np.column_stack([batter_vec, prob_vecs]), (9, 1))
+    skeleton_arr[:, :6] = np.tile(np.column_stack([batter_vec, prob_vecs]), 
+                                                                    (9, 1))
 
     # normalize data so probabilities add to one
     prob_cols = skeleton_arr[:, 1:6]
@@ -424,7 +429,7 @@ for i in range(num_permutations):
     for j in range(num_games):
         skeleton_arr_tmp = skeleton_arr.copy()
         
-        # assign a random result (out, single, double, triple, homerun) to each row
+        # assign a random result (out, 1b, 2b, 3b, hr) to each row
         skeleton_arr_tmp[:, 6] = np.array([
             np.random.choice([0, 1, 2, 3, 4], size = 1, p = row)[0]
             for row in skeleton_arr_tmp[:, 1:6]
