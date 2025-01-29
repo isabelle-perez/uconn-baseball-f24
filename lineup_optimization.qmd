@@ -475,7 +475,8 @@ text_results = text_results.sort_values(by = 'mean_runs')
 # get top three best lineups
 top_3 = text_results.iloc[:3, :-2]
 
-top_3
+top_3.iloc[:, :5]
+top_3.iloc[:, 5:]
 ```
 
 # Additional Notes
