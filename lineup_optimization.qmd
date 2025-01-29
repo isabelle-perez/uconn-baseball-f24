@@ -27,7 +27,8 @@ uconn_data = pd.read_csv('data/in-game-trackman/final_fall_stats.csv')
 uconn_data['Name'] = uconn_data['First'] + ' ' + uconn_data['Last']
 uconn_data.drop(columns = ['First', 'Last'], inplace = True)
 
-req_data = uconn_data[['Name', 'Prob1B', 'Prob2B', 'Prob3B', 'Prob4B', 'ProbOut']]
+req_data = uconn_data[['Name', 'Prob1B', 'Prob2B', 'Prob3B', 'Prob4B', 
+                                                            'ProbOut']]
 ```
 
 ## TODO 1: Set Player Positions
@@ -39,48 +40,60 @@ first_b = ['Maddix Dalena', 'Grant MacArthur', 'Gabriel Tirado']
 second_b = ['Ryan Daniels', 'Jack LaRose', 'Bryan Padilla', 'Rob Rispoli']
 third_b = ['Tyler Minick', 'Bryan Padilla', 'Jack LaRose']
 ss = ['Anthony Belisario', 'Bryan Padilla', 'Rob Rispoli']
-left = ['Sam Biller', 'Carter Groen', 'Drew Kron', 'Beau Root', 'Aidan Dougherty']
-right = ['Sam Biller', 'Aidan Dougherty', 'Carter Groen', 'Caleb Shpur', 'Drew Kron']
+left = ['Sam Biller', 'Carter Groen', 'Drew Kron', 'Beau Root', 
+                                                'Aidan Dougherty']
+right = ['Sam Biller', 'Aidan Dougherty', 'Carter Groen', 'Caleb Shpur', 
+                                                                'Drew Kron']
 center = ['Sam Biller', 'Drew Kron', 'Beau Root', 'Caleb Shpur']
-dh = ['Maddix Dalena', 'Ryan Daniels', 'Matt Garbowski', 'Carter Groen', 'Tyler Minick']
+dh = ['Maddix Dalena', 'Ryan Daniels', 'Matt Garbowski', 'Carter Groen', 
+                                                            'Tyler Minick']
 ```
 
 ## TODO 2: Establish Definite Starters
 
 ```{python}
 # definite starters
-starters = ['Matt Garbowski', 'Maddix Dalena', 'Bryan Padilla', 'Ryan Daniels',
-                            'Tyler Minick', 'Caleb Shpur', 'Sam Biller', 'Rob Rispoli']
+starters = ['Matt Garbowski', 'Maddix Dalena', 'Bryan Padilla', 
+            'Ryan Daniels', 'Tyler Minick', 'Caleb Shpur', 'Sam Biller', 
+                                                            'Rob Rispoli']
 ```
 
 ## TODO 3: Limit Player Positions in Lineup
 
 ```{python}
 # possible lineup positions
-first_names = ['Matt Garbowski', 'Bryan Padilla', 'Tyler Minick', 'Drew Kron', 'Beau Root', 
-                                                    'Caleb Shpur', 'Sam Biller', 'Rob Rispoli']
-second_names = ['Matt Garbowski', 'Bryan Padilla', 'Tyler Minick', 'Drew Kron', 
-                                        'Beau Root', 'Sam Biller', 'Rob Rispoli']
-third_names = ['Matt Garbowski', 'Maddix Dalena', 'Grant MacArthur', 'Jack LaRose', 
-                            'Bryan Padilla', 'Tyler Minick', 'Drew Kron', 'Beau Root', 'Sam Biller',
-                             'Rob Rispoli', 'Ryan Daniels', 'Connor Lane', 'Gabriel Tirado']
-fourth_names = ['Matt Garbowski', 'Maddix Dalena', 'Grant MacArthur', 'Jack LaRose', 
-                            'Bryan Padilla', 'Tyler Minick', 'Drew Kron', 'Beau Root', 'Sam Biller',
-                             'Rob Rispoli', 'Ryan Daniels', 'Connor Lane', 'Gabriel Tirado']
-fifth_names = ['Matt Garbowski', 'Maddix Dalena', 'Beau Root', 'Caleb Shpur', 'Bryan Padilla', 'Tyler Minick',
-                            'Ryan Daniels', 'Connor Lane', 'Gabriel Tirado', 'Sam Biller',
-                             'Rob Rispoli', 'Mike Oates', 'Grant MacArthur', 'Jack LaRose', 'Drew Kron']
-sixth_names = ['Matt Garbowski', 'Maddix Dalena', 'Beau Root', 'Caleb Shpur', 'Tyler Minick',
-                            'Ryan Daniels', 'Anthony Belisario', 'Connor Lane', 'Gabriel Tirado', 'Sam Biller',
-                                        'Rob Rispoli', 'Mike Oates', 'Grant MacArthur', 'Jack LaRose', 'Drew Kron']
-seventh_names = ['Caleb Shpur', 'Ryan Daniels', 'Anthony Belisario', 'Connor Lane', 'Gabriel Tirado',
-                    'Sam Biller', 'Carter Groen', 'Rob Rispoli', 'Mike Oates', 'Grant MacArthur', 'Jack LaRose',
-                                                                                                    'Drew Kron']
-eighth_names = ['Ryan Daniels', 'Anthony Belisario', 'Connor Lane', 'Gabriel Tirado', 
-                    'Sam Biller', 'Carter Groen', 'Rob Rispoli', 'Mike Oates', 'Grant MacArthur', 'Jack LaRose',
-                                                                                                    'Drew Kron']
-ninth_names = ['Ryan Daniels', 'Anthony Belisario', 'Connor Lane', 'Gabriel Tirado',
-                        'Carter Groen', 'Mike Oates', 'Grant MacArthur', 'Jack LaRose', 'Drew Kron']
+first_names = ['Matt Garbowski', 'Bryan Padilla', 'Tyler Minick', 
+                'Drew Kron', 'Beau Root', 'Caleb Shpur', 'Sam Biller', 
+                                                            'Rob Rispoli']
+second_names = ['Matt Garbowski', 'Bryan Padilla', 'Tyler Minick', 
+                    'Drew Kron', 'Beau Root', 'Sam Biller', 'Rob Rispoli']
+third_names = ['Matt Garbowski', 'Maddix Dalena', 'Grant MacArthur', 
+                'Jack LaRose', 'Bryan Padilla', 'Tyler Minick', 'Drew Kron', 
+                    'Beau Root', 'Sam Biller', 'Rob Rispoli', 'Ryan Daniels', 
+                                                'Connor Lane', 'Gabriel Tirado']
+fourth_names = ['Matt Garbowski', 'Maddix Dalena', 'Grant MacArthur',
+                'Jack LaRose', 'Bryan Padilla', 'Tyler Minick', 'Drew Kron', 
+                    'Beau Root', 'Sam Biller', 'Rob Rispoli', 'Ryan Daniels', 
+                                                'Connor Lane', 'Gabriel Tirado']
+fifth_names = ['Matt Garbowski', 'Maddix Dalena', 'Beau Root', 'Caleb Shpur', 
+                'Bryan Padilla', 'Tyler Minick', 'Ryan Daniels', 'Connor Lane', 
+                    'Gabriel Tirado', 'Sam Biller', 'Rob Rispoli', 'Mike Oates', 
+                                    'Grant MacArthur', 'Jack LaRose', 'Drew Kron']
+sixth_names = ['Matt Garbowski', 'Maddix Dalena', 'Beau Root', 'Caleb Shpur', 
+                            'Tyler Minick', 'Ryan Daniels', 'Anthony Belisario', 
+                                    'Connor Lane', 'Gabriel Tirado', 'Sam Biller',
+                                    'Rob Rispoli', 'Mike Oates', 'Grant MacArthur', 
+                                                        'Jack LaRose', 'Drew Kron']
+seventh_names = ['Caleb Shpur', 'Ryan Daniels', 'Anthony Belisario', 
+                        'Connor Lane', 'Gabriel Tirado', 'Sam Biller', 
+                            'Carter Groen', 'Rob Rispoli', 'Mike Oates', 
+                            'Grant MacArthur', 'Jack LaRose','Drew Kron']
+eighth_names = ['Ryan Daniels', 'Anthony Belisario', 'Connor Lane', 
+                'Gabriel Tirado', 'Sam Biller', 'Carter Groen', 'Rob Rispoli', 
+                    'Mike Oates', 'Grant MacArthur', 'Jack LaRose', 'Drew Kron']
+ninth_names = ['Ryan Daniels', 'Anthony Belisario', 'Connor Lane', 
+                    'Gabriel Tirado', 'Carter Groen', 'Mike Oates', 
+                        'Grant MacArthur', 'Jack LaRose', 'Drew Kron']
 ```
 
 ## Probabilities & Simulation Preparation
@@ -113,12 +126,12 @@ center_nums = np.empty(len(center))
 right_nums = np.empty(len(right))
 dh_nums = np.empty(len(dh))
 
-def fill_lookup(pos, pos_lst):
-    for i in range(len(pos_lst)):
+def fill_lookup(pos, lst):
+    for i in range(len(lst)):
         try:
-            pos_lst[i] = lookup_table['Player_Name'].tolist().index(pos[i]) + 1
+            lst[i] = lookup_table['Player_Name'].tolist().index(pos[i]) + 1
         except ValueError:
-            pos_lst[i] = np.nan
+            lst[i] = np.nan
 
 fill_lookup(catcher, c_nums)
 fill_lookup(first_b, first_nums)
@@ -133,21 +146,25 @@ fill_lookup(dh, dh_nums)
 
 ```{python}
 comb_grid = pd.DataFrame(
-    itertools.product(c_nums, first_nums, second_nums, third_nums, short_nums, 
-                                    left_nums, right_nums, center_nums, dh_nums),
-    columns=['C_Numbers', 'First_Numbers', 'Second_Numbers', 'Short_Numbers', 
-             'Third_Numbers', 'LF_Numbers', 'RF_Numbers', 'CF_Numbers', 'DH_Numbers']
+    itertools.product(c_nums, first_nums, second_nums, third_nums, 
+                        short_nums, left_nums, right_nums, center_nums, 
+                                                                dh_nums),
+    columns = ['C_Numbers', 'First_Numbers', 'Second_Numbers', 
+                'Short_Numbers', 'Third_Numbers', 'LF_Numbers', 
+                        'RF_Numbers', 'CF_Numbers', 'DH_Numbers']
 )
 
 comb_grid = comb_grid.values
-cols = ['C_Numbers', 'First_Numbers', 'Second_Numbers', 'Short_Numbers', 'Third_Numbers',
-                                    'LF_Numbers', 'RF_Numbers', 'CF_Numbers', 'DH_Numbers']
+cols = ['C_Numbers', 'First_Numbers', 'Second_Numbers', 'Short_Numbers', 
+                'Third_Numbers', 'LF_Numbers', 'RF_Numbers', 'CF_Numbers', 
+                                                                'DH_Numbers']
 
 comb_grid = pd.DataFrame(comb_grid, columns = cols)
 
 comb_grid['TestingColumn'] = 'tmp'
 
-comb_grid['TestingColumn'] = comb_grid.iloc[:, :9].apply(lambda row: len(set(row)), axis=1)
+comb_grid['TestingColumn'] = comb_grid.iloc[:, :9].apply(lambda row: len(set(row)), 
+                                                                            axis = 1)
 
 comb_grid = comb_grid[comb_grid['TestingColumn'] == 9]
 ```
