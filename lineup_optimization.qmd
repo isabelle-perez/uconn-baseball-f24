@@ -243,8 +243,6 @@ permutations_condensed = permutations_condensed.drop(columns = ['index'])
 ```
 
 ```{python}
-np.random.seed(777)
-
 def update_cols(prev_row, hit, prob_wts = None):
     '''Move runners and update score.'''
     r1 = prev_row[9]
@@ -391,7 +389,7 @@ def process_event(cur_row, prev_row):
 ```
 
 ```{python}
-np.random.seed(777)
+np.random.seed(1)
 
 # map batter names to integers
 batter_names = req_data.iloc[:, 0].unique()
